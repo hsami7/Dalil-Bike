@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Explore Morocco - Heritage Guide</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-container": "#92c0e9",
+                        "surface-tint": "#326286",
+                        "secondary-fixed": "#d6e9c0",
+                        "surface": "#f9f9fc",
+                        "on-error-container": "#93000a",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed": "#ffdcc4",
+                        "surface-bright": "#f9f9fc",
+                        "on-tertiary-container": "#ffa862",
+                        "tertiary-fixed-dim": "#ffb781",
+                        "outline": "#72787f",
+                        "on-background": "#1a1c1e",
+                        "surface-container-high": "#e7e8eb",
+                        "error-container": "#ffdad6",
+                        "background": "#f9f9fc",
+                        "on-surface": "#1a1c1e",
+                        "on-primary-fixed": "#001e31",
+                        "surface-container-highest": "#e2e2e5",
+                        "on-surface-variant": "#41474e",
+                        "on-tertiary-fixed": "#2f1400",
+                        "on-tertiary-fixed-variant": "#6f3800",
+                        "secondary-fixed-dim": "#bacda5",
+                        "inverse-surface": "#2e3133",
+                        "tertiary-container": "#763c00",
+                        "outline-variant": "#c1c7cf",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-container": "#596949",
+                        "on-secondary-fixed-variant": "#3c4b2d",
+                        "inverse-primary": "#9dcbf4",
+                        "on-primary-fixed-variant": "#154b6d",
+                        "secondary-container": "#d6e9c0",
+                        "on-secondary-fixed": "#121f06",
+                        "secondary": "#536343",
+                        "surface-container": "#edeef1",
+                        "primary": "#003857",
+                        "primary-fixed-dim": "#9dcbf4",
+                        "on-primary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-dim": "#d9dadd",
+                        "primary-fixed": "#cce5ff",
+                        "primary-container": "#1b4f72",
+                        "surface-variant": "#e2e2e5",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-low": "#f3f3f7",
+                        "inverse-on-surface": "#f0f0f4",
+                        "tertiary": "#552900"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .serif-italic { font-family: 'Newsreader', serif; font-style: italic; }
+        .glass-panel {
+            background: rgba(249, 249, 252, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 w-full bg-transparent">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#003857] dark:text-sky-200 cursor-pointer hover:opacity-80 transition-opacity active:scale-95 duration-200">menu</span>
+</div>
+<h1 class="font-['Newsreader'] italic text-2xl text-[#003857] dark:text-sky-100">Explore Morocco</h1>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#003857] dark:text-sky-200 cursor-pointer hover:opacity-80 transition-opacity active:scale-95 duration-200">search</span>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-md mx-auto">
+<!-- Hero Story Section -->
+<section class="mb-12">
+<h2 class="font-headline italic text-5xl mb-4 text-on-surface leading-tight">Select Your Destination</h2>
+<div class="h-[2px] w-12 bg-primary-container mb-6 opacity-40"></div>
+<p class="text-on-surface-variant font-body text-sm leading-relaxed max-w-[80%]">
+                From the ochre walls of the south to the sapphire alleys of the north, discover the curated heritage of the Maghreb.
+            </p>
+</section>
+<!-- Editorial Grid Layout -->
+<div class="grid grid-cols-2 gap-4">
+<!-- Marrakech - Large Card -->
+<div class="col-span-2 relative group">
+<div class="aspect-[4/3] rounded-xl overflow-hidden bg-surface-container-low relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Stunning sunset over the Koutoubia Mosque in Marrakech with warm golden light illuminating the sandstone architecture and palm trees" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwAoEvmDeRlxNYuhajLAaKTXTwXU-HA33Mq5iSc_aYnZCVIOZMFUR6y70jZDBmg5rKflnI63UUT4WqI4dkucBDHqkUpEiCQPt2JNc1E0Y_3lgk4AOxL6gMSsEbni2j_7pVz4P5jXDjIBjIFO8GgFG67MYq9pg0uidsSCp2Fn_zx3PacRKYjVyAIZa0K_nDwvcnRa6N5DEiLdsIEcnlD4tJJi3CxHj1FVXpo2Hd9xcHYaWl9uLYj8oTWQuCW5cEl1BIjXUxoyIztMIh"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6">
+<span class="text-[10px] uppercase tracking-widest font-bold text-on-primary-container mb-1 block">Southern Majesty</span>
+<h3 class="font-headline italic text-3xl text-on-primary">Marrakech</h3>
+</div>
+</div>
+</div>
+<!-- Fes - Vertical Card -->
+<div class="col-span-1 relative group mt-4">
+<div class="aspect-[3/4] rounded-xl overflow-hidden bg-surface-container-low relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Narrow labyrinthine alleyway of the Fes Medina with intricate mosaic tilework and sunlight filtering through wooden slats above" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAweiOF_RvcZZELKcOM90NygcESP7kIe0_ealeQ30CSruJP22Tb5wN-GPfy2DBLW9laVWbQPTjJy50LOGTp-C_xetr3BRzLuBeSi9nMTpLlNBxQHqqkNzjL_40W6itOhs77NStAGghy12HT6j_tKbqW_O7b4kLdUf2b2ikliLl3zHuRt037gNiplVZzAYWro55mTXrMK1bUJVz5hLtAmSYJD8Fxr-M5JoYBm9n6PWm2bgpBHxS50IZDV3YQgHgZXKPX3RJ48QhyfoPI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<h3 class="font-headline italic text-xl text-white">Fes</h3>
+</div>
+</div>
+</div>
+<!-- Casablanca - Smaller Card Offset -->
+<div class="col-span-1 relative group -mt-4">
+<div class="aspect-[3/4] rounded-xl overflow-hidden bg-surface-container-low relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modern architecture of the Hassan II Mosque in Casablanca sitting by the Atlantic ocean with dramatic sea spray" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQ_ZuLhO6QsarL9CJIpvUj55anXoqJSatMaqMhXKS_BiqmRwDhIkV3ZNKAM4mbM0PKhhNuHhjoK2fXW70qpysi1dgd25RAxg9FynjIRzW1kNDOTpfi4GVqubvkHDDpkjEm7IhGsPMGOTIi68f0_zQ6y_lalKK5jJs7u6IshTPHL0CdTaa7MyHaZ_lSs8FifuGc3lthppmbm3EDplO9LkpOCLmw6csplX78TjRScopdIS5fxj7DJ-_DZxr0n_Cyqayf8gps2NyBKrnt"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<h3 class="font-headline italic text-xl text-white">Casablanca</h3>
+</div>
+</div>
+</div>
+<!-- Chefchaouen - Full Bleed Style -->
+<div class="col-span-2 relative group mt-4 mb-8">
+<div class="aspect-[16/9] rounded-xl overflow-hidden bg-surface-container-low relative shadow-sm">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Iconic blue-painted walls and stairs of Chefchaouen with colorful flower pots and soft morning shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKXlH9kZFlqCETVUjltqKe7P0ptESXC5VqPvvM8RcaQCfimzudzCVzPiLnUKUoaUhw_oJag8vHvwDn7XrAsx_qTw6vnLAhsnI8KkNz_vOphDj40lRtyYzGNqjp9OyhejtUEmlgRt0Kb2Rlwy0SBhitv9fml_EadK8YGFPI7AcPotoVmF4Gd5-hw77lQWGb-NegNfOBn-qrGmHOWQ7O-hZUi8IvSCRDWTvUGLZ6EgF4YgXvqMtlq_kj1VTr9yzewuxaULzJGHwVxgM2"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/50 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6 flex justify-between items-end w-full">
+<div>
+<span class="text-[10px] uppercase tracking-widest font-bold text-on-primary-container mb-1 block">Rif Mountains</span>
+<h3 class="font-headline italic text-3xl text-on-primary">Chefchaouen</h3>
+</div>
+<button class="bg-surface-container-lowest rounded-full p-3 shadow-lg group-active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-primary">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Editor's Note Section -->
+<section class="bg-surface-container-low rounded-xl p-8 mb-12 border-l-4 border-primary-container">
+<span class="material-symbols-outlined text-tertiary mb-2" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<h4 class="font-label font-bold text-xs uppercase tracking-widest text-secondary mb-3">Curator's Choice</h4>
+<p class="font-headline italic text-xl text-on-surface leading-relaxed">
+                "The secret of Morocco is not just in the destinations, but in the silences between the calls to prayer."
+            </p>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pt-3 pb-8 bg-[#f9f9fc]/70 dark:bg-[#1a1c1e]/70 backdrop-blur-xl z-50 rounded-t-[24px] shadow-[0_-4px_32px_rgba(26,28,30,0.06)]">
+<!-- Explore - Active -->
+<a class="flex flex-col items-center justify-center text-[#003857] dark:text-sky-200 transition-all scale-110" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] uppercase tracking-widest font-bold">Explore</span>
+</a>
+<!-- Destinations -->
+<a class="flex flex-col items-center justify-center text-[#1a1c1e]/50 dark:text-slate-500 hover:text-[#536343] dark:hover:text-emerald-400 transition-colors" href="#">
+<span class="material-symbols-outlined mb-1">location_city</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] uppercase tracking-widest font-bold">Destinations</span>
+</a>
+<!-- Saved -->
+<a class="flex flex-col items-center justify-center text-[#1a1c1e]/50 dark:text-slate-500 hover:text-[#536343] dark:hover:text-emerald-400 transition-colors" href="#">
+<span class="material-symbols-outlined mb-1">bookmark</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] uppercase tracking-widest font-bold">Saved</span>
+</a>
+<!-- Journal -->
+<a class="flex flex-col items-center justify-center text-[#1a1c1e]/50 dark:text-slate-500 hover:text-[#536343] dark:hover:text-emerald-400 transition-colors" href="#">
+<span class="material-symbols-outlined mb-1">menu_book</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] uppercase tracking-widest font-bold">Journal</span>
+</a>
+</nav>
+</body></html>

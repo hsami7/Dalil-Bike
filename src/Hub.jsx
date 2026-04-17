@@ -117,7 +117,7 @@ export default function Hub() {
             
             <article 
               className="grid grid-cols-1 lg:grid-cols-12 gap-12 group cursor-pointer"
-              onClick={() => navigate('/place')}
+              onClick={() => navigate(`/place/${domain.id}`)}
             >
               <div className="lg:col-span-12">
                 <div className="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-xl border border-outline-variant/20 flex flex-col md:flex-row h-full md:h-[500px] transition-transform duration-500 hover:-translate-y-1">

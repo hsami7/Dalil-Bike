@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-dim": "#d9dadd",
+                    "primary-fixed-dim": "#9dcbf4",
+                    "surface": "#f9f9fc",
+                    "on-primary-container": "#92c0e9",
+                    "background": "#f9f9fc",
+                    "inverse-surface": "#2e3133",
+                    "primary-container": "#1b4f72",
+                    "tertiary-fixed": "#ffdcc4",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed-dim": "#bacda5",
+                    "outline-variant": "#c1c7cf",
+                    "inverse-primary": "#9dcbf4",
+                    "secondary": "#536343",
+                    "on-tertiary-fixed-variant": "#6f3800",
+                    "on-tertiary-container": "#ffa862",
+                    "on-primary-fixed-variant": "#154b6d",
+                    "surface-tint": "#326286",
+                    "primary-fixed": "#cce5ff",
+                    "on-surface": "#1a1c1e",
+                    "surface-bright": "#f9f9fc",
+                    "on-error": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed": "#001e31",
+                    "surface-variant": "#e2e2e5",
+                    "on-surface-variant": "#41474e",
+                    "error": "#ba1a1a",
+                    "inverse-on-surface": "#f0f0f4",
+                    "tertiary-container": "#763c00",
+                    "on-tertiary-fixed": "#2f1400",
+                    "on-primary": "#ffffff",
+                    "on-secondary-container": "#596949",
+                    "on-background": "#1a1c1e",
+                    "on-secondary": "#ffffff",
+                    "tertiary": "#552900",
+                    "outline": "#72787f",
+                    "on-secondary-fixed-variant": "#3c4b2d",
+                    "primary": "#003857",
+                    "surface-container-highest": "#e2e2e5",
+                    "surface-container-high": "#e7e8eb",
+                    "secondary-fixed": "#d6e9c0",
+                    "tertiary-fixed-dim": "#ffb781",
+                    "surface-container-low": "#f3f3f7",
+                    "surface-container": "#edeef1",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed": "#121f06",
+                    "secondary-container": "#d6e9c0"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      .editorial-shadow { box-shadow: 0 32px 64px -12px rgba(26, 28, 30, 0.06); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary-fixed-dim selection:text-primary min-h-screen pb-32">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-transparent backdrop-blur-xl flex justify-between items-center px-6 py-4 w-full">
+<div class="p-2 hover:bg-[#f3f3f7]/50 transition-all duration-300 ease-in-out rounded-full">
+<span class="material-symbols-outlined text-[#003857] dark:text-[#f9f9fc]">menu</span>
+</div>
+<h1 class="font-['Newsreader'] italic text-2xl text-[#003857] dark:text-white">Marrakech</h1>
+<div class="p-2 hover:bg-[#f3f3f7]/50 transition-all duration-300 ease-in-out rounded-full">
+<span class="material-symbols-outlined text-[#003857] dark:text-[#f9f9fc]">search</span>
+</div>
+</nav>
+<main class="relative">
+<!-- Hero Section -->
+<section class="relative h-[751px] w-full overflow-hidden">
+<img alt="Marrakech Landscape" class="w-full h-full object-cover" data-alt="Stunning sunset view of Jemaa el-Fnaa square in Marrakech with the Koutoubia Mosque silhouette against a vibrant orange and purple sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCowm26MVmco2KKLPQgqW6DrB4kC4FejXjJ18XjlOvyL3wI0VqkJpxHK5MCc04B_K9t36_rP9ib8C99O06sVlrv3fggPbJ_lIpI7uCo_H7DO-vkJEDHLMFrQq2VKfBtE9-J1p81iSPQYnK3OxIEiOpLWNxEWRac0fW-nPDKImI0ZzA-n6PxSwCxROJeuHOtxUocpw_ULPmgv9bBX2pDCcdw26oAhhytNNFBEjJ3RYxNSOiH4Tb2jOB1ej7iPz-lqUUK3o8TG6uTOnUQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-black/20"></div>
+<div class="absolute bottom-16 left-0 w-full px-8 flex flex-col items-start">
+<span class="text-white/80 font-medium tracking-[0.2em] text-[10px] uppercase mb-4 bg-primary/20 backdrop-blur-md px-3 py-1 rounded-full">The Red City</span>
+<h2 class="font-headline italic text-white text-[5rem] leading-[0.9] mb-6 drop-shadow-2xl">Marrakech</h2>
+<div class="flex items-center gap-4 text-white/90">
+<div class="flex items-center gap-2 px-3 py-1 bg-surface/10 backdrop-blur-lg rounded-full border border-white/10">
+<span class="material-symbols-outlined text-sm">thermostat</span>
+<span class="text-xs font-semibold">28°C</span>
+</div>
+<div class="flex items-center gap-2 px-3 py-1 bg-surface/10 backdrop-blur-lg rounded-full border border-white/10">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span class="text-xs font-semibold">18:42</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Introduction -->
+<section class="px-8 py-20 bg-surface">
+<div class="max-w-xl">
+<p class="font-headline italic text-3xl leading-relaxed text-primary">
+                    "Between the ochre walls of the Medina and the snow-capped Atlas peaks, Marrakech breathes in a rhythm of ancient spice markets and modernist desert dreams."
+                </p>
+<div class="mt-12 h-[1px] w-12 bg-secondary opacity-30"></div>
+<p class="mt-12 text-on-surface-variant font-medium leading-loose tracking-wide">
+                    The city is a kaleidoscope of sensory wonders. From the rhythmic chanting of the call to prayer to the intricate zellige tiles hidden within quiet riads, Marrakech offers a journey through time where every corner reveals a story carved in cedar wood and stone.
+                </p>
+</div>
+</section>
+<!-- Section 1: The Grand Palaces & Sites -->
+<section class="bg-surface-container-low py-24 px-8 overflow-hidden">
+<div class="flex justify-between items-end mb-16">
+<div>
+<span class="text-secondary font-bold tracking-widest text-[10px] uppercase">Curated Wonders</span>
+<h3 class="font-headline text-4xl mt-2 text-on-surface">The Grand Palaces &amp; Sites</h3>
+</div>
+<button class="text-primary font-bold text-sm flex items-center gap-2 group">
+                    View Maps <span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+<div class="flex gap-8 overflow-x-auto no-scrollbar pb-12 -mx-8 px-8">
+<!-- Card 1 -->
+<div class="flex-none w-[85vw] md:w-[400px]">
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden editorial-shadow group">
+<div class="h-80 overflow-hidden">
+<img alt="Koutoubia Mosque" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="The towering minaret of Koutoubia Mosque against a clear blue sky, framed by lush green gardens and palm trees" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRppLASVlPL2gdJSFtCE24fbYsIcgz93k7Dm7us2PVqNn_WvJhLmq4RmgaD7yDjpJ-HYSe5cv_B8xN5_qwdh5Im1GR3DHaPHnwOJDsVIFH0AAevi8zlqt4YvnCbaddL9C4YzASv88O_vRY1lrP9vSCOXndfa9Y0uG9HhzqtfXcovo3L1GPY0vmLnWLEBSyP_o0qUBqcupOGwbHPHjaCKHIeXd1jYKug263lXurjbyf34ft1hf5Pc9IiX3iTPC-iq6U_3H3kYmXVeAZ"/>
+</div>
+<div class="p-8">
+<h4 class="font-headline text-2xl text-primary mb-3">Koutoubia Mosque</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                                The city's spiritual anchor. Its 12th-century minaret has served as the architectural model for the Giralda in Seville.
+                            </p>
+<span class="text-tertiary font-bold text-[10px] tracking-tighter uppercase border-b border-outline-variant/40 pb-1">12th Century Almohad</span>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="flex-none w-[85vw] md:w-[400px]">
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden editorial-shadow group">
+<div class="h-80 overflow-hidden">
+<img alt="Bahia Palace" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Intricate Moroccan architectural details of Bahia Palace featuring colorful zellige tiles and carved cedar wood ceilings" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtijIuobexTQyQ18JyZFcf8a7owSAUXzG3-CBngfgD6Od0rlpF9pFfuVT6UCMiCSZO3HrVXpG7T6R5LBRc38J6hF7-MG40awBY3sG4JTN10lO7at1wtHOPKtWewETCGmVy7sWv5FxpH0y0knW8EGF4T-4wS5RBFK34QALGHQp-nC7vkVk3gK5mueHmmq3m6h6HBrEKf1wjIMDk8fFVpan9BY4NOUGmzqMLbo47YTBPYKl0CzjuAtOdpULe6mPNZwgqO7mL6PIdJQ1v"/>
+</div>
+<div class="p-8">
+<h4 class="font-headline text-2xl text-primary mb-3">Bahia Palace</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                                'The Brilliance.' A masterpiece of Moroccan architecture intended to be the greatest palace of its time.
+                            </p>
+<span class="text-tertiary font-bold text-[10px] tracking-tighter uppercase border-b border-outline-variant/40 pb-1">Ottoman-Moroccan Fusion</span>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="flex-none w-[85vw] md:w-[400px]">
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden editorial-shadow group">
+<div class="h-80 overflow-hidden">
+<img alt="Jardin Majorelle" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="The iconic vibrant Majorelle Blue villa surrounded by exotic cacti and lush tropical botanical gardens" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsjvud3yXlQ9Bv7Udh1Nn92r5JdJknFBr09MGY1Au4gqXTPrasBHrRB94ygKmfDECHcCVP4NeomGiggk0PoVLdydBfWG-eKGgKDbjBQwuu2xnXLywp3OgmUeFI0Yr3eJNOOpLKqqG4NMBeZyyrVMXguEzeuuFcX6sPKfS4KLQtHXUahjUUk2WEXFTxAnYUO0TAqRYKtkKVcQBakyVEJTd8e0P1aMnS8uI6_59Fd6cl0pIPTEsDOzVpIQ0LQsYfEDklTTj4Pf_kSph5"/>
+</div>
+<div class="p-8">
+<h4 class="font-headline text-2xl text-primary mb-3">Jardin Majorelle</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                                A cobalt blue oasis curated by Jacques Majorelle and later preserved by Yves Saint Laurent.
+                            </p>
+<span class="text-tertiary font-bold text-[10px] tracking-tighter uppercase border-b border-outline-variant/40 pb-1">Botanical Art Sanctuary</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Legendary Stays -->
+<section class="py-24 px-8">
+<div class="flex flex-col mb-16 text-center">
+<span class="text-secondary font-bold tracking-widest text-[10px] uppercase">The Art of Living</span>
+<h3 class="font-headline text-4xl mt-2 text-on-surface italic">Legendary Stays</h3>
+</div>
+<div class="space-y-16 max-w-2xl mx-auto">
+<!-- Hotel 1 -->
+<div class="relative group">
+<div class="h-[500px] rounded-xl overflow-hidden">
+<img alt="La Mamounia" class="w-full h-full object-cover" data-alt="Luxury pool area at La Mamounia hotel with grand columns, reflection in turquoise water, and orange trees" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYPYXJ3xO6CJ2Pp7C241mGz257L4RoH8z5dc7Li40O3MSVyr58kfHgcHtfou4y3kVPxsX4kj3IoIgH9_XHR7VmCmnsEFzhzpMsxK0cPT3ZgnEPUkZBKMqvFCfy1Qk3nc2_n29TmgvCySMBpsz-r16tZoXtmtegXxeCO6d9zGKJC8A92NxvrAq3y6hoVyEIg3rMhdMeQjlhRHhPmCemPrkf6z5B0cgTzBz8zA7CFFteTeL_QAqhNn2N3Ujznyk776CYwgwXZTV1au0s"/>
+<div class="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors"></div>
+<div class="absolute top-6 left-6">
+<span class="bg-tertiary text-white font-bold text-[10px] px-3 py-1 rounded-full uppercase tracking-widest">Editor's Choice</span>
+</div>
+</div>
+<div class="mt-[-80px] relative z-10 px-6">
+<div class="bg-surface-container-lowest p-8 rounded-xl editorial-shadow">
+<div class="flex justify-between items-start mb-4">
+<h4 class="font-headline text-3xl text-primary">La Mamounia</h4>
+<div class="flex items-center text-primary-container">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-sm font-bold ml-1">5.0</span>
+</div>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-8">
+                                Marrakech's most iconic grand dame. A garden palace where Churchill once painted and royalty still retreats.
+                            </p>
+<div class="flex justify-between items-center">
+<span class="text-xs font-medium text-secondary uppercase tracking-widest">From $750/night</span>
+<button class="bg-gradient-to-br from-primary to-primary-container text-white text-xs font-bold px-6 py-3 rounded-full hover:shadow-lg transition-all">Book Atelier</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Hotel 2 -->
+<div class="relative group">
+<div class="h-[500px] rounded-xl overflow-hidden">
+<img alt="Royal Mansour" class="w-full h-full object-cover" data-alt="Palatial entrance of Royal Mansour showing exquisite handcrafted copper doors and intricate stonework" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWEm4g4V-yU8CVszcfvpl1TsIoe6hTTmwTwtYTbvm2FgSaAHv0VUdorRY4JIaeR8sJURDU7z97Dj5cgPu7pbaRIZa0NuvoLTgik9qNoFXu5WFNbwcVuLpBNfXZiRw8Q1LVl9ESc-Ix_SzEy_WfFFZ8zdKDBreaVidH5NYbijvzXodeN_tYE-a_uo83soEghIvZD0Zxu3Z5rzCtueDiAPzMf-ptN6FjtmnGIeF6OfmgIktvipestqZYBlbhUuRGK1wdvOBZ9n0iXohH"/>
+<div class="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors"></div>
+</div>
+<div class="mt-[-80px] relative z-10 px-6">
+<div class="bg-surface-container-lowest p-8 rounded-xl editorial-shadow">
+<div class="flex justify-between items-start mb-4">
+<h4 class="font-headline text-3xl text-primary">Royal Mansour</h4>
+<div class="flex items-center text-primary-container">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-sm font-bold ml-1">4.9</span>
+</div>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-8">
+                                Commissioned by King Mohammed VI, this hotel is a city within a city, composed entirely of private three-story riads.
+                            </p>
+<div class="flex justify-between items-center">
+<span class="text-xs font-medium text-secondary uppercase tracking-widest">From $1,200/night</span>
+<button class="bg-gradient-to-br from-primary to-primary-container text-white text-xs font-bold px-6 py-3 rounded-full hover:shadow-lg transition-all">Book Riad</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / Footer Editorial -->
+<section class="mt-12 bg-primary py-24 px-8 text-center rounded-t-[3rem]">
+<h5 class="font-headline text-4xl text-white italic mb-6">Join the Registry</h5>
+<p class="text-white/70 text-sm max-w-xs mx-auto mb-10 leading-relaxed font-light">
+                Receive curated travel logs and exclusive secret guides to the Atlas mountains once a month.
+            </p>
+<div class="relative max-w-sm mx-auto">
+<input class="w-full bg-white/10 border-none rounded-full px-8 py-5 text-white placeholder-white/40 focus:ring-2 focus:ring-primary-fixed-dim focus:bg-white/20 transition-all outline-none" placeholder="email@marrakech.co" type="email"/>
+<button class="absolute right-2 top-2 bottom-2 aspect-square flex items-center justify-center bg-white text-primary rounded-full">
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-8 pb-6 pt-2 bg-[#f9f9fc]/70 backdrop-blur-2xl dark:bg-[#1a1c1e]/70 z-50 rounded-t-[2rem] shadow-[0_-8px_32px_rgba(26,28,30,0.06)]">
+<!-- Discover (Active) -->
+<a class="flex flex-col items-center justify-center bg-gradient-to-br from-[#003857] to-[#1b4f72] text-white rounded-full p-3 scale-110 -translate-y-2 transition-transform" href="#">
+<span class="material-symbols-outlined">explore</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-medium tracking-wide uppercase mt-1">Discover</span>
+</a>
+<!-- Stay -->
+<a class="flex flex-col items-center justify-center text-[#1a1c1e]/60 dark:text-[#f9f9fc]/60 p-2 hover:opacity-80 transition-transform duration-200 active:scale-90" href="#">
+<span class="material-symbols-outlined">hotel</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-medium tracking-wide uppercase mt-1">Stay</span>
+</a>
+<!-- History -->
+<a class="flex flex-col items-center justify-center text-[#1a1c1e]/60 dark:text-[#f9f9fc]/60 p-2 hover:opacity-80 transition-transform duration-200 active:scale-90" href="#">
+<span class="material-symbols-outlined">history_edu</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-medium tracking-wide uppercase mt-1">History</span>
+</a>
+<!-- Saved -->
+<a class="flex flex-col items-center justify-center text-[#1a1c1e]/60 dark:text-[#f9f9fc]/60 p-2 hover:opacity-80 transition-transform duration-200 active:scale-90" href="#">
+<span class="material-symbols-outlined">bookmark</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-medium tracking-wide uppercase mt-1">Saved</span>
+</a>
+</nav>
+</body></html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Colosseum - Curator</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary": "#536343",
+                    "on-surface": "#1a1c1e",
+                    "inverse-on-surface": "#f0f0f4",
+                    "on-error-container": "#93000a",
+                    "primary": "#003857",
+                    "error-container": "#ffdad6",
+                    "surface-container-lowest": "#ffffff",
+                    "on-background": "#1a1c1e",
+                    "background": "#f9f9fc",
+                    "outline-variant": "#c1c7cf",
+                    "surface-bright": "#f9f9fc",
+                    "on-secondary-fixed": "#121f06",
+                    "primary-container": "#1b4f72",
+                    "on-secondary-container": "#596949",
+                    "primary-fixed-dim": "#9dcbf4",
+                    "inverse-primary": "#9dcbf4",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-container": "#ffa862",
+                    "error": "#ba1a1a",
+                    "surface-container": "#edeef1",
+                    "surface": "#f9f9fc",
+                    "surface-container-low": "#f3f3f7",
+                    "on-tertiary-fixed": "#2f1400",
+                    "on-primary-container": "#92c0e9",
+                    "on-secondary-fixed-variant": "#3c4b2d",
+                    "surface-variant": "#e2e2e5",
+                    "on-primary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#6f3800",
+                    "inverse-surface": "#2e3133",
+                    "tertiary": "#552900",
+                    "on-primary-fixed-variant": "#154b6d",
+                    "secondary-fixed": "#d6e9c0",
+                    "tertiary-container": "#763c00",
+                    "surface-container-high": "#e7e8eb",
+                    "outline": "#72787f",
+                    "surface-container-highest": "#e2e2e5",
+                    "primary-fixed": "#cce5ff",
+                    "secondary-fixed-dim": "#bacda5",
+                    "surface-dim": "#d9dadd",
+                    "tertiary-fixed": "#ffdcc4",
+                    "surface-tint": "#326286",
+                    "on-error": "#ffffff",
+                    "secondary-container": "#d6e9c0",
+                    "on-secondary": "#ffffff",
+                    "tertiary-fixed-dim": "#ffb781",
+                    "on-surface-variant": "#41474e",
+                    "on-primary-fixed": "#001e31"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {},
+            "fontFamily": {
+                    "headline": [
+                            "Newsreader"
+                    ],
+                    "body": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "label": [
+                            "Plus Jakarta Sans"
+                    ]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        h1, h2, h3, h4, h5, h6, .font-headline { font-family: 'Newsreader', serif; }
+    </style>
+</head>
+<body class="bg-background text-on-surface antialiased">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/70 dark:bg-slate-900/70 backdrop-blur-xl shadow-sm dark:shadow-none hidden md:flex">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-screen-2xl mx-auto">
+<div class="font-serif italic text-2xl text-sky-900 dark:text-sky-200">Curator</div>
+<nav class="flex gap-8">
+<a class="text-sky-900 dark:text-sky-100 font-bold border-b-2 border-sky-900 dark:border-sky-400 pb-1 hover:text-sky-700 dark:hover:text-sky-300 transition-colors scale-95 duration-200 ease-in-out" href="#">Explore</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-sky-700 dark:hover:text-sky-300 transition-colors scale-95 duration-200 ease-in-out" href="#">Stays</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-sky-700 dark:hover:text-sky-300 transition-colors scale-95 duration-200 ease-in-out" href="#">History</a>
+</nav>
+<div class="flex items-center gap-4 text-sky-900 dark:text-sky-400">
+<button class="hover:text-sky-700 dark:hover:text-sky-300 transition-colors scale-95 duration-200 ease-in-out">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="pb-24 md:pb-0 md:pt-24">
+<!-- Hero Section -->
+<section class="relative w-full h-[614px] md:h-[819px] bg-surface-container-low overflow-hidden">
+<img alt="The Colosseum" class="w-full h-full object-cover" data-alt="Wide cinematic shot of the Colosseum in Rome during golden hour, bathed in warm, soft sunlight, highly detailed architecture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLBgcBI57eOXDEHFi64vfN3KUiuMTeXCaH1qYNUfjuRnBFBu7wY4og75T3rIf5aVMg71wfX31fRar4MWMKuPHCoZQIyg4yHYJp1m6XUdsrbYm7GbydbltVyK9OOvTfcRCG82KOXJtCPQ8d_h8J-Iazqe9p1JExgiFxTdOd7qy315usD5DNnTN3u-J2WPqs7tCMbyq-eOBPtNONTytS5glMmM_XCEtdQLJswGooo7tcoRTUUmmKWxUXCazD7VRVRrbB6B9TdCu_Hdhe"/>
+<!-- Weather/Time Widget Overlay -->
+<div class="absolute bottom-6 left-6 md:bottom-12 md:left-12 bg-surface/70 backdrop-blur-[20px] rounded-xl p-4 flex items-center gap-4 text-on-surface">
+<div class="flex flex-col">
+<span class="text-[0.75rem] font-bold uppercase tracking-wider text-primary">Rome, Italy</span>
+<span class="font-headline text-[1.375rem]">72°F / 22°C</span>
+</div>
+<div class="w-px h-8 bg-outline-variant/30"></div>
+<div class="flex flex-col">
+<span class="text-[0.75rem] font-bold uppercase tracking-wider text-primary">Local Time</span>
+<span class="font-headline text-[1.375rem]">14:30</span>
+</div>
+</div>
+</section>
+<!-- Content Grid -->
+<div class="max-w-screen-xl mx-auto px-6 md:px-12 py-12 md:py-24 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24">
+<!-- Main Article (Left/Center) -->
+<article class="lg:col-span-8">
+<header class="mb-12">
+<span class="text-[0.75rem] font-bold uppercase tracking-wider text-secondary mb-4 block">Antiquity</span>
+<h1 class="font-headline text-[3.5rem] leading-tight text-primary mb-6">The Colosseum</h1>
+<p class="text-on-surface-variant text-lg leading-relaxed">
+                        An iconic symbol of Imperial Rome, the Flavian Amphitheatre remains the largest ancient amphitheatre ever built, and is still the largest standing amphitheatre in the world today.
+                    </p>
+</header>
+<div class="prose prose-lg text-on-surface max-w-none">
+<p class="font-headline text-[1.75rem] leading-relaxed mb-8 text-primary-container">
+                        "While stands the Coliseum, Rome shall stand; When falls the Coliseum, Rome shall fall; And when Rome falls—the World."
+                    </p>
+<h2 class="font-headline text-[1.75rem] text-primary mt-12 mb-6">A Monument to Flavian Dynasty</h2>
+<p class="mb-6 leading-relaxed">
+                        Construction began under the emperor Vespasian in AD 72 and was completed in AD 80 under his successor and heir, Titus. Further modifications were made during the reign of Domitian (81–96). These three emperors are known as the Flavian dynasty, and the amphitheatre was named in Latin for its association with their family name (Flavius).
+                    </p>
+<p class="mb-6 leading-relaxed">
+                        Built of travertine limestone, tuff (volcanic rock), and brick-faced concrete, it could hold an estimated 50,000 to 80,000 spectators at various points in its history, having an average audience of some 65,000; it was used for gladiatorial contests and public spectacles such as mock sea battles, animal hunts, executions, re-enactments of famous battles, and dramas based on Roman mythology.
+                    </p>
+<!-- Historical Timeline snippet -->
+<div class="relative pl-8 mt-12 mb-12">
+<div class="absolute left-0 top-0 bottom-0 w-px bg-outline-variant/20"></div>
+<div class="mb-8 relative">
+<div class="absolute -left-[37px] top-2 w-3 h-3 rounded-full bg-secondary"></div>
+<h3 class="font-headline text-xl text-primary">AD 72</h3>
+<p class="text-on-surface-variant text-sm mt-1">Construction begins under Emperor Vespasian.</p>
+</div>
+<div class="mb-8 relative">
+<div class="absolute -left-[37px] top-2 w-3 h-3 rounded-full bg-secondary"></div>
+<h3 class="font-headline text-xl text-primary">AD 80</h3>
+<p class="text-on-surface-variant text-sm mt-1">Inaugural games held by Titus, lasting 100 days.</p>
+</div>
+<div class="relative">
+<div class="absolute -left-[37px] top-2 w-3 h-3 rounded-full bg-secondary"></div>
+<h3 class="font-headline text-xl text-primary">AD 1349</h3>
+<p class="text-on-surface-variant text-sm mt-1">A severe earthquake causes massive damage to the outer ring.</p>
+</div>
+</div>
+</div>
+</article>
+<!-- Sidebar (Right) -->
+<aside class="lg:col-span-4 space-y-8">
+<!-- Info Card -->
+<div class="bg-surface-container-lowest rounded-xl p-8 shadow-[0_32px_64px_-12px_rgba(26,28,30,0.06)] relative overflow-hidden">
+<!-- Subtle gradient top edge -->
+<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-primary-container"></div>
+<h3 class="font-headline text-[1.375rem] text-primary mb-6">Visitor Information</h3>
+<ul class="space-y-6">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary mt-1" data-icon="schedule">schedule</span>
+<div>
+<span class="block text-sm font-bold text-on-surface">Opening Hours</span>
+<span class="block text-sm text-on-surface-variant mt-1">Daily: 9:00 AM – 7:15 PM<br/>(Last admission at 6:15 PM)</span>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary mt-1" data-icon="location_on">location_on</span>
+<div>
+<span class="block text-sm font-bold text-on-surface">Location</span>
+<span class="block text-sm text-on-surface-variant mt-1">Piazza del Colosseo, 1,<br/>00184 Roma RM, Italy</span>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary mt-1" data-icon="confirmation_number">confirmation_number</span>
+<div>
+<span class="block text-sm font-bold text-on-surface">Entry Fee</span>
+<span class="block text-sm text-on-surface-variant mt-1">Adults: €16.00<br/>Reduced: €2.00 (EU Citizens 18-25)</span>
+</div>
+</li>
+</ul>
+<button class="mt-8 w-full bg-gradient-to-br from-primary to-primary-container text-white rounded-full py-3 px-6 font-bold text-sm tracking-wide hover:opacity-90 transition-opacity">
+                        Book Tickets
+                    </button>
+</div>
+<!-- Mini Map Card -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-[0_32px_64px_-12px_rgba(26,28,30,0.06)]">
+<img alt="Map of Rome" class="w-full h-48 object-cover rounded-lg mb-4" data-alt="Stylized map showing the location of the Colosseum in central Rome, with subtle warm tones" data-location="Rome" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTacs8mgVBegnoRXcFgPQT7QwtyFdbuFLz1iHIf8V8CynNsPrMqU5TvG2eBMDse2Xt8qLBBZOz7CcHILPR2u0FV_1yMxxWeA7APKGx6ujOzXHGH0HplRQLBm2ON7DLTpwWw_jtci9NdrRZx80C4A5Cr3ZRUR-iQ3GdBdvTVhKRLbsnxc1Wstp8oP6ol7g0EjTr0fWffgrEVqVpUnKX2Z7gsytwabLTB8r6_Sgq2Ia5EfF_mk9N9jBWS0YTuSZrGaQ0a_di2xDYefra"/>
+<button class="w-full text-secondary font-bold text-sm underline decoration-outline-variant/40 hover:bg-surface-variant py-2 rounded-lg transition-colors">
+                        Get Directions
+                     </button>
+</div>
+</aside>
+</div>
+<!-- Photo Gallery (Bento Grid) -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-screen-2xl mx-auto px-6 md:px-12">
+<header class="mb-12">
+<h2 class="font-headline text-[1.75rem] text-primary">Visual Journey</h2>
+</header>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[250px]">
+<div class="md:col-span-2 md:row-span-2 rounded-xl overflow-hidden relative group">
+<img alt="Colosseum Interior" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Detailed view of the hypogeum, the underground chambers of the Colosseum, with dramatic shadows and sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkIlH5-s6s0LfMKkb-bMXrn50obYQJ9eQSBQUvdH41n0pfZ9xd3u8e3V5cHsLcPrFOQ-TwKqySeumba5GCRoiVxZGNmaKKGTswxNYakfbwq9MDwX8TLennsTIip9UEulKHHyWNh5dTFO7-rCohDrm-f9KM6uJr4lYORG0TQdfjs0OZZzNJf6ei8OJ51P-KujXHnGPg7j-W5Rt49jyOfmmtjHbuGBKbbqzHeelWSv4Ue_2Jz8b9FCc3K6nAGk46zapHXacwtV2RJYrx"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+<span class="text-white text-sm font-medium">The Hypogeum Network</span>
+</div>
+</div>
+<div class="rounded-xl overflow-hidden relative group">
+<img alt="Colosseum Arches" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close up of the ancient stone arches of the Colosseum exterior against a clear blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBp0Ir5H7dBlPfjV8rbJqXodMDyJKiY3zdp-eV99Q4-P8lkWlAXglzJScCAHZspGGYXrjC4JeYlqHsm-vt2PypSs1kfnvOmMGzQYWw9cUmz0vIgld6HsGNTr5HShMOc9zx5WLWDHTqZxID5Sx0ux_cnTM8lM0FQagGcKWu3zHci3Tv8tTfyt7DEApsTOwwQ2wMxj2jWwpbJIH8W29_TWqVMhvXA8qddCFe7sZH9_-szobCNoPLwFYNQWAAevRthoGJpcnNse_5p1GcH"/>
+</div>
+<div class="rounded-xl overflow-hidden relative group">
+<img alt="Colosseum Night" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="The Colosseum beautifully illuminated at night, glowing warm against a dark sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJmf6kTuXXiy9u33qWpWjLF9NaDTGMNqEG7zb_A7xbxlXKJKAIwBkki0eYe3NFGJwM984qYVc59GGM3nnEXVJl9DCG4PYdt3owDoDMhOrpmnb2nByiqD48xCgXAVC6YICzeHlYqzXtunYqo2FKOTNMOLCwPwSgy6vg7eZObY9gZ-y8RWncrGiqLr_TRSS14gOn-LMbFAoA8r1X0dGykz-TBx1ygsWj3vpZ1qcOb_ZUygYPgr35Owv7WanLArtmpUyeq4z6xsenERUv"/>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-white/70 dark:bg-slate-900/70 backdrop-blur-xl shadow-[0_-4px_20px_rgba(0,0,0,0.06)] rounded-t-3xl md:hidden z-50">
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-5 py-1.5 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="location_city">location_city</span>
+<span class="font-sans text-[10px] font-semibold uppercase tracking-wider">Destinations</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-sky-100 dark:bg-sky-900/40 text-sky-900 dark:text-sky-200 rounded-xl px-5 py-1.5 scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="explore" data-weight="fill" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-sans text-[10px] font-semibold uppercase tracking-wider">Discover</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-5 py-1.5 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="bookmark">bookmark</span>
+<span class="font-sans text-[10px] font-semibold uppercase tracking-wider">Saved</span>
+</a>
+</nav>
+</body></html>

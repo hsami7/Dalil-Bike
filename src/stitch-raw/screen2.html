@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Discover London - Curator</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary": "#536343",
+                        "on-surface": "#1a1c1e",
+                        "inverse-on-surface": "#f0f0f4",
+                        "on-error-container": "#93000a",
+                        "primary": "#003857",
+                        "error-container": "#ffdad6",
+                        "surface-container-lowest": "#ffffff",
+                        "on-background": "#1a1c1e",
+                        "background": "#f9f9fc",
+                        "outline-variant": "#c1c7cf",
+                        "surface-bright": "#f9f9fc",
+                        "on-secondary-fixed": "#121f06",
+                        "primary-container": "#1b4f72",
+                        "on-secondary-container": "#596949",
+                        "primary-fixed-dim": "#9dcbf4",
+                        "inverse-primary": "#9dcbf4",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-container": "#ffa862",
+                        "error": "#ba1a1a",
+                        "surface-container": "#edeef1",
+                        "surface": "#f9f9fc",
+                        "surface-container-low": "#f3f3f7",
+                        "on-tertiary-fixed": "#2f1400",
+                        "on-primary-container": "#92c0e9",
+                        "on-secondary-fixed-variant": "#3c4b2d",
+                        "surface-variant": "#e2e2e5",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#6f3800",
+                        "inverse-surface": "#2e3133",
+                        "tertiary": "#552900",
+                        "on-primary-fixed-variant": "#154b6d",
+                        "secondary-fixed": "#d6e9c0",
+                        "tertiary-container": "#763c00",
+                        "surface-container-high": "#e7e8eb",
+                        "outline": "#72787f",
+                        "surface-container-highest": "#e2e2e5",
+                        "primary-fixed": "#cce5ff",
+                        "secondary-fixed-dim": "#bacda5",
+                        "surface-dim": "#d9dadd",
+                        "tertiary-fixed": "#ffdcc4",
+                        "surface-tint": "#326286",
+                        "on-error": "#ffffff",
+                        "secondary-container": "#d6e9c0",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed-dim": "#ffb781",
+                        "on-surface-variant": "#41474e",
+                        "on-primary-fixed": "#001e31"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Plus Jakarta Sans", "sans-serif"],
+                        "label": ["Plus Jakarta Sans", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+        /* Design System: Ghost Border Fallback */
+        .ghost-border {
+            box-shadow: inset 0 0 0 1px rgba(193, 199, 207, 0.15); /* outline-variant at 15% */
+        }
+        /* Design System: Ambient Shadow */
+        .ambient-shadow {
+            box-shadow: 0 8px 32px rgba(26, 28, 30, 0.06); /* on-surface at 6% */
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased pb-24 md:pb-0 selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar (Web) -->
+<nav class="hidden md:flex fixed top-0 w-full z-50 shadow-sm bg-white/70 backdrop-blur-xl">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-screen-2xl mx-auto">
+<div class="font-serif italic text-2xl text-sky-900">Curator</div>
+<div class="flex space-x-8">
+<a class="text-sky-900 font-bold border-b-2 border-sky-900 pb-1 hover:text-sky-700 transition-colors scale-95 duration-200 ease-in-out" href="#">Explore</a>
+<a class="text-slate-500 font-medium hover:text-sky-700 transition-colors scale-95 duration-200 ease-in-out" href="#">Stays</a>
+<a class="text-slate-500 font-medium hover:text-sky-700 transition-colors scale-95 duration-200 ease-in-out" href="#">History</a>
+</div>
+<div class="flex items-center space-x-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center overflow-hidden">
+<span class="material-symbols-outlined text-sky-900" data-icon="person">person</span>
+</div>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="w-full">
+<!-- Hero Section (Immersive Bleed) -->
+<section class="relative w-full h-[614px] min-h-[400px] flex flex-col justify-end">
+<div class="absolute inset-0 z-0">
+<img alt="London Skyline" class="w-full h-full object-cover" data-alt="wide cinematic shot of the River Thames and Big Ben in London during twilight with warm city lights reflecting on the water" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALREb_NS_ELHWeaprKbPeZ6NQvqWRG4yM4xTFatTeH0C669UR8Xiq9-AA1V_o85KVWnhhiykY7748rmAmpTc-x8XxDZxpqMGwv9GooVwh7PgCkW1ohpCR0jJm4u54ijzrtgyFSWicvaVht4_AGWEnzzYV1lyvjHQcA_KKXb9SgnjndOkaNwUwWCoRR1oludSCCFenygIUfC99nrj32ksRLT7G9dVOSamynZeg1xUdwZHuEIwmOWgbtU-559xYeIlqVgSbQrOat3ix1"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent"></div>
+</div>
+<div class="relative z-10 px-6 md:px-12 pb-12 max-w-screen-2xl mx-auto w-full">
+<span class="inline-block px-3 py-1 bg-surface/70 backdrop-blur-xl text-primary font-semibold text-[0.75rem] uppercase tracking-wider rounded-full mb-4 ghost-border">
+                    United Kingdom
+                </span>
+<h1 class="font-headline text-[3.5rem] leading-none text-primary">London</h1>
+<p class="mt-4 text-on-surface-variant max-w-lg text-lg font-body leading-relaxed">
+                    A multi-layered metropolis where centuries of grand history collide with cutting-edge culture along the banks of the Thames.
+                </p>
+</div>
+</section>
+<!-- Filters (Scrollable Row) -->
+<section class="px-6 md:px-12 py-6 max-w-screen-2xl mx-auto w-full">
+<div class="flex space-x-3 overflow-x-auto no-scrollbar pb-2">
+<button class="flex-shrink-0 px-6 py-2.5 rounded-full bg-gradient-to-br from-primary to-primary-container text-on-primary font-semibold text-sm shadow-sm transition-transform hover:scale-[1.02]">
+                    All Discoveries
+                </button>
+<button class="flex-shrink-0 px-6 py-2.5 rounded-full bg-surface-container-lowest text-on-surface font-semibold text-sm ghost-border hover:bg-surface-container-low transition-colors">
+                    Historical Landmarks
+                </button>
+<button class="flex-shrink-0 px-6 py-2.5 rounded-full bg-surface-container-lowest text-on-surface font-semibold text-sm ghost-border hover:bg-surface-container-low transition-colors">
+                    Recommended Hotels
+                </button>
+<button class="flex-shrink-0 px-6 py-2.5 rounded-full bg-surface-container-lowest text-on-surface font-semibold text-sm ghost-border hover:bg-surface-container-low transition-colors">
+                    Culinary Arts
+                </button>
+</div>
+</section>
+<!-- Historical Landmarks (Asymmetric Grid) -->
+<section class="px-6 md:px-12 py-12 max-w-screen-2xl mx-auto w-full">
+<!-- Intentional asymmetric margin for heading -->
+<div class="ml-0 md:ml-8 mb-10">
+<h2 class="font-headline text-[1.75rem] text-primary">Echoes of the Crown</h2>
+<p class="text-on-surface-variant text-sm mt-1">Historical Landmarks</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Large Feature Card -->
+<div class="md:col-span-8 group cursor-pointer">
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden ambient-shadow h-full flex flex-col transition-transform duration-500 ease-out hover:-translate-y-1">
+<div class="relative h-64 md:h-80 w-full overflow-hidden">
+<img alt="Tower Bridge Detail" class="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105" data-alt="close up architectural detail of the Tower Bridge in London with dramatic cloudy sky and stone textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBF1Hldtv3AATd84v67FGxXkNef-TjrJ2G2t0CfhPNQ-_1jFvDEoweXiaffDhIRHqKzxNMocpL6UF1oH4g8fIty4I4f8xaw4fxLyIxKU96jhl9VyO8e5QTQekwaVa3l_Az6ecdGJIo351Km3iMCZZalCvd9qWOJTvTI0qmPrgN4xvh9eeNThU_jSZVWFIrZvSJmCd7I6q7HajeGzaWdeGzUOYUJnv85j9s_EULoPL1gfDNBYCs2oVUPxTG67L-hC3mdj4Teq6RhBV3z"/>
+<div class="absolute top-4 right-4 bg-surface/70 backdrop-blur-xl px-3 py-1 rounded-full flex items-center space-x-1">
+<span class="material-symbols-outlined text-[1rem] text-tertiary" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs font-bold text-on-surface">4.9</span>
+</div>
+</div>
+<div class="p-6 md:p-8 flex flex-col justify-center flex-grow">
+<h3 class="font-headline text-2xl text-on-surface mb-2">Tower of London</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                                A historic castle on the north bank of the River Thames. Discover the bloody tales, the majestic Crown Jewels, and centuries of royal intrigue guarded by the iconic Yeoman Warders.
+                            </p>
+<div class="mt-auto flex items-center space-x-4">
+<span class="text-xs font-semibold text-secondary uppercase tracking-wider">11th Century</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="text-xs font-semibold text-on-surface-variant">2.4 mi away</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Small Stacked Cards -->
+<div class="md:col-span-4 flex flex-col gap-8">
+<!-- Small Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden ambient-shadow flex-grow flex flex-col group cursor-pointer">
+<div class="relative h-40 w-full overflow-hidden">
+<img alt="British Museum" class="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105" data-alt="wide shot of the British Museum facade with classic columns and grand steps bathed in soft afternoon light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDG9TksvpwXaFgHXIQvPyjzkyvDtJ43WXlHVLlSXNvbotwIdc77ZX5c0k42ijtd_cX_p9HxXu3a82jpLV3BqQZyoRMBIdaBYQwq6KlfOLS6NCkxySTQY3Pn81P7mO77eTJ1R8jacU6_Db6fiXuDQdumcgQJIYxfe8LRv1cimIVnF5477_5W_5Rd49M2dJrilNjaFMDuwHHez9fNQET0edvkYnGEgc1-mMdpf3X_xdk0BOpTv2G9cN9p9h3eKDzjrXkuLWxVudw6df-p"/>
+</div>
+<div class="p-5 flex-grow flex flex-col">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline text-lg text-on-surface">British Museum</h3>
+<div class="flex items-center space-x-1">
+<span class="material-symbols-outlined text-[0.875rem] text-tertiary" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs font-bold text-on-surface">4.8</span>
+</div>
+</div>
+<p class="text-on-surface-variant text-xs line-clamp-2 mb-4">A vast collection spanning two million years of human history and culture.</p>
+<div class="mt-auto">
+<span class="text-[10px] font-semibold text-secondary uppercase tracking-wider">Museum</span>
+</div>
+</div>
+</div>
+<!-- Small Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden ambient-shadow flex-grow flex flex-col group cursor-pointer">
+<div class="relative h-40 w-full overflow-hidden">
+<img alt="Westminster Abbey" class="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105" data-alt="interior shot of Westminster Abbey showing intricate gothic vaulted ceilings and stained glass windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDd8hwOmiKVQdzPhMYTdPA65hc9xbfwAMZSrk9w98G_0l5NV9m_BUF0VyF19Fn0zqVgbXPycqRNeDe4EIGFEKu6LW-j2QbgGByt4ClJVdiwXjNTXxzkokaDBT15mnJD90BciDrTn_5FEQYc78R-JxwLFIeEMeiYcjKlfCJzgCKAK96j4nTxAutdMfW06fS-iIFmGVC3sPlwT6a_qGLvNRXJ0xTuSZgg2zoFXF3yb0cxxmqhAJZhPygroOyfdVuCkonsMwxQSoa3GUrL"/>
+</div>
+<div class="p-5 flex-grow flex flex-col">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline text-lg text-on-surface">Westminster Abbey</h3>
+<div class="flex items-center space-x-1">
+<span class="material-symbols-outlined text-[0.875rem] text-tertiary" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs font-bold text-on-surface">4.9</span>
+</div>
+</div>
+<p class="text-on-surface-variant text-xs line-clamp-2 mb-4">The royal church offering daily services and a rich history of coronations.</p>
+<div class="mt-auto">
+<span class="text-[10px] font-semibold text-secondary uppercase tracking-wider">Architecture</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Recommended Hotels (Tonal Shift Section - No Border) -->
+<section class="bg-surface-container-low py-16 w-full mt-8">
+<div class="max-w-screen-2xl mx-auto px-6 md:px-12">
+<div class="ml-0 md:ml-8 mb-10">
+<h2 class="font-headline text-[1.75rem] text-primary">Sanctuaries &amp; Stays</h2>
+<p class="text-on-surface-variant text-sm mt-1">Curated Accommodations</p>
+</div>
+<!-- Horizontal scrolling bento cards for elegance -->
+<div class="flex space-x-6 overflow-x-auto no-scrollbar pb-8 -mx-6 px-6 md:mx-0 md:px-0">
+<!-- Hotel Card 1 -->
+<div class="flex-shrink-0 w-80 md:w-96 bg-surface-container-lowest rounded-xl overflow-hidden ambient-shadow group cursor-pointer">
+<div class="relative h-56 overflow-hidden">
+<img alt="The Ned Interior" class="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105" data-alt="luxurious hotel bedroom interior with plush velvet headboard, warm ambient lighting, and rich navy blue accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFJjI3tJuIPyFAsgy_ombAQcbiblUGbmeZmWcss6ox1R_Gb15drfOgZNviRwHMahVotTBwMGdoP8EI91RhYzej16SnpJVxjf0ZL652YrBZRb2n4xDohPERCjoPEBq_YDUoFfGOdtpJWD84L5V0AKyBWr5IrxMrDNtMSuR25gvsp9VI1LCedbQ_Hxg-xygrGSdIcc0sJS-4pMQhyEf5vvux6QiuytALJ3ez0Mu9u3aHSlZn8nVtlLMlFOFrGFrWnEhW-SMr8SuehybM"/>
+<div class="absolute bottom-4 left-4 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1.5 rounded-lg">
+<span class="text-primary font-bold text-sm">£350</span><span class="text-on-surface-variant text-xs"> / night</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-3">
+<h3 class="font-headline text-xl text-on-surface">The Ned</h3>
+<div class="flex items-center space-x-1 bg-surface-container px-2 py-1 rounded-full">
+<span class="material-symbols-outlined text-[0.875rem] text-primary" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs font-bold text-on-surface">4.7</span>
+</div>
+</div>
+<p class="text-on-surface-variant text-sm line-clamp-2 mb-4">
+                                Set in a former bank in the City of London, offering vintage glamour, multiple restaurants, and a rooftop pool.
+                            </p>
+<p class="text-xs font-medium text-secondary flex items-center">
+<span class="material-symbols-outlined text-[1rem] mr-1" data-icon="location_on">location_on</span>
+                                City of London
+                            </p>
+</div>
+</div>
+<!-- Hotel Card 2 -->
+<div class="flex-shrink-0 w-80 md:w-96 bg-surface-container-lowest rounded-xl overflow-hidden ambient-shadow group cursor-pointer">
+<div class="relative h-56 overflow-hidden">
+<img alt="Treehouse Hotel London" class="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105" data-alt="bright minimal hotel living area with large window, white furniture, and subtle modern art on walls" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCInAlEF5zIa9j-0chVtim9l13bHpZ0sRYYsJdLTToq2V7toZuHepDF-vRXB8vDDQbuygfV0V9lRrMa4SyjLlK1hTokvAB7vG-vU054QPIOglEg5mJGuYhmLsTl7ExTMfitBypvDRwzeZIATLK22RlsumIjBKaLuiqJt55EDqBrJeN-oxDdiSBUtniSZ3fedszCwsfSKLqw6lm7tV-bQsT_TwTCBd41qWnE7ID0UKJtghvD0T3dp8daKuKzHKSnpbBz5GVJ69WKK1cs"/>
+<div class="absolute bottom-4 left-4 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1.5 rounded-lg">
+<span class="text-primary font-bold text-sm">£280</span><span class="text-on-surface-variant text-xs"> / night</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-3">
+<h3 class="font-headline text-xl text-on-surface">Treehouse Hotel</h3>
+<div class="flex items-center space-x-1 bg-surface-container px-2 py-1 rounded-full">
+<span class="material-symbols-outlined text-[0.875rem] text-primary" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs font-bold text-on-surface">4.6</span>
+</div>
+</div>
+<p class="text-on-surface-variant text-sm line-clamp-2 mb-4">
+                                Playful and nostalgic design with sweeping views of the London skyline and vibrant dining spaces.
+                            </p>
+<p class="text-xs font-medium text-secondary flex items-center">
+<span class="material-symbols-outlined text-[1rem] mr-1" data-icon="location_on">location_on</span>
+                                Marylebone
+                            </p>
+</div>
+</div>
+<!-- Hotel Card 3 -->
+<div class="flex-shrink-0 w-80 md:w-96 bg-surface-container-lowest rounded-xl overflow-hidden ambient-shadow group cursor-pointer">
+<div class="relative h-56 overflow-hidden">
+<img alt="The Savoy" class="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105" data-alt="classic elegant hotel suite with heavy drapes, chandelier, and traditional english mahogany furniture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvriLniFO2rEP9XcqxqEfJudXo3tGukAmmtNEJJOMkWWTdnkd6s8FPDbQzlJfuxe_0jOTBiOtfI0DdkC30nGVAxNtNgnny2uPmbuEAKL1FXk5yac9tGBuoKbtfhrF4Hijq2rRSk3A6VQ6-lZB9erxImtPb5TmbSlMl9RIc5j8SWt8djjY7ftHjJXuJ8RsJeHAHWQUxVuwIvfqx-eudz1_7BY6GZkgoKkzydyONPMYV631s2XkdHl8UsGg3Kt-WilJy2yeF7C03k0GG"/>
+<div class="absolute bottom-4 left-4 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1.5 rounded-lg">
+<span class="text-primary font-bold text-sm">£650</span><span class="text-on-surface-variant text-xs"> / night</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-3">
+<h3 class="font-headline text-xl text-on-surface">The Savoy</h3>
+<div class="flex items-center space-x-1 bg-surface-container px-2 py-1 rounded-full">
+<span class="material-symbols-outlined text-[0.875rem] text-primary" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs font-bold text-on-surface">4.9</span>
+</div>
+</div>
+<p class="text-on-surface-variant text-sm line-clamp-2 mb-4">
+                                A world-renowned icon on the Strand, perfectly blending Edwardian elegance with Art Deco style.
+                            </p>
+<p class="text-xs font-medium text-secondary flex items-center">
+<span class="material-symbols-outlined text-[1rem] mr-1" data-icon="location_on">location_on</span>
+                                Covent Garden
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Mobile) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-white/70 backdrop-blur-xl shadow-[0_-4px_20px_rgba(0,0,0,0.06)] rounded-t-3xl z-50">
+<!-- Inactive -->
+<a class="flex flex-col items-center justify-center text-slate-400 px-5 py-1.5 hover:bg-slate-100 rounded-xl transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="location_city">location_city</span>
+<span class="font-sans text-[10px] font-semibold uppercase tracking-wider">Destinations</span>
+</a>
+<!-- Active -->
+<a class="flex flex-col items-center justify-center bg-sky-100 text-sky-900 rounded-xl px-5 py-1.5 scale-90 transition-transform hover:bg-slate-100" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="explore" data-weight="fill" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-sans text-[10px] font-semibold uppercase tracking-wider">Discover</span>
+</a>
+<!-- Inactive -->
+<a class="flex flex-col items-center justify-center text-slate-400 px-5 py-1.5 hover:bg-slate-100 rounded-xl transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="bookmark">bookmark</span>
+<span class="font-sans text-[10px] font-semibold uppercase tracking-wider">Saved</span>
+</a>
+</nav>
+</body></html>

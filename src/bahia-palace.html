@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface": "#1a1c1e",
+                    "on-primary-fixed": "#001e31",
+                    "secondary-container": "#d6e9c0",
+                    "on-tertiary-fixed-variant": "#6f3800",
+                    "surface-tint": "#326286",
+                    "on-secondary-fixed": "#121f06",
+                    "on-secondary": "#ffffff",
+                    "on-background": "#1a1c1e",
+                    "on-error": "#ffffff",
+                    "secondary": "#536343",
+                    "surface-container-highest": "#e2e2e5",
+                    "on-secondary-container": "#596949",
+                    "surface-dim": "#d9dadd",
+                    "on-tertiary": "#ffffff",
+                    "outline": "#72787f",
+                    "background": "#f9f9fc",
+                    "on-error-container": "#93000a",
+                    "surface": "#f9f9fc",
+                    "tertiary-fixed-dim": "#ffb781",
+                    "on-primary-fixed-variant": "#154b6d",
+                    "on-primary": "#ffffff",
+                    "tertiary": "#552900",
+                    "on-tertiary-container": "#ffa862",
+                    "surface-variant": "#e2e2e5",
+                    "secondary-fixed-dim": "#bacda5",
+                    "inverse-primary": "#9dcbf4",
+                    "error": "#ba1a1a",
+                    "surface-bright": "#f9f9fc",
+                    "secondary-fixed": "#d6e9c0",
+                    "on-surface-variant": "#41474e",
+                    "primary-container": "#1b4f72",
+                    "on-tertiary-fixed": "#2f1400",
+                    "primary": "#003857",
+                    "tertiary-fixed": "#ffdcc4",
+                    "surface-container-low": "#f3f3f7",
+                    "inverse-surface": "#2e3133",
+                    "primary-fixed": "#cce5ff",
+                    "outline-variant": "#c1c7cf",
+                    "on-primary-container": "#92c0e9",
+                    "surface-container-high": "#e7e8eb",
+                    "on-secondary-fixed-variant": "#3c4b2d",
+                    "inverse-on-surface": "#f0f0f4",
+                    "error-container": "#ffdad6",
+                    "surface-container": "#edeef1",
+                    "primary-fixed-dim": "#9dcbf4",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-container": "#763c00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Plus Jakarta Sans", "sans-serif"],
+                    "label": ["Plus Jakarta Sans", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .serif-text { font-family: 'Newsreader', serif; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl flex justify-between items-center px-6 py-4">
+<button class="flex items-center justify-center w-10 h-10 transition-transform duration-300 scale-95 active:scale-90 hover:bg-[#f3f3f7]">
+<span class="material-symbols-outlined text-[#003857]" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="font-serif text-[#1a1c1e] text-xl">Bahia Palace</h1>
+<button class="flex items-center justify-center w-10 h-10 transition-transform duration-300 scale-95 active:scale-90 hover:bg-[#f3f3f7]">
+<span class="material-symbols-outlined text-[#003857]" data-icon="bookmark">bookmark</span>
+</button>
+</header>
+<main class="pb-24">
+<!-- Hero Section -->
+<section class="relative w-full h-[618px] overflow-hidden">
+<img alt="Bahia Palace View" class="w-full h-full object-cover" data-alt="Intricate Moroccan zellige tilework and sun-drenched marble courtyard of Bahia Palace under a clear blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAc0X3EqG1ERibdh6AfP9jrrsWGUCIbH8wetkuyBMl5Rphin8eQdcXwuibexfvGfN0S8VG4t8uWszlDcbViddlQDN4hHm_r7cNuoHZ1J62R51pYnPtM9JsOENU7jns6mGvxU_fn47OGDxa4rH9KbuZxoIWItJ2KGtGFoC5wrxBjqelcyqY5F-d5asvpYkq0PY6eAgRIIJnzAu3TIHK_RB3_p4GdfX8moFtzQAJEnmHqnNSgxhskTQQlAVyO9iOLBb9lKMAA2dh9veZ_"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<!-- Glass Overlay Weather Widget -->
+<div class="absolute top-24 right-6 bg-white/40 backdrop-blur-xl p-4 rounded-xl border border-white/20">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="light_mode">light_mode</span>
+<span class="text-on-surface font-semibold">24°C Marrakech</span>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 px-6 md:px-24 pb-12">
+<span class="inline-block px-3 py-1 mb-4 bg-tertiary-fixed text-on-tertiary-fixed-variant text-[10px] uppercase tracking-[0.2em] font-bold rounded-full">Historical Landmark</span>
+<h2 class="serif-text text-5xl md:text-7xl text-on-surface leading-tight max-w-3xl">
+                    Bahia Palace: The Brilliance of the Grand Vizier
+                </h2>
+</div>
+</section>
+<!-- Article Body -->
+<section class="px-6 md:px-24 pt-16 flex flex-col md:flex-row gap-16">
+<div class="md:w-2/3">
+<p class="serif-text text-2xl md:text-3xl text-primary leading-relaxed italic mb-12 border-l-2 border-outline-variant/30 pl-8">
+                    "A masterpiece intended to be the greatest palace of its time, capturing the very soul of Moroccan craftsmanship."
+                </p>
+<div class="space-y-8 text-on-surface-variant leading-relaxed text-lg">
+<p>
+                        The <span class="text-on-surface font-semibold">Bahia Palace</span>, whose name translates literally to "Brilliance," is a stunning 19th-century complex located in the heart of Marrakech. Conceived originally by Si Moussa, the grand vizier of Sultan Muhammad IV, its construction continued under his son, Ba Ahmed, who expanded the site into the sprawling architectural marvel seen today.
+                    </p>
+<p>
+                        Built to showcase the absolute peak of Islamic and Moroccan architectural styles, the palace is a labyrinth of rooms, courtyards, and gardens. Every surface tells a story: from the intricate <span class="italic">zellige</span> tilework patterns to the hand-carved cedar wood ceilings and the delicate stucco work that adorns the walls of the private quarters.
+                    </p>
+</div>
+<!-- Asymmetric Image Section -->
+<div class="mt-16 grid grid-cols-12 gap-4">
+<div class="col-span-7 aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden shadow-sm">
+<img alt="Intricate tiles" class="w-full h-full object-cover hover:scale-110 transition-transform duration-700" data-alt="Close-up of vibrant blue and yellow Moroccan geometric mosaic tiles with intricate patterns and aged texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVxga8V3Z7Vqfkn64XJJ5lJ4u40cGfUEKXuYOoE0TkXsgQG8skmXuUCUDmLTygYfkkDRyW9a-0qGYnTK7F8RqqC1iGbLOfpIvjVSwAlRxlYKZEor27Pzm9OSI5KuC1YYzDGbEe8K9ZoQKloxE9AZVJjjcfq4-AIc-LgeHjt1SI-Lwgr-VKYUI2fcjM47mljmGTOCXYdb48b2taERdsh9pQJQzJ1WmJ3L4lVWQGsqBw2DYq6i4NZOFqhW4rUPmOHX9d7kwpK0Ool9xG"/>
+</div>
+<div class="col-span-5 flex flex-col gap-4 mt-12">
+<div class="aspect-square bg-surface-container-low rounded-xl overflow-hidden shadow-sm">
+<img alt="Cedar carving" class="w-full h-full object-cover hover:scale-110 transition-transform duration-700" data-alt="Ornate hand-carved cedar wood ceiling with traditional Moorish geometric designs and warm amber lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQu0sd_kYHUm6aHSfdUJHgG514ZSO5t2HjXECVa9dsRJiryM8yLLXxiK2R0pVNlkftoldtK5J-CUZ_A_LdF_5yQOz29Zq1aBlXbFOwKDCBBZvo8E4cJgnXDM6lFu9ZnFKpNjTTE4vK6mPh1v3P82lT562cgLfSgoCh4Wstkhgw3gLCMvn5uUaWWLnTBwFsjjLa_MnzJjV1XfKsyv9asR5Sk-c9pWE7tusR8fXfbe_5czVg8HoCFqsi1zhBfsG7pIbih7Hr608RE9Ik"/>
+</div>
+<p class="text-xs uppercase tracking-widest text-on-surface-variant font-medium mt-2">The Moorish Legacy</p>
+</div>
+</div>
+<!-- Architecture Highlights -->
+<div class="mt-24 space-y-12">
+<h3 class="serif-text text-3xl text-on-surface">Architecture Highlights</h3>
+<div class="grid md:grid-cols-2 gap-8">
+<div class="bg-surface-container-lowest p-8 rounded-xl group transition-all duration-300">
+<span class="material-symbols-outlined text-primary mb-4 block" data-icon="architecture">architecture</span>
+<h4 class="font-bold text-xl mb-4">Cour d'Honneur</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                                The Grand Courtyard is a 1,500 m² expanse of Italian Carrara marble, surrounded by a gallery of vibrant carved wood and stained glass.
+                            </p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl group transition-all duration-300">
+<span class="material-symbols-outlined text-primary mb-4 block" data-icon="park">park</span>
+<h4 class="font-bold text-xl mb-4">Lush Gardens</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                                Enclosed riads filled with jasmine, orange trees, and fountains designed to provide a sensory escape from the bustling Medina.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Sidebar / Visitor Info -->
+<div class="md:w-1/3">
+<div class="sticky top-28 space-y-8">
+<div class="bg-surface-container-low p-8 rounded-xl">
+<h4 class="font-bold text-sm uppercase tracking-widest text-primary mb-6">Plan Your Visit</h4>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary" data-icon="schedule">schedule</span>
+<div>
+<p class="font-bold text-sm">Opening Hours</p>
+<p class="text-on-surface-variant text-sm">9:00 AM – 5:00 PM Daily</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary" data-icon="payments">payments</span>
+<div>
+<p class="font-bold text-sm">Ticket Price</p>
+<p class="text-on-surface-variant text-sm">70 MAD per person</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary" data-icon="location_on">location_on</span>
+<div>
+<p class="font-bold text-sm">Location</p>
+<p class="text-on-surface-variant text-sm">Avenue Imam El Ghazali, Marrakech</p>
+</div>
+</div>
+</div>
+<button class="w-full mt-8 py-4 px-6 bg-gradient-to-br from-primary to-primary-container text-white rounded-full font-bold flex items-center justify-center gap-2 shadow-lg hover:opacity-90 transition-opacity">
+                            Get Directions
+                            <span class="material-symbols-outlined text-sm" data-icon="near_me">near_me</span>
+</button>
+</div>
+<!-- Mini Map Card -->
+<div class="bg-surface-container-high aspect-video rounded-xl overflow-hidden relative">
+<img alt="Map view" class="w-full h-full object-cover grayscale opacity-50" data-alt="Stylized map showing the Medina district of Marrakech with Bahia Palace highlighted" data-location="Marrakech" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDE5SeIaGY1S7kF2UCM12sR2uhjHgTTi96dmfsv8YP-VLR5FfwM8hIQZW30NueXclPain9uQGmSXtwxiY-nkv02Gj4Z9Ox4ZQpZFAsANTF_IdYEsg4ECf8dnD4kIQa8kOF47xeRGA_gjm33mYeQWMggjTLgJS1lCK1U2CT9TjIFGhDIHYK8NxCHWDJz-6fSMlOm8gEyD8sxSxGc0QQN9lfJP_oCYCxi0GDi1wY03JCJsc8QnW3IS_lf3PLKNu3-dX3JaOf6snYn5_Qo"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="bg-primary text-white p-3 rounded-full shadow-2xl">
+<span class="material-symbols-outlined" data-icon="location_searching">location_searching</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Historical Timeline Section -->
+<section class="px-6 md:px-24 mt-32">
+<div class="relative py-24">
+<div class="absolute left-1/2 top-0 bottom-0 w-[1px] bg-outline-variant/20"></div>
+<div class="relative grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+<div class="text-right pr-12 md:pr-24">
+<span class="serif-text text-6xl text-primary/10 block mb-4">1860s</span>
+<h5 class="font-bold mb-2">Foundation Stone</h5>
+<p class="text-sm text-on-surface-variant max-w-xs ml-auto">Grand Vizier Si Moussa begins construction of the northern section.</p>
+</div>
+<div class="pl-12 md:pl-24">
+<span class="serif-text text-6xl text-primary/10 block mb-4">1894</span>
+<h5 class="font-bold mb-2">The Expansion</h5>
+<p class="text-sm text-on-surface-variant max-w-xs">Ba Ahmed seizes power and dramatically expands the palace for his four wives and 24 concubines.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 bg-white/70 backdrop-blur-xl rounded-t-[1.5rem] shadow-[0_-8px_32px_rgba(26,28,30,0.06)] md:hidden">
+<div class="flex justify-around items-center px-4 pt-3 pb-8">
+<a class="flex flex-col items-center justify-center text-[#003857] dark:text-[#97cbff] relative after:content-[''] after:absolute after:-bottom-1 after:w-1 after:h-1 after:bg-[#003857] after:rounded-full transition-all scale-90 active:scale-100" href="#">
+<span class="material-symbols-outlined" data-icon="explore" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="Plus Jakarta Sans font-medium text-[10px] uppercase tracking-widest mt-1">Explore</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1a1c1e]/40 dark:text-white/40 hover:text-[#003857] transition-all scale-90 active:scale-100" href="#">
+<span class="material-symbols-outlined" data-icon="auto_stories">auto_stories</span>
+<span class="Plus Jakarta Sans font-medium text-[10px] uppercase tracking-widest mt-1">Saved</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1a1c1e]/40 dark:text-white/40 hover:text-[#003857] transition-all scale-90 active:scale-100" href="#">
+<span class="material-symbols-outlined" data-icon="map">map</span>
+<span class="Plus Jakarta Sans font-medium text-[10px] uppercase tracking-widest mt-1">Map</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1a1c1e]/40 dark:text-white/40 hover:text-[#003857] transition-all scale-90 active:scale-100" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="Plus Jakarta Sans font-medium text-[10px] uppercase tracking-widest mt-1">Settings</span>
+</a>
+</div>
+</nav>
+</body></html>
