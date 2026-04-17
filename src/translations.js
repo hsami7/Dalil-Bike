@@ -247,4 +247,56 @@ const translations = {
   },
 };
 
+// City name translations keyed by the city id from data.js
+export const cityNames = {
+  en: {
+    marrakech: "Marrakech",
+    fes: "Fez",
+    casablanca: "Casablanca",
+    chefchaouen: "Chefchaouen",
+    rabat: "Rabat",
+    meknes: "Meknes",
+    tangier: "Tangier",
+    essaouira: "Essaouira",
+    agadir: "Agadir",
+    ouarzazate: "Ouarzazate & Merzouga",
+  },
+  fr: {
+    marrakech: "Marrakech",
+    fes: "Fès",
+    casablanca: "Casablanca",
+    chefchaouen: "Chefchaouen",
+    rabat: "Rabat",
+    meknes: "Meknès",
+    tangier: "Tanger",
+    essaouira: "Essaouira",
+    agadir: "Agadir",
+    ouarzazate: "Ouarzazate & Merzouga",
+  },
+  es: {
+    marrakech: "Marrakech",
+    fes: "Fez",
+    casablanca: "Casablanca",
+    chefchaouen: "Chefchaouen",
+    rabat: "Rabat",
+    meknes: "Mequinez",
+    tangier: "Tánger",
+    essaouira: "Esauira",
+    agadir: "Agadir",
+    ouarzazate: "Ouarzazate & Merzouga",
+  },
+  ar: {
+    marrakech: "مراكش",
+    fes: "فاس",
+    casablanca: "الدار البيضاء",
+    chefchaouen: "شفشاون",
+    rabat: "الرباط",
+    meknes: "مكناس",
+    tangier: "طنجة",
+    essaouira: "الصويرة",
+    agadir: "أكادير",
+    ouarzazate: "ورزازات & مرزوكة",
+  },
+};
+
 export default translations;

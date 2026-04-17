@@ -25,7 +25,7 @@ function getLevenshteinDistance(s1, s2) {
 
 export default function Home() {
   const navigate = useNavigate();
-  const { t } = useLanguage();
+  const { t, tCity } = useLanguage();
   const [searchTerm, setSearchTerm] = useState('');
   const searchInputRef = useRef(null);
 
@@ -193,7 +193,7 @@ export default function Home() {
                           {t('mustSee')}
                         </span>
                       )}
-                      <h3 className="font-headline text-4xl md:text-5xl text-white font-medium mb-1 drop-shadow-md">{city.name}</h3>
+                      <h3 className="font-headline text-4xl md:text-5xl text-white font-medium mb-1 drop-shadow-md">{tCity(city.id)}</h3>
                       <p className="font-body text-white/90 text-sm max-w-xl line-clamp-2 pb-2">{city.desc}</p>
                     </div>
                   </article>
@@ -247,7 +247,7 @@ export default function Home() {
                          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                          <div className="absolute bottom-0 left-0 p-8">
                            <span className="inline-block bg-white/20 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-widest py-1 px-3 rounded-full mb-3 border border-white/30">{t('trending')}</span>
-                           <h4 className="text-white font-headline text-3xl font-medium mb-1">{city.name}</h4>
+                           <h4 className="text-white font-headline text-3xl font-medium mb-1">{tCity(city.id)}</h4>
                            <p className="text-white/70 text-sm font-body line-clamp-1">{city.tagline}</p>
                          </div>
                        </article>

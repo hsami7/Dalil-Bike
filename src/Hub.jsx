@@ -8,7 +8,7 @@ import { useLanguage } from './LanguageContext';
 export default function Hub() {
   const navigate = useNavigate();
   const location = useLocation();
-  const { t } = useLanguage();
+  const { t, tCity } = useLanguage();
   const historyRef = useRef(null);
   const staysRef = useRef(null);
   
@@ -45,7 +45,7 @@ export default function Hub() {
 
   return (
     <div className="min-h-screen bg-surface">
-      <Header activeTab="explore" mobileTitle={domain.name} />
+      <Header activeTab="explore" mobileTitle={tCity(domain.id)} />
       
       <main className="w-full">
         {/* Hero Section (Immersive Bleed) */}
@@ -63,7 +63,7 @@ export default function Hub() {
               {t('morocco')}
             </span>
             <h1 className="font-headline text-[3.5rem] md:text-[5rem] leading-none text-primary italic font-bold tracking-tight mb-4 drop-shadow-sm">
-              {domain.name}
+              {tCity(domain.id)}
             </h1>
             <p className="text-on-surface-variant max-w-lg text-lg font-body leading-relaxed">
               {domain.desc}

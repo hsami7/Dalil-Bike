@@ -7,7 +7,7 @@ import { useLanguage } from './LanguageContext';
 
 export default function Hotel() {
   const navigate = useNavigate();
-  const { t } = useLanguage();
+  const { t, tCity } = useLanguage();
 
   return (
     <div className="min-h-screen bg-surface">
@@ -41,7 +41,7 @@ export default function Hotel() {
                 />
                 <div className="absolute top-4 right-4">
                   <span className="bg-surface/80 backdrop-blur-md text-on-surface text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-full border border-outline-variant/30 shadow-sm">
-                    {city.name}
+                    {tCity(city.id)}
                   </span>
                 </div>
               </div>

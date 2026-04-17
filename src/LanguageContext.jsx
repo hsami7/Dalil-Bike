@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import translations from './translations';
+import translations, { cityNames } from './translations';
 
 const LanguageContext = createContext();
 
@@ -29,8 +29,13 @@ export function LanguageProvider({ children }) {
     return translations[language]?.[key] || translations.en[key] || key;
   };
 
+  // Translate a city id (e.g. 'fes') to its localized name
+  const tCity = (cityId) => {
+    return cityNames[language]?.[cityId] || cityNames.en[cityId] || cityId;
+  };
+
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t }}>
+    <LanguageContext.Provider value={{ language, setLanguage, t, tCity }}>
       {children}
     </LanguageContext.Provider>
   );
