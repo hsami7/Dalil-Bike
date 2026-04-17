@@ -159,7 +159,7 @@ export default function Hub() {
               <div className="flex space-x-6 overflow-x-auto no-scrollbar pb-8">
                 <article 
                   className="flex-shrink-0 w-80 md:w-[450px] bg-surface-container-lowest rounded-3xl overflow-hidden shadow-lg group cursor-pointer border border-outline-variant/20 transition-all hover:shadow-2xl"
-                  onClick={() => navigate('/hotel')}
+                  onClick={() => navigate(`/hotel/${domain.id}`)}
                 >
                   <div className="relative h-64 md:h-80 overflow-hidden">
                     <img 

@@ -5,6 +5,7 @@ import Home from './Home'
 import Hub from './Hub'
 import Place from './Place'
 import Hotel from './Hotel'
+import HotelDetail from './HotelDetail'
 import ScrollToTop from './ScrollToTop'
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
             <Route path="/hub" element={<Hub />} />
             <Route path="/place" element={<Place />} />
             <Route path="/hotel" element={<Hotel />} />
+            <Route path="/hotel/:cityId" element={<HotelDetail />} />
           </Routes>
         </div>
       </BrowserRouter>
