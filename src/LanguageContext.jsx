@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import translations, { cityNames } from './translations';
+import contentTranslations from './content-translations';
 
 const LanguageContext = createContext();
 
@@ -34,8 +35,15 @@ export function LanguageProvider({ children }) {
     return cityNames[language]?.[cityId] || cityNames.en[cityId] || cityId;
   };
 
+  // Translate content data: tContent('desc', 'marrakech') or tContent('stayName', 'fes')
+  const tContent = (field, cityId) => {
+    return contentTranslations[field]?.[language]?.[cityId]
+      || contentTranslations[field]?.en?.[cityId]
+      || '';
+  };
+
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t, tCity }}>
+    <LanguageContext.Provider value={{ language, setLanguage, t, tCity, tContent }}>
       {children}
     </LanguageContext.Provider>
   );

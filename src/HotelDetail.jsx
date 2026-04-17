@@ -8,7 +8,7 @@ import { useLanguage } from './LanguageContext';
 export default function HotelDetail() {
   const navigate = useNavigate();
   const { cityId } = useParams();
-  const { t, tCity } = useLanguage();
+  const { t, tCity, tContent } = useLanguage();
 
   const domain = DOMAINS.find(d => d.id === cityId);
 
@@ -25,7 +25,7 @@ export default function HotelDetail() {
 
   return (
     <div className="min-h-screen bg-surface">
-      <Header activeTab="stays" mobileTitle={stay.name} />
+      <Header activeTab="stays" mobileTitle={tContent('stayName', domain.id)} />
 
       <main className="pt-28 pb-24">
         {/* Hero Gallery Bento Grid */}
@@ -86,7 +86,7 @@ export default function HotelDetail() {
                 {t('editorsChoice')}
               </span>
               <h1 className="font-headline text-[3.5rem] leading-tight text-primary mb-4 tracking-tight">
-                {stay.name}
+                {tContent('stayName', domain.id)}
               </h1>
               <div className="flex flex-wrap items-center gap-6 text-on-surface-variant mb-8">
                 <div className="flex items-center gap-1">
@@ -100,7 +100,7 @@ export default function HotelDetail() {
                 </div>
               </div>
               <p className="text-lg leading-relaxed text-on-surface/80 max-w-2xl">
-                {stay.desc}
+                {tContent('stayDesc', domain.id)}
               </p>
             </div>
 
@@ -111,7 +111,7 @@ export default function HotelDetail() {
               <div className="flex flex-col md:flex-row gap-8 relative z-10">
                 <div className="w-1 bg-outline-variant/20 rounded-full hidden md:block"></div>
                 <div className="space-y-6 text-on-surface-variant leading-relaxed">
-                  <p>{domain.history.desc}</p>
+                  <p>{tContent('historyDesc', domain.id)}</p>
                 </div>
               </div>
             </section>
@@ -206,7 +206,7 @@ export default function HotelDetail() {
                 <div className="absolute inset-0 bg-primary/10"></div>
                 <div className="absolute bottom-4 left-4 right-4 bg-surface/80 backdrop-blur-md rounded-lg p-4 flex items-center justify-between">
                   <div>
-                    <h4 className="font-semibold text-primary text-sm">{stay.name}</h4>
+                    <h4 className="font-semibold text-primary text-sm">{tContent('stayName', domain.id)}</h4>
                     <p className="text-xs text-on-surface-variant">{cityName}, {t('morocco')}</p>
                   </div>
                   <button

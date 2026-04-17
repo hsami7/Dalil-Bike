@@ -8,7 +8,7 @@ import { useLanguage } from './LanguageContext';
 export default function Hub() {
   const navigate = useNavigate();
   const location = useLocation();
-  const { t, tCity } = useLanguage();
+  const { t, tCity, tContent } = useLanguage();
   const historyRef = useRef(null);
   const staysRef = useRef(null);
   
@@ -66,7 +66,7 @@ export default function Hub() {
               {tCity(domain.id)}
             </h1>
             <p className="text-on-surface-variant max-w-lg text-lg font-body leading-relaxed">
-              {domain.desc}
+              {tContent('desc', domain.id)}
             </p>
           </div>
         </section>
@@ -128,13 +128,13 @@ export default function Hub() {
                       src={domain.history.img} 
                     />
                     <div className="absolute top-6 left-6 bg-white/20 backdrop-blur-xl border border-white/30 px-4 py-2 rounded-full">
-                       <span className="text-white font-bold text-xs uppercase tracking-widest">{domain.history.period}</span>
+                       <span className="text-white font-bold text-xs uppercase tracking-widest">{tContent('historyPeriod', domain.id)}</span>
                     </div>
                   </div>
                   <div className="md:w-2/5 p-8 md:p-12 flex flex-col justify-center">
-                    <h3 className="font-headline text-3xl md:text-5xl text-on-surface mb-6 font-medium leading-tight">{domain.history.name}</h3>
+                    <h3 className="font-headline text-3xl md:text-5xl text-on-surface mb-6 font-medium leading-tight">{tContent('historyName', domain.id)}</h3>
                     <p className="text-on-surface-variant text-lg leading-relaxed mb-8 line-clamp-4">
-                      {domain.history.desc}
+                      {tContent('historyDesc', domain.id)}
                     </p>
                     <div className="flex items-center gap-4 text-primary font-bold hover:underline">
                       <span>{t('exploreLandmark')}</span>
@@ -175,11 +175,11 @@ export default function Hub() {
                   <div className="p-8">
                     <div className="flex justify-between items-start mb-4">
                       <h3 className="font-headline text-2xl md:text-3xl text-on-surface font-medium group-hover:text-primary transition-colors">
-                        {domain.stay.name}
+                        {tContent('stayName', domain.id)}
                       </h3>
                     </div>
                     <p className="text-on-surface-variant text-base line-clamp-3 mb-6 leading-relaxed">
-                      {domain.stay.desc}
+                      {tContent('stayDesc', domain.id)}
                     </p>
                     <div className="flex items-center text-sm font-semibold text-secondary">
                       <span className="material-symbols-outlined text-xl me-2">location_on</span>

@@ -7,7 +7,7 @@ import { useLanguage } from './LanguageContext';
 
 export default function Place() {
   const navigate = useNavigate();
-  const { t, tCity } = useLanguage();
+  const { t, tCity, tContent } = useLanguage();
 
   return (
     <div className="min-h-screen bg-surface">
@@ -49,15 +49,15 @@ export default function Place() {
               {/* Content Container */}
               <div className="p-8 flex flex-col flex-1">
                 <div className="flex justify-between items-start mb-3">
-                  <span className="text-secondary font-bold text-[10px] uppercase tracking-wider mb-2 block">{city.history.period}</span>
+                  <span className="text-secondary font-bold text-[10px] uppercase tracking-wider mb-2 block">{tContent('historyPeriod', city.id)}</span>
                 </div>
                 
                 <h2 className="font-headline text-2xl text-on-surface font-medium leading-tight group-hover:text-primary transition-colors mb-4">
-                  {city.history.name}
+                  {tContent('historyName', city.id)}
                 </h2>
                 
                 <p className="font-body text-on-surface-variant text-sm line-clamp-2 mb-8 flex-1">
-                  {city.history.desc}
+                  {tContent('historyDesc', city.id)}
                 </p>
 
                 <div className="flex items-center justify-between pt-6 border-t border-outline-variant/30 mt-auto">

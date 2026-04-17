@@ -7,7 +7,7 @@ import { useLanguage } from './LanguageContext';
 
 export default function Hotel() {
   const navigate = useNavigate();
-  const { t, tCity } = useLanguage();
+  const { t, tCity, tContent } = useLanguage();
 
   return (
     <div className="min-h-screen bg-surface">
@@ -50,12 +50,12 @@ export default function Hotel() {
               <div className="p-8 flex flex-col flex-1">
                 <div className="flex justify-between items-start mb-3">
                   <h2 className="font-headline text-2xl text-on-surface font-medium leading-tight group-hover:text-primary transition-colors">
-                    {city.stay.name}
+                    {tContent('stayName', city.id)}
                   </h2>
                 </div>
                 
                 <p className="font-body text-on-surface-variant text-sm line-clamp-2 mb-6 flex-1">
-                  {city.stay.desc}
+                  {tContent('stayDesc', city.id)}
                 </p>
 
                 <div className="flex items-center justify-between pt-6 border-t border-outline-variant/30 mt-auto">
