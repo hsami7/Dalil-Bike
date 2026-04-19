@@ -23,12 +23,15 @@ const translations = {
 
     // Home — Results
     editorSelection: "The Editor's Selection",
-    editorSubtitle: "From the ochre walls of the south to the sapphire alleys of the north, discover the curated heritage of the Maghreb.",
+    editorSubtitle:
+      "From the ochre walls of the south to the sapphire alleys of the north, discover the curated heritage of the Maghreb.",
     discovering: "Discovering",
     noMatches: "No matches for",
     showingResults: "Showing {count} destination{s} for your search.",
-    noExactMatch: "We couldn't find an exact match, but we found something close.",
-    trySearching: "Try searching for cities like 'Marrakech', 'Tangier', or 'Ouarzazate'.",
+    noExactMatch:
+      "We couldn't find an exact match, but we found something close.",
+    trySearching:
+      "Try searching for cities like 'Marrakech', 'Tangier', or 'Ouarzazate'.",
     showingResultsFor: "Showing results for",
     instead: "instead",
     clear: "Clear",
@@ -60,7 +63,8 @@ const translations = {
     // Hotel page
     moroccanSanctuaries: "Moroccan Sanctuaries",
     artOfStay: "The Art of the Stay",
-    hotelSubtitle: "From the legendary palaces of Marrakech to the hidden riads of Fez, discover our curated collection of Morocco's most exceptional retreats.",
+    hotelSubtitle:
+      "From the legendary palaces of Marrakech to the hidden riads of Fez, discover our curated collection of Morocco's most exceptional retreats.",
     startingFrom: "Starting from",
     staysDirectory: "Stays Directory",
 
@@ -83,8 +87,10 @@ const translations = {
     amenityWifi: "Free Wi-Fi",
     amenityWifiDesc: "High-speed throughout",
     fromTheLogs: "From the Guest Logs",
-    review1: "An absolute triumph of hospitality. Waking up to the sounds of the medina and having breakfast on the terrace is an experience I will carry forever. The staff anticipates your needs before you even realize them.",
-    review2: "The gardens alone are worth the journey. It feels less like a hotel and more like you are a guest at a deeply glamorous palace. Every detail is considered.",
+    review1:
+      "An absolute triumph of hospitality. Waking up to the sounds of the medina and having breakfast on the terrace is an experience I will carry forever. The staff anticipates your needs before you even realize them.",
+    review2:
+      "The gardens alone are worth the journey. It feels less like a hotel and more like you are a guest at a deeply glamorous palace. Every detail is considered.",
     checkInOut: "Check In - Check Out",
     selectDates: "Select dates",
     guests: "Guests",
@@ -95,7 +101,8 @@ const translations = {
     // Place page
     echoesOfPast: "Echoes of the Past",
     timelessLandmarks: "Timeless Landmarks",
-    placeSubtitle: "Journey through centuries of Moroccan heritage. From the Roman ruins of Volubilis to the grand palaces of the Imperial cities.",
+    placeSubtitle:
+      "Journey through centuries of Moroccan heritage. From the Roman ruins of Volubilis to the grand palaces of the Imperial cities.",
     discoverMoreBtn: "Discover More",
     historicalSites: "Historical Sites",
 
@@ -112,11 +119,13 @@ const translations = {
     visualJourney: "Visual Journey",
 
     // Landing Page
-    landingTagline: "Marrakech · Explore & Charge",
+    landingTagline: "",
+    landingSlogan: "CHARGE YOUR PHONE. FIND YOUR WAY.",
     pedalChargeTitle: "Pedal and Charge",
-    pedalChargeDesc: "Explore Marrakech while pedaling and charging your device. Explore Morocco....",
+    pedalChargeDesc: "Explore Morocco while pedaling and charging your device.",
     noPedalChargeTitle: "Charge Without Pedaling",
-    noPedalChargeDesc: "Enjoy an ultra-fast charge without any physical effort.",
+    noPedalChargeDesc:
+      "Enjoy an ultra-fast charge without any physical effort.",
     continueToExplore: "Continue to exploration",
 
     // Language names
@@ -138,12 +147,15 @@ const translations = {
     searchPlaceholder: "Rechercher villes, régions ou thèmes...",
     searchButton: "Chercher",
     editorSelection: "La Sélection de l'Éditeur",
-    editorSubtitle: "Des murailles ocres du sud aux ruelles saphir du nord, découvrez le patrimoine du Maghreb.",
+    editorSubtitle:
+      "Des murailles ocres du sud aux ruelles saphir du nord, découvrez le patrimoine du Maghreb.",
     discovering: "Découverte de",
     noMatches: "Aucun résultat pour",
     showingResults: "Affichage de {count} destination{s} pour votre recherche.",
-    noExactMatch: "Nous n'avons pas trouvé de correspondance exacte, mais quelque chose de similaire.",
-    trySearching: "Essayez de chercher des villes comme 'Marrakech', 'Tanger' ou 'Ouarzazate'.",
+    noExactMatch:
+      "Nous n'avons pas trouvé de correspondance exacte, mais quelque chose de similaire.",
+    trySearching:
+      "Essayez de chercher des villes comme 'Marrakech', 'Tanger' ou 'Ouarzazate'.",
     showingResultsFor: "Résultats pour",
     instead: "à la place",
     clear: "Effacer",
@@ -168,7 +180,8 @@ const translations = {
     discoverMore: "Découvrir Plus de Sanctuaires",
     moroccanSanctuaries: "Sanctuaires Marocains",
     artOfStay: "L'Art du Séjour",
-    hotelSubtitle: "Des palais légendaires de Marrakech aux riads cachés de Fès, découvrez notre collection d'hébergements exceptionnels.",
+    hotelSubtitle:
+      "Des palais légendaires de Marrakech aux riads cachés de Fès, découvrez notre collection d'hébergements exceptionnels.",
     startingFrom: "À partir de",
     staysDirectory: "Répertoire Séjours",
     viewPhotos: "Voir Toutes les Photos",
@@ -189,8 +202,10 @@ const translations = {
     amenityWifi: "Wi-Fi Gratuit",
     amenityWifiDesc: "Haut débit partout",
     fromTheLogs: "Le Livre d'Or",
-    review1: "Un triomphe absolu d'hospitalité. Se réveiller aux sons de la médina et prendre le petit-déjeuner sur la terrasse est une expérience inoubliable. Le personnel anticipe vos besoins avant même que vous ne les réalisiez.",
-    review2: "Les jardins seuls valent le voyage. On se sent moins dans un hôtel que comme invité dans un palais d'une élégance rare. Chaque détail est pensé.",
+    review1:
+      "Un triomphe absolu d'hospitalité. Se réveiller aux sons de la médina et prendre le petit-déjeuner sur la terrasse est une expérience inoubliable. Le personnel anticipe vos besoins avant même que vous ne les réalisiez.",
+    review2:
+      "Les jardins seuls valent le voyage. On se sent moins dans un hôtel que comme invité dans un palais d'une élégance rare. Chaque détail est pensé.",
     checkInOut: "Arrivée - Départ",
     selectDates: "Sélectionner les dates",
     guests: "Voyageurs",
@@ -199,7 +214,8 @@ const translations = {
     noCharge: "Aucun paiement immédiat.",
     echoesOfPast: "Échos du Passé",
     timelessLandmarks: "Monuments Intemporels",
-    placeSubtitle: "Voyagez à travers des siècles de patrimoine marocain. Des ruines romaines de Volubilis aux grands palais des villes impériales.",
+    placeSubtitle:
+      "Voyagez à travers des siècles de patrimoine marocain. Des ruines romaines de Volubilis aux grands palais des villes impériales.",
     discoverMoreBtn: "En Savoir Plus",
     historicalSites: "Sites Historiques",
     status: "Statut",
@@ -212,11 +228,14 @@ const translations = {
     entryFeeValue: "Variable selon le site",
     exploreSite: "Explorer le Site",
     visualJourney: "Voyage Visuel",
-    landingTagline: "Marrakech · Explorer & Charger",
+    landingTagline: "",
+    landingSlogan: "CHARGEZ VOTRE TÉLÉPHONE. TROUVEZ VOTRE CHEMIN.",
     pedalChargeTitle: "Pédaler et Charger",
-    pedalChargeDesc: "Explorez Marrakech en pédalant tout en rechargeant votre appareil. Explorez le Maroc....",
+    pedalChargeDesc:
+      "Explorez Morocco en pédalant tout en rechargeant votre appareil.",
     noPedalChargeTitle: "Charger Sans Pédaler",
-    noPedalChargeDesc: "Profitez d'une recharge ultra-rapide sans aucun effort physique.",
+    noPedalChargeDesc:
+      "Profitez d'une recharge ultra-rapide sans aucun effort physique.",
     continueToExplore: "Continuer vers l'exploration",
     langEn: "English",
     langFr: "Français",
@@ -236,12 +255,15 @@ const translations = {
     searchPlaceholder: "Buscar ciudades, regiones o temas...",
     searchButton: "Buscar",
     editorSelection: "Selección del Editor",
-    editorSubtitle: "Desde las murallas ocres del sur hasta los callejones zafiro del norte, descubra el patrimonio del Magreb.",
+    editorSubtitle:
+      "Desde las murallas ocres del sur hasta los callejones zafiro del norte, descubra el patrimonio del Magreb.",
     discovering: "Descubriendo",
     noMatches: "Sin resultados para",
     showingResults: "Mostrando {count} destino{s} para su búsqueda.",
-    noExactMatch: "No encontramos una coincidencia exacta, pero sí algo similar.",
-    trySearching: "Intente buscar ciudades como 'Marrakech', 'Tánger' u 'Ouarzazate'.",
+    noExactMatch:
+      "No encontramos una coincidencia exacta, pero sí algo similar.",
+    trySearching:
+      "Intente buscar ciudades como 'Marrakech', 'Tánger' u 'Ouarzazate'.",
     showingResultsFor: "Mostrando resultados para",
     instead: "en su lugar",
     clear: "Borrar",
@@ -266,7 +288,8 @@ const translations = {
     discoverMore: "Descubrir Más Santuarios",
     moroccanSanctuaries: "Santuarios Marroquíes",
     artOfStay: "El Arte del Alojamiento",
-    hotelSubtitle: "Desde los palacios legendarios de Marrakech hasta los riads ocultos de Fez, descubra nuestra colección de retiros excepcionales.",
+    hotelSubtitle:
+      "Desde los palacios legendarios de Marrakech hasta los riads ocultos de Fez, descubra nuestra colección de retiros excepcionales.",
     startingFrom: "Desde",
     staysDirectory: "Directorio de Alojamientos",
     viewPhotos: "Ver Todas las Fotos",
@@ -287,8 +310,10 @@ const translations = {
     amenityWifi: "Wi-Fi Gratis",
     amenityWifiDesc: "Alta velocidad en todo el hotel",
     fromTheLogs: "Del Libro de Huéspedes",
-    review1: "Un triunfo absoluto de la hospitalidad. Despertar con los sonidos de la medina y desayunar en la terraza es una experiencia inolvidable. El personal anticipa tus necesidades antes de que te des cuenta.",
-    review2: "Los jardines solos merecen el viaje. Se siente menos como un hotel y más como ser invitado en un palacio elegante. Cada detalle está cuidado.",
+    review1:
+      "Un triunfo absoluto de la hospitalidad. Despertar con los sonidos de la medina y desayunar en la terraza es una experiencia inolvidable. El personal anticipa tus necesidades antes de que te des cuenta.",
+    review2:
+      "Los jardines solos merecen el viaje. Se siente menos como un hotel y más como ser invitado en un palacio elegante. Cada detalle está cuidado.",
     checkInOut: "Entrada - Salida",
     selectDates: "Seleccionar fechas",
     guests: "Huéspedes",
@@ -297,7 +322,8 @@ const translations = {
     noCharge: "No se cobrará ahora.",
     echoesOfPast: "Ecos del Pasado",
     timelessLandmarks: "Monumentos Atemporales",
-    placeSubtitle: "Viaje a través de siglos de patrimonio marroquí. Desde las ruinas romanas de Volubilis hasta los grandes palacios de las ciudades imperiales.",
+    placeSubtitle:
+      "Viaje a través de siglos de patrimonio marroquí. Desde las ruinas romanas de Volubilis hasta los grandes palacios de las ciudades imperiales.",
     discoverMoreBtn: "Descubrir Más",
     historicalSites: "Sitios Históricos",
     status: "Estado",
@@ -310,11 +336,14 @@ const translations = {
     entryFeeValue: "Varía según el sitio",
     exploreSite: "Explorar Sitio",
     visualJourney: "Viaje Visual",
-    landingTagline: "Marrakech · Explorar y Cargar",
+    landingTagline: "",
+    landingSlogan: "CARGA TU TELÉFONO. ENCUENTRA TU CAMINO.",
     pedalChargeTitle: "Pedalear y Cargar",
-    pedalChargeDesc: "Explora Marrakech pedaleando mientras cargas tu dispositivo. Explora Marruecos....",
+    pedalChargeDesc:
+      "Explora Morocco pedaleando mientras cargas tu dispositivo.",
     noPedalChargeTitle: "Cargar Sin Pedalear",
-    noPedalChargeDesc: "Disfruta de una carga ultra rápida sin ningún esfuerzo físico.",
+    noPedalChargeDesc:
+      "Disfruta de una carga ultra rápida sin ningún esfuerzo físico.",
     continueToExplore: "Continuar hacia la exploración",
     langEn: "English",
     langFr: "Français",
@@ -334,7 +363,8 @@ const translations = {
     searchPlaceholder: "ابحث عن مدن، مناطق أو مواضيع...",
     searchButton: "بحث",
     editorSelection: "اختيار المحرر",
-    editorSubtitle: "من أسوار الجنوب المغربية إلى أزقة الشمال الزرقاء، اكتشف التراث المغاربي المنتقى.",
+    editorSubtitle:
+      "من أسوار الجنوب المغربية إلى أزقة الشمال الزرقاء، اكتشف التراث المغاربي المنتقى.",
     discovering: "اكتشاف",
     noMatches: "لا نتائج لـ",
     showingResults: "عرض {count} وجهة لبحثك.",
@@ -364,7 +394,8 @@ const translations = {
     discoverMore: "اكتشف المزيد من الملاذات",
     moroccanSanctuaries: "ملاذات مغربية",
     artOfStay: "فن الإقامة",
-    hotelSubtitle: "من قصور مراكش الأسطورية إلى رياضات فاس المخفية، اكتشف مجموعتنا المنتقاة من أروع الملاذات المغربية.",
+    hotelSubtitle:
+      "من قصور مراكش الأسطورية إلى رياضات فاس المخفية، اكتشف مجموعتنا المنتقاة من أروع الملاذات المغربية.",
     startingFrom: "ابتداءً من",
     staysDirectory: "دليل الإقامات",
     viewPhotos: "عرض جميع الصور",
@@ -385,8 +416,10 @@ const translations = {
     amenityWifi: "واي فاي مجاني",
     amenityWifiDesc: "سرعة عالية في كل مكان",
     fromTheLogs: "من سجل الضيوف",
-    review1: "انتصار مطلق للضيافة. الاستيقاظ على أصوات المدينة القديمة وتناول الفطور على السطح تجربة لا تُنسى. يستبق الموظفون احتياجاتك قبل أن تدركها.",
-    review2: "الحدائق وحدها تستحق الرحلة. يبدو الأمر أقل كفندق وأكثر كضيافة في قصر أنيق. كل تفصيل مدروس.",
+    review1:
+      "انتصار مطلق للضيافة. الاستيقاظ على أصوات المدينة القديمة وتناول الفطور على السطح تجربة لا تُنسى. يستبق الموظفون احتياجاتك قبل أن تدركها.",
+    review2:
+      "الحدائق وحدها تستحق الرحلة. يبدو الأمر أقل كفندق وأكثر كضيافة في قصر أنيق. كل تفصيل مدروس.",
     checkInOut: "تسجيل الوصول - المغادرة",
     selectDates: "اختر التواريخ",
     guests: "الضيوف",
@@ -395,7 +428,8 @@ const translations = {
     noCharge: "لن يتم الخصم الآن.",
     echoesOfPast: "أصداء الماضي",
     timelessLandmarks: "معالم خالدة",
-    placeSubtitle: "سافر عبر قرون من التراث المغربي. من الآثار الرومانية في وليلي إلى القصور العظيمة للمدن الإمبراطورية.",
+    placeSubtitle:
+      "سافر عبر قرون من التراث المغربي. من الآثار الرومانية في وليلي إلى القصور العظيمة للمدن الإمبراطورية.",
     discoverMoreBtn: "اكتشف المزيد",
     historicalSites: "المواقع التاريخية",
     status: "الحالة",
@@ -408,9 +442,10 @@ const translations = {
     entryFeeValue: "تختلف حسب الموقع",
     exploreSite: "استكشف الموقع",
     visualJourney: "رحلة بصرية",
-    landingTagline: "مراكش · اكتشف واشحن",
+    landingTagline: "",
+    landingSlogan: "اشحن هاتفك. جد طريقك.",
     pedalChargeTitle: "دواسة واشحن",
-    pedalChargeDesc: "استكشف مراكش أثناء التبديل وشحن جهازك. اكتشف المغرب ....",
+    pedalChargeDesc: "استكشف المغرب أثناء التبديل  وشحن جهازك.",
     noPedalChargeTitle: "شحن بدون تبديل",
     noPedalChargeDesc: "استمتع بشحن فائق السرعة دون أي مجهود بدني.",
     continueToExplore: "الاستمرار في الاستكشاف",
