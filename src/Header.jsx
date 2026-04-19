@@ -2,53 +2,47 @@ import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useLanguage } from './LanguageContext';
 
-function DalilBikeLogo({ size = 52 }) {
+function DalilBikeLogo({ height = 36 }) {
   const navy = "#1B2D5C";
   const yellow = "#F5A800";
-  // Scale factor: base design at height=44, width auto
-  const height = size;
-  const width = Math.round(size * 2.8); // approximate aspect ratio of the text logo
+  // viewBox is tightly sized to the text content: 260 wide × 40 tall
+  // width scales proportionally from height
+  const width = Math.round(height * (260 / 40));
   return (
     <svg
-      viewBox="0 0 280 44"
+      viewBox="0 0 260 40"
       width={width}
       height={height}
       xmlns="http://www.w3.org/2000/svg"
       aria-label="Dalil Bike"
+      style={{ display: 'block' }}
     >
+      {/* DALIL */}
       <text
-        x="0"
-        y="36"
+        x="0" y="34"
         fontFamily="'Arial Black', 'Franklin Gothic Heavy', 'Impact', sans-serif"
         fontWeight="900"
-        fontSize="38"
+        fontSize="36"
         fill={navy}
-        letterSpacing="2"
-      >
-        DALIL
-      </text>
-      {/* Lightning bolt between DALIL and BIKE */}
+        letterSpacing="1"
+      >DALIL</text>
+      {/* ⚡ lightning bolt */}
       <text
-        x="148"
-        y="36"
-        fontFamily="'Arial Black', sans-serif"
+        x="138" y="34"
+        fontFamily="serif"
         fontWeight="900"
-        fontSize="38"
+        fontSize="34"
         fill={yellow}
-      >
-        ⚡
-      </text>
+      >⚡</text>
+      {/* BIKE */}
       <text
-        x="192"
-        y="36"
+        x="175" y="34"
         fontFamily="'Arial Black', 'Franklin Gothic Heavy', 'Impact', sans-serif"
         fontWeight="900"
-        fontSize="38"
+        fontSize="36"
         fill={navy}
-        letterSpacing="2"
-      >
-        BIKE
-      </text>
+        letterSpacing="1"
+      >BIKE</text>
     </svg>
   );
 }
@@ -103,11 +97,10 @@ function LanguageSwitcher() {
             <button
               key={lang.code}
               onClick={() => { setLanguage(lang.code); setOpen(false); }}
-              className={`w-full flex items-center gap-3 px-5 py-3.5 text-sm transition-colors ${
-                language === lang.code
+              className={`w-full flex items-center gap-3 px-5 py-3.5 text-sm transition-colors ${language === lang.code
                   ? 'bg-sky-50 text-sky-900 font-bold'
                   : 'text-slate-600 hover:bg-slate-50'
-              }`}
+                }`}
             >
               <span className="text-lg">{lang.flag}</span>
               <span>{t(langLabelMap[lang.code])}</span>
@@ -133,31 +126,31 @@ export default function Header({ activeTab = 'explore', mobileTitle = '', onSear
         <div className="flex justify-between items-center w-full px-6 py-4 max-w-screen-2xl mx-auto">
           {/* Brand */}
           <div onClick={() => navigate('/')} className="cursor-pointer">
-            <DalilBikeLogo size={52} />
+            <DalilBikeLogo height={36} />
           </div>
-          
+
           {/* Navigation Links */}
           <nav className="flex gap-8 items-center">
-            <a 
-              href="/" 
-              className={activeTab === 'explore' 
-                ? "text-sky-900 font-bold border-b-2 border-sky-900 pb-1 text-sm tracking-wide" 
+            <a
+              href="/"
+              className={activeTab === 'explore'
+                ? "text-sky-900 font-bold border-b-2 border-sky-900 pb-1 text-sm tracking-wide"
                 : "text-slate-500 font-medium hover:text-sky-700 transition-colors text-sm tracking-wide"}
             >
               {t('navExplore')}
             </a>
-            <a 
-              href="/hotel" 
-              className={activeTab === 'stays' 
-                ? "text-sky-900 font-bold border-b-2 border-sky-900 pb-1 text-sm tracking-wide" 
+            <a
+              href="/hotel"
+              className={activeTab === 'stays'
+                ? "text-sky-900 font-bold border-b-2 border-sky-900 pb-1 text-sm tracking-wide"
                 : "text-slate-500 font-medium hover:text-sky-700 transition-colors text-sm tracking-wide"}
             >
               {t('navStays')}
             </a>
-            <a 
-              href="/place" 
-              className={activeTab === 'history' 
-                ? "text-sky-900 font-bold border-b-2 border-sky-900 pb-1 text-sm tracking-wide" 
+            <a
+              href="/place"
+              className={activeTab === 'history'
+                ? "text-sky-900 font-bold border-b-2 border-sky-900 pb-1 text-sm tracking-wide"
                 : "text-slate-500 font-medium hover:text-sky-700 transition-colors text-sm tracking-wide"}
             >
               {t('navHistory')}
@@ -172,17 +165,17 @@ export default function Header({ activeTab = 'explore', mobileTitle = '', onSear
       {/* Mobile App Bar */}
       <header className="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl flex justify-between items-center px-6 py-4 md:hidden">
         {mobileTitle ? (
-           <button onClick={() => navigate(-1)} className="flex items-center justify-center w-10 h-10 transition-transform duration-300 scale-95 active:scale-90 hover:bg-[#f3f3f7] rounded-full">
-             <span className="material-symbols-outlined text-[#003857]" data-icon="arrow_back">arrow_back</span>
-           </button>
+          <button onClick={() => navigate(-1)} className="flex items-center justify-center w-10 h-10 transition-transform duration-300 scale-95 active:scale-90 hover:bg-[#f3f3f7] rounded-full">
+            <span className="material-symbols-outlined text-[#003857]" data-icon="arrow_back">arrow_back</span>
+          </button>
         ) : (
-           <div className="w-10"></div>
+          <div className="w-10"></div>
         )}
-        
+
         <h1 className="font-serif text-[#1a1c1e] text-xl font-headline font-bold italic">
-          {mobileTitle || <DalilBikeLogo size={40} />}
+          {mobileTitle || <DalilBikeLogo height={28} />}
         </h1>
-        
+
         <LanguageSwitcher />
       </header>
     </>
