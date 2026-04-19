@@ -2,48 +2,44 @@ import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useLanguage } from './LanguageContext';
 
-function DalilBikeLogo({ height = 36 }) {
-  const navy = "#1B2D5C";
-  const yellow = "#F5A800";
-  // viewBox is tightly sized to the text content: 260 wide × 40 tall
-  // width scales proportionally from height
-  const width = Math.round(height * (260 / 40));
+function DalilBikeLogo({ scale = 1 }) {
+  const navy  = "#1E3A5F";
+  const amber = "#FFD100";
+  const fontSize = `${Math.round(22 * scale)}px`;
+  const boltSize = `${Math.round(20 * scale)}px`;
+
   return (
-    <svg
-      viewBox="0 0 260 40"
-      width={width}
-      height={height}
-      xmlns="http://www.w3.org/2000/svg"
+    <span
       aria-label="Dalil Bike"
-      style={{ display: 'block' }}
+      style={{
+        display: 'inline-flex',
+        alignItems: 'center',
+        gap: `${Math.round(5 * scale)}px`,
+        fontFamily: "'Cinzel', 'Trajan Pro', Georgia, serif",
+        fontWeight: 700,
+        fontSize,
+        color: navy,
+        letterSpacing: '0.06em',
+        lineHeight: 1,
+        userSelect: 'none',
+        whiteSpace: 'nowrap',
+      }}
     >
-      {/* DALIL */}
-      <text
-        x="0" y="34"
-        fontFamily="'Arial Black', 'Franklin Gothic Heavy', 'Impact', sans-serif"
-        fontWeight="900"
-        fontSize="36"
-        fill={navy}
-        letterSpacing="1"
-      >DALIL</text>
-      {/* ⚡ lightning bolt */}
-      <text
-        x="138" y="34"
-        fontFamily="serif"
-        fontWeight="900"
-        fontSize="34"
-        fill={yellow}
-      >⚡</text>
-      {/* BIKE */}
-      <text
-        x="175" y="34"
-        fontFamily="'Arial Black', 'Franklin Gothic Heavy', 'Impact', sans-serif"
-        fontWeight="900"
-        fontSize="36"
-        fill={navy}
-        letterSpacing="1"
-      >BIKE</text>
-    </svg>
+      DALIL
+      {/* Lightning bolt SVG icon */}
+      <svg
+        width={boltSize}
+        height={boltSize}
+        viewBox="0 0 24 24"
+        fill={amber}
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+        style={{ flexShrink: 0 }}
+      >
+        <path d="M13 2L4.5 13.5H11L10 22L19.5 10.5H13L13 2Z" />
+      </svg>
+      BIKE
+    </span>
   );
 }
 
@@ -126,7 +122,7 @@ export default function Header({ activeTab = 'explore', mobileTitle = '', onSear
         <div className="flex justify-between items-center w-full px-6 py-4 max-w-screen-2xl mx-auto">
           {/* Brand */}
           <div onClick={() => navigate('/')} className="cursor-pointer">
-            <DalilBikeLogo height={36} />
+            <DalilBikeLogo scale={1} />
           </div>
 
           {/* Navigation Links */}
@@ -173,7 +169,7 @@ export default function Header({ activeTab = 'explore', mobileTitle = '', onSear
         )}
 
         <h1 className="font-serif text-[#1a1c1e] text-xl font-headline font-bold italic">
-          {mobileTitle || <DalilBikeLogo height={28} />}
+          {mobileTitle || <DalilBikeLogo scale={0.8} />}
         </h1>
 
         <LanguageSwitcher />
