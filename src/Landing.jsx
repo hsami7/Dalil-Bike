@@ -156,18 +156,31 @@ export default function Landing() {
           </div>
         </div>
 
+        {/* Tagline */}
+        <div style={{
+          fontFamily: "'Plus Jakarta Sans', sans-serif",
+          fontSize: '12px',
+          fontWeight: 600,
+          color: '#64748b',
+          textTransform: 'uppercase',
+          letterSpacing: '0.15em',
+          marginBottom: 8
+        }}>
+          {t('landingTagline')}
+        </div>
+
         {/* Slogan */}
         <h2 style={{
           fontFamily: "'Cinzel', serif",
           fontWeight: 700,
-          fontSize: '15px',
+          fontSize: '24px',
           color: '#1E3A5F',
-          letterSpacing: '0.2em',
           marginBottom: 64,
           textAlign: 'center',
-          opacity: 0.8
+          lineHeight: 1.4,
+          maxWidth: 600
         }}>
-          CHARGE YOUR PHONE. FIND YOUR WAY.
+          {t('landingSlogan')}
         </h2>
 
         <div style={{
