@@ -2,6 +2,57 @@ import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useLanguage } from './LanguageContext';
 
+function DalilBikeLogo({ size = 52 }) {
+  const navy = "#1B2D5C";
+  const yellow = "#F5A800";
+  // Scale factor: base design at height=44, width auto
+  const height = size;
+  const width = Math.round(size * 2.8); // approximate aspect ratio of the text logo
+  return (
+    <svg
+      viewBox="0 0 280 44"
+      width={width}
+      height={height}
+      xmlns="http://www.w3.org/2000/svg"
+      aria-label="Dalil Bike"
+    >
+      <text
+        x="0"
+        y="36"
+        fontFamily="'Arial Black', 'Franklin Gothic Heavy', 'Impact', sans-serif"
+        fontWeight="900"
+        fontSize="38"
+        fill={navy}
+        letterSpacing="2"
+      >
+        DALIL
+      </text>
+      {/* Lightning bolt between DALIL and BIKE */}
+      <text
+        x="148"
+        y="36"
+        fontFamily="'Arial Black', sans-serif"
+        fontWeight="900"
+        fontSize="38"
+        fill={yellow}
+      >
+        ⚡
+      </text>
+      <text
+        x="192"
+        y="36"
+        fontFamily="'Arial Black', 'Franklin Gothic Heavy', 'Impact', sans-serif"
+        fontWeight="900"
+        fontSize="38"
+        fill={navy}
+        letterSpacing="2"
+      >
+        BIKE
+      </text>
+    </svg>
+  );
+}
+
 const LANGS = [
   { code: 'en', flag: '🇬🇧' },
   { code: 'fr', flag: '🇫🇷' },
@@ -81,11 +132,8 @@ export default function Header({ activeTab = 'explore', mobileTitle = '', onSear
       <header className="hidden md:flex fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-sm transition-transform duration-200 ease-in-out">
         <div className="flex justify-between items-center w-full px-6 py-4 max-w-screen-2xl mx-auto">
           {/* Brand */}
-          <div 
-            onClick={() => navigate('/')}
-            className="font-serif italic text-2xl text-sky-900 font-headline font-bold cursor-pointer"
-          >
-            {t('brandName')}
+          <div onClick={() => navigate('/')} className="cursor-pointer">
+            <DalilBikeLogo size={52} />
           </div>
           
           {/* Navigation Links */}
@@ -132,7 +180,7 @@ export default function Header({ activeTab = 'explore', mobileTitle = '', onSear
         )}
         
         <h1 className="font-serif text-[#1a1c1e] text-xl font-headline font-bold italic">
-          {mobileTitle || t('brandName')}
+          {mobileTitle || <DalilBikeLogo size={40} />}
         </h1>
         
         <LanguageSwitcher />
