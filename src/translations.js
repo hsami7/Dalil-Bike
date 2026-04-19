@@ -119,7 +119,6 @@ const translations = {
     visualJourney: "Visual Journey",
 
     // Landing Page
-    landingTagline: "",
     landingSlogan: "CHARGE YOUR PHONE. FIND YOUR WAY.",
     pedalChargeTitle: "Pedal and Charge",
     pedalChargeDesc: "Explore Morocco while pedaling and charging your device.",
@@ -227,7 +226,6 @@ const translations = {
     entryFee: "Tarif d'Entrée",
     entryFeeValue: "Variable selon le site",
     exploreSite: "Explorer le Site",
-    visualJourney: "Voyage Visuel",
     landingTagline: "",
     landingSlogan: "CHARGEZ VOTRE TÉLÉPHONE. TROUVEZ VOTRE CHEMIN.",
     pedalChargeTitle: "Pédaler et Charger",
@@ -334,7 +332,6 @@ const translations = {
     locationLabel: "Ubicación",
     entryFee: "Precio de Entrada",
     entryFeeValue: "Varía según el sitio",
-    exploreSite: "Explorar Sitio",
     visualJourney: "Viaje Visual",
     landingTagline: "",
     landingSlogan: "CARGA TU TELÉFONO. ENCUENTRA TU CAMINO.",
@@ -439,7 +436,6 @@ const translations = {
     openingHoursValue: "يوميًا: 9:00 صباحًا – 6:00 مساءً",
     locationLabel: "الموقع",
     entryFee: "رسوم الدخول",
-    entryFeeValue: "تختلف حسب الموقع",
     exploreSite: "استكشف الموقع",
     visualJourney: "رحلة بصرية",
     landingTagline: "",

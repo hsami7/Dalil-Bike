@@ -156,18 +156,6 @@ export default function Landing() {
           </div>
         </div>
 
-        {/* Tagline */}
-        <div style={{
-          fontFamily: "'Plus Jakarta Sans', sans-serif",
-          fontSize: '12px',
-          fontWeight: 600,
-          color: '#64748b',
-          textTransform: 'uppercase',
-          letterSpacing: '0.15em',
-          marginBottom: 8
-        }}>
-          {t('landingTagline')}
-        </div>
 
         {/* Slogan */}
         <h2 style={{
