@@ -103,7 +103,7 @@ export default function Home() {
     <>
       <Header activeTab="explore" onSearchClick={handleSearchFocus} />
       
-      <main className="pt-0 md:pt-20">
+      <main className="pt-0 md:pt-20 pb-24">
         {/* Hero Section */}
         <section className="relative w-full h-[614px] md:h-[768px] flex flex-col justify-center items-center px-6 overflow-hidden">
           {/* Hero Background Image */}

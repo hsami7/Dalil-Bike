@@ -104,7 +104,7 @@ export default function Landing() {
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
-      padding: '40px 24px',
+      padding: '40px 24px 100px',
       position: 'relative'
     }}>
 

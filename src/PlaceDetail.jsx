@@ -27,7 +27,7 @@ export default function PlaceDetail() {
     <div className="min-h-screen bg-surface">
       <Header activeTab="history" mobileTitle={tContent('historyName', domain.id)} />
 
-      <main className="pt-0 md:pt-0 pb-24">
+      <main className="pt-0 md:pt-0 pb-32 md:pb-24">
         {/* Hero Section — Full-bleed cinematic image */}
         <section className="relative w-full h-[60vh] md:h-[80vh] bg-surface-container-low overflow-hidden">
           <img
@@ -60,7 +60,7 @@ export default function PlaceDetail() {
               <span className="text-[0.75rem] font-bold uppercase tracking-wider text-secondary mb-4 block">
                 {tContent('historyPeriod', domain.id)}
               </span>
-              <h1 className="font-headline text-[3.5rem] leading-tight text-primary mb-6">
+              <h1 className="font-headline text-[2.5rem] md:text-[3.5rem] leading-tight text-primary mb-6">
                 {tContent('historyName', domain.id)}
               </h1>
               <p className="text-on-surface-variant text-lg leading-relaxed">
