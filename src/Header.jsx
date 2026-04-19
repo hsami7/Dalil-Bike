@@ -3,113 +3,26 @@ import { useNavigate } from 'react-router-dom';
 import { useLanguage } from './LanguageContext';
 
 function DalilBikeLogo({ scale = 1 }) {
-  const navy  = "#1E3A5F";
-  const amber = "#FFD100";
-  const fontSize = `${Math.round(22 * scale)}px`;
-  const boltSize = `${Math.round(20 * scale)}px`;
-
+  const height = Math.round(50 * scale);
   return (
-    <span
-      aria-label="Dalil Bike"
-      style={{
-        display: 'inline-flex',
-        alignItems: 'center',
-        gap: `${Math.round(5 * scale)}px`,
-        fontFamily: "'Cinzel', 'Trajan Pro', Georgia, serif",
-        fontWeight: 700,
-        fontSize,
-        color: navy,
-        letterSpacing: '0.06em',
-        lineHeight: 1,
-        userSelect: 'none',
-        whiteSpace: 'nowrap',
-      }}
-    >
-      DALIL
-      {/* Lightning bolt SVG icon */}
-      <svg
-        width={boltSize}
-        height={boltSize}
-        viewBox="0 0 24 24"
-        fill={amber}
-        xmlns="http://www.w3.org/2000/svg"
-        aria-hidden="true"
-        style={{ flexShrink: 0 }}
-      >
-        <path d="M13 2L4.5 13.5H11L10 22L19.5 10.5H13L13 2Z" />
-      </svg>
-      BIKE
-    </span>
-  );
-}
-
-const LANGS = [
-  { code: 'en', flag: '🇬🇧' },
-  { code: 'fr', flag: '🇫🇷' },
-  { code: 'es', flag: '🇪🇸' },
-  { code: 'ar', flag: '🇲🇦' },
-];
-
-function LanguageSwitcher() {
-  const { language, setLanguage, t } = useLanguage();
-  const [open, setOpen] = useState(false);
-  const ref = useRef(null);
-
-  // Close dropdown on outside click
-  useEffect(() => {
-    const handleClickOutside = (e) => {
-      if (ref.current && !ref.current.contains(e.target)) setOpen(false);
-    };
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, []);
-
-  const current = LANGS.find(l => l.code === language) || LANGS[0];
-
-  const langLabelMap = {
-    en: 'langEn',
-    fr: 'langFr',
-    es: 'langEs',
-    ar: 'langAr',
-  };
-
-  return (
-    <div ref={ref} className="relative">
-      <button
-        onClick={() => setOpen(prev => !prev)}
-        className="flex items-center gap-2 px-3 py-2 rounded-full hover:bg-sky-50 transition-colors text-sky-900 text-sm font-medium"
-        aria-label="Change language"
-      >
-        <span className="text-lg leading-none">{current.flag}</span>
-        <span className="hidden sm:inline">{t(langLabelMap[language])}</span>
-        <span className="material-symbols-outlined text-base transition-transform" style={{ transform: open ? 'rotate(180deg)' : 'rotate(0)' }}>
-          expand_more
-        </span>
-      </button>
-
-      {open && (
-        <div className="absolute end-0 top-full mt-2 bg-white rounded-2xl shadow-[0_8px_40px_rgba(0,56,87,0.15)] border border-sky-100 overflow-hidden min-w-[180px] z-[99] animate-[fadeSlideIn_0.2s_ease-out]">
-          {LANGS.map(lang => (
-            <button
-              key={lang.code}
-              onClick={() => { setLanguage(lang.code); setOpen(false); }}
-              className={`w-full flex items-center gap-3 px-5 py-3.5 text-sm transition-colors ${language === lang.code
-                  ? 'bg-sky-50 text-sky-900 font-bold'
-                  : 'text-slate-600 hover:bg-slate-50'
-                }`}
-            >
-              <span className="text-lg">{lang.flag}</span>
-              <span>{t(langLabelMap[lang.code])}</span>
-              {language === lang.code && (
-                <span className="material-symbols-outlined text-sky-600 text-base ms-auto">check</span>
-              )}
-            </button>
-          ))}
-        </div>
-      )}
+    <div style={{ display: 'flex', alignItems: 'center', height: '40px' }}>
+      <img
+        src="/src/assets/just_dalil_bike_logo.png"
+        alt="Dalil Bike"
+        style={{
+          height: height,
+          width: 'auto',
+          objectFit: 'contain',
+          transform: `scale(${4.0 * scale})`,
+          transformOrigin: 'left center',
+          marginLeft: '2px'
+        }}
+      />
     </div>
   );
 }
+
+import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Header({ activeTab = 'explore', mobileTitle = '', onSearchClick }) {
   const navigate = useNavigate();

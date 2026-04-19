@@ -10,13 +10,13 @@ export const DOMAINS = [
       name: "La Mamounia",
       price: "7500 MAD",
       link: "https://mamounia.com/en/gallery/",
-      img: "https://images.unsplash.com/photo-1664346328057-ec7441a4ed1c?q=80&w=2000&auto=format&fit=crop",
+      img: "https://images.unsplash.com/photo-1530541930197-ff16ac917b0e?q=80&w=2000&auto=format&fit=crop",
       desc: "Marrakech's most iconic grand dame. A legendary palace that breathes the very soul of Marrakech since 1923, offering historic luxury amidst ancient olive groves."
     },
     history: {
       name: "Jemaa el-Fnaa Square",
       period: "UNESCO Heritage",
-      img: "https://images.unsplash.com/photo-1597212618440-806262de4fe6?q=80&w=2000&auto=format&fit=crop",
+      img: "https://images.unsplash.com/photo-1740436857456-d62bfdfdf37a?q=80&w=2000&auto=format&fit=crop",
       desc: "The beating heart of Marrakech. By day, it’s a bustling marketplace with orange juice stalls and snake charmers; by night, it transforms into an open-air food market filled with traditional storytellers and musicians. A UNESCO Masterpiece."
     }
   },
@@ -31,13 +31,13 @@ export const DOMAINS = [
       name: "Hotel Sahrai",
       price: "4200 MAD",
       link: "https://www.hotelsahrai.com/en/gallery.html",
-      img: "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=2000&auto=format&fit=crop",
+      img: "https://images.unsplash.com/photo-1506869640319-fe1a24fd76dc?q=80&w=2000&auto=format&fit=crop",
       desc: "A stunning modern luxury escape overlooking the ancient medina, blending contemporary design with traditional Moroccan soul."
     },
     history: {
       name: "Fes el Bali (Medina)",
       period: "8th Century",
-      img: "https://images.unsplash.com/photo-15041185440d9-bd24119d8033?q=80&w=2000&auto=format&fit=crop",
+      img: "https://images.unsplash.com/photo-1548813395-c9bc8e5b05d4?q=80&w=2000&auto=format&fit=crop",
       desc: "Step back in time in the world's largest car-free urban area. This medieval labyrinth is home to the Al-Quaraouiyine University and the famous Chouara Tannery, where leather is still dyed using ancient methods."
     }
   },
@@ -52,13 +52,13 @@ export const DOMAINS = [
       name: "Four Seasons Casablanca",
       price: "5000 MAD",
       link: "#",
-      img: "https://images.unsplash.com/photo-1568015523996-3c224213600f?q=80&w=2000&auto=format&fit=crop",
+      img: "https://images.unsplash.com/photo-1530026405186-ed1f139313f8?q=80&w=2000&auto=format&fit=crop",
       desc: "Sweeping views of the Atlantic from a pristine, modern architectural oasis, defining urban luxury in Morocco's economic heart."
     },
     history: {
       name: "Hassan II Mosque",
       period: "1993",
-      img: "https://images.unsplash.com/photo-1582281542224-ed77ce1bb4c0?q=80&w=2000&auto=format&fit=crop",
+      img: "https://images.unsplash.com/photo-1577948000111-9c970dfe3743?q=80&w=2000&auto=format&fit=crop",
       desc: "A masterpiece of Moroccan craftsmanship. Sitting partially over the Atlantic Ocean, its minaret is one of the tallest in the world. One of the few mosques open to non-Muslims for guided tours."
     }
   },
@@ -73,13 +73,13 @@ export const DOMAINS = [
       name: "Lina Ryad & Spa",
       price: "2400 MAD",
       link: "#",
-      img: "https://images.unsplash.com/photo-1588621458925-5e6080ddbc96?q=80&w=2000&auto=format&fit=crop",
+      img: "https://images.unsplash.com/photo-1564507592333-c60657eea523?q=80&w=2000&auto=format&fit=crop",
       desc: "A serene boutique sanctuary offering traditional suites and panoramic views of the blue-washed mountain town."
     },
     history: {
       name: "The Blue Medina",
       period: "15th Century",
-      img: "https://images.unsplash.com/photo-1548625343-7f9999f1fa32?q=80&w=2000&auto=format&fit=crop",
+      img: "https://images.unsplash.com/photo-1569383746724-6f1b882b8f46?q=80&w=2000&auto=format&fit=crop",
       desc: "Tucked into the Rif Mountains, this city is a photographer's dream. The striking blue-washed buildings were originally painted to symbolize the sky and heaven, offering a serene atmosphere."
     }
   },
@@ -100,7 +100,7 @@ export const DOMAINS = [
     history: {
       name: "Hassan Tower",
       period: "12th Century",
-      img: "https://images.unsplash.com/photo-1591530962386-896db812aadd?q=80&w=2000&auto=format&fit=crop",
+      img: "https://images.unsplash.com/photo-1732289572369-0bba00efab69?q=80&w=2000&auto=format&fit=crop",
       desc: "The minaret of an incomplete mosque intended to be the world's largest. It stands as a majestic symbol of Almohad architecture and Morocco's rich Islamic history."
     }
   },
@@ -115,7 +115,7 @@ export const DOMAINS = [
       name: "Château Roslane",
       price: "1800 MAD",
       link: "#",
-      img: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2000&auto=format&fit=crop",
+      img: "https://images.unsplash.com/photo-1540541338287-41700207dee6?q=80&w=2000&auto=format&fit=crop",
       desc: "An exclusive boutique wine resort, the first of its kind in North Africa, providing a refined gateway to the imperial city."
     },
     history: {
@@ -142,7 +142,7 @@ export const DOMAINS = [
     history: {
       name: "Hercules Caves",
       period: "Prehistoric/Legendary",
-      img: "https://images.unsplash.com/photo-1510461750244-672534575f0f?q=80&w=2000&auto=format&fit=crop",
+      img: "https://images.unsplash.com/photo-1683040064697-23d3a001b3c3?q=80&w=2000&auto=format&fit=crop",
       desc: "Where the Mediterranean meets the Atlantic. Legend says Hercules rested here. The cave's seafront opening resembles the map of Africa."
     }
   },
@@ -178,7 +178,7 @@ export const DOMAINS = [
       name: "Sofitel Agadir Thalassa",
       price: "3800 MAD",
       link: "#",
-      img: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=2000&auto=format&fit=crop",
+      img: "https://images.unsplash.com/photo-1590674899484-d5640e854abe?q=80&w=2000&auto=format&fit=crop",
       desc: "A sanctuary of well-being offering an unmatched luxury spa experience right on its private Atlantic beach."
     },
     history: {
@@ -205,7 +205,7 @@ export const DOMAINS = [
     history: {
       name: "Aït Benhaddou",
       period: "11th Century",
-      img: "https://images.unsplash.com/photo-1550570495-97b7640f09a1?q=80&w=2000&auto=format&fit=crop",
+      img: "https://images.unsplash.com/photo-1737894404260-7ca0c3cc5a1d?q=80&w=2000&auto=format&fit=crop",
       desc: "A stunning ksar (fortified village) and UNESCO World Heritage site. This earthen complex has served as the cinematic backdrop for films like Gladiator and Game of Thrones."
     }
   }
