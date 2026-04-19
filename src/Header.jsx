@@ -121,14 +121,14 @@ export default function Header({ activeTab = 'explore', mobileTitle = '', onSear
       <header className="hidden md:flex fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-sm transition-transform duration-200 ease-in-out">
         <div className="flex justify-between items-center w-full px-6 py-4 max-w-screen-2xl mx-auto">
           {/* Brand */}
-          <div onClick={() => navigate('/')} className="cursor-pointer">
+          <div onClick={() => navigate('/explore')} className="cursor-pointer">
             <DalilBikeLogo scale={1} />
           </div>
 
           {/* Navigation Links */}
           <nav className="flex gap-8 items-center">
             <a
-              href="/"
+              href="/explore"
               className={activeTab === 'explore'
                 ? "text-sky-900 font-bold border-b-2 border-sky-900 pb-1 text-sm tracking-wide"
                 : "text-slate-500 font-medium hover:text-sky-700 transition-colors text-sm tracking-wide"}
