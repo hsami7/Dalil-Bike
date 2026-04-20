@@ -199,12 +199,6 @@ export default function Hub() {
                     </div>
                   </article>
                 ))}
-                
-                {/* Additional Placeholder Card for Horizontal Feel */}
-                <div className="flex-shrink-0 w-80 md:w-[450px] bg-surface-container rounded-3xl border-2 border-dashed border-outline-variant flex flex-col items-center justify-center text-center p-8 opacity-60">
-                  <span className="material-symbols-outlined text-4xl mb-4 text-on-surface-variant">add_circle</span>
-                  <p className="font-headline text-xl text-on-surface-variant italic">{t('discoverMore')}</p>
-                </div>
               </div>
             </div>
           </section>
