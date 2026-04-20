@@ -50,12 +50,12 @@ export default function Hotel() {
               <div className="p-8 flex flex-col flex-1">
                 <div className="flex justify-between items-start mb-3">
                   <h2 className="font-headline text-2xl text-on-surface font-medium leading-tight group-hover:text-primary transition-colors">
-                    {tContent('stayName', hotel.cityId)}
+                    {tContent('stayName', hotel.id)}
                   </h2>
                 </div>
                 
                 <p className="font-body text-on-surface-variant text-sm line-clamp-2 mb-6 flex-1">
-                  {tContent('stayDesc', hotel.cityId)}
+                  {tContent('stayDesc', hotel.id)}
                 </p>
 
                 <div className="flex items-center justify-between pt-6 border-t border-outline-variant/30 mt-auto">
