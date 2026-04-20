@@ -15,7 +15,43 @@ export const LANDMARKS = [
   { id: "tangier", cityId: "tangier", imageKey: "tangier_hercules_caves", img: HISTORY_IMAGES.tangier_hercules_caves.primary },
   { id: "essaouira", cityId: "essaouira", imageKey: "essaouira_skala", img: HISTORY_IMAGES.essaouira_skala.primary },
   { id: "agadir", cityId: "agadir", imageKey: "agadir_agadir_oufella", img: HISTORY_IMAGES.agadir_agadir_oufella.primary },
-  { id: "ouarzazate", cityId: "ouarzazate", imageKey: "ouarzazate_ait_benhaddou", img: HISTORY_IMAGES.ouarzazate_ait_benhaddou.primary }
+  { id: "ouarzazate", cityId: "ouarzazate", imageKey: "ouarzazate_ait_benhaddou", img: HISTORY_IMAGES.ouarzazate_ait_benhaddou.primary },
+  // Marrakech
+  { id: "marrakech_koutoubia", cityId: "marrakech", imageKey: "marrakech_koutoubia", img: HISTORY_IMAGES.marrakech_koutoubia.primary },
+  { id: "marrakech_bahia", cityId: "marrakech", imageKey: "marrakech_bahia", img: HISTORY_IMAGES.marrakech_bahia.primary },
+  { id: "marrakech_saadian", cityId: "marrakech", imageKey: "marrakech_saadian", img: HISTORY_IMAGES.marrakech_saadian.primary },
+  // Casablanca
+  { id: "casablanca_mahkama", cityId: "casablanca", imageKey: "casablanca_mahkama", img: HISTORY_IMAGES.casablanca_mahkama.primary },
+  { id: "casablanca_royal_palace", cityId: "casablanca", imageKey: "casablanca_royal_palace", img: HISTORY_IMAGES.casablanca_royal_palace.primary },
+  { id: "casablanca_medina", cityId: "casablanca", imageKey: "casablanca_medina", img: HISTORY_IMAGES.casablanca_medina.primary },
+  // Chefchaouen
+  { id: "chefchaouen_kasbah", cityId: "chefchaouen", imageKey: "chefchaouen_kasbah", img: HISTORY_IMAGES.chefchaouen_kasbah.primary },
+  { id: "chefchaouen_spanish_mosque", cityId: "chefchaouen", imageKey: "chefchaouen_spanish_mosque", img: HISTORY_IMAGES.chefchaouen_spanish_mosque.primary },
+  { id: "chefchaouen_ras_el_maa", cityId: "chefchaouen", imageKey: "chefchaouen_ras_el_maa", img: HISTORY_IMAGES.chefchaouen_ras_el_maa.primary },
+  // Rabat
+  { id: "rabat_udayas", cityId: "rabat", imageKey: "rabat_udayas", img: HISTORY_IMAGES.rabat_udayas.primary },
+  { id: "rabat_chellah", cityId: "rabat", imageKey: "rabat_chellah", img: HISTORY_IMAGES.rabat_chellah.primary },
+  { id: "rabat_mausoleum", cityId: "rabat", imageKey: "rabat_mausoleum", img: HISTORY_IMAGES.rabat_mausoleum.primary },
+  // Meknes
+  { id: "meknes_stables", cityId: "meknes", imageKey: "meknes_stables", img: HISTORY_IMAGES.meknes_stables.primary },
+  { id: "meknes_mausoleum", cityId: "meknes", imageKey: "meknes_mausoleum", img: HISTORY_IMAGES.meknes_mausoleum.primary },
+  { id: "meknes_prison", cityId: "meknes", imageKey: "meknes_prison", img: HISTORY_IMAGES.meknes_prison.primary },
+  // Tangier
+  { id: "tangier_kasbah", cityId: "tangier", imageKey: "tangier_kasbah", img: HISTORY_IMAGES.tangier_kasbah.primary },
+  { id: "tangier_sultan_palace", cityId: "tangier", imageKey: "tangier_sultan_palace", img: HISTORY_IMAGES.tangier_sultan_palace.primary },
+  { id: "tangier_american_legation", cityId: "tangier", imageKey: "tangier_american_legation", img: HISTORY_IMAGES.tangier_american_legation.primary },
+  // Essaouira
+  { id: "essaouira_medina", cityId: "essaouira", imageKey: "essaouira_medina", img: HISTORY_IMAGES.essaouira_medina.primary },
+  { id: "essaouira_sqala_port", cityId: "essaouira", imageKey: "essaouira_sqala_port", img: HISTORY_IMAGES.essaouira_sqala_port.primary },
+  { id: "essaouira_borj_barmil", cityId: "essaouira", imageKey: "essaouira_borj_barmil", img: HISTORY_IMAGES.essaouira_borj_barmil.primary },
+  // Agadir
+  { id: "agadir_memoire", cityId: "agadir", imageKey: "agadir_memoire", img: HISTORY_IMAGES.agadir_memoire.primary },
+  { id: "agadir_medina_coco", cityId: "agadir", imageKey: "agadir_medina_coco", img: HISTORY_IMAGES.agadir_medina_coco.primary },
+  { id: "agadir_gardens", cityId: "agadir", imageKey: "agadir_gardens", img: HISTORY_IMAGES.agadir_gardens.primary },
+  // Ouarzazate
+  { id: "ouarzazate_taourirt", cityId: "ouarzazate", imageKey: "ouarzazate_taourirt", img: HISTORY_IMAGES.ouarzazate_taourirt.primary },
+  { id: "ouarzazate_atlas_studios", cityId: "ouarzazate", imageKey: "ouarzazate_atlas_studios", img: HISTORY_IMAGES.ouarzazate_atlas_studios.primary },
+  { id: "ouarzazate_tifoultoute", cityId: "ouarzazate", imageKey: "ouarzazate_tifoultoute", img: HISTORY_IMAGES.ouarzazate_tifoultoute.primary }
 ];
 
 export const HOTELS = [

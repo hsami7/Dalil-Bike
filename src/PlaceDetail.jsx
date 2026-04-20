@@ -24,11 +24,14 @@ export default function PlaceDetail() {
 
   const cityName = tCity(domain.id);
   const hData = HISTORY_IMAGES[landmark.imageKey];
+  
+  // Find a hotel in this city for the recommended stay section
   const hotel = HOTELS.find(h => h.cityId === domain.id);
+  
   const landmarkPhotos = hData ? [
     { url: hData.primary },
     ...hData.gallery.map(url => ({ url }))
-  ] : [{ url: landmark.img }];
+  ] : (landmark.img ? [{ url: landmark.img }] : []);
 
   return (
     <div className="min-h-screen bg-surface">
@@ -199,24 +202,42 @@ export default function PlaceDetail() {
                   src={landmarkPhotos[1]?.url || domain.img}
                 />
               </div>
-              <div 
-                className="rounded-xl overflow-hidden relative group cursor-pointer shadow-lg"
-                onClick={() => navigate(`/hotel/${domain.id}`)}
-              >
-                <img
-                  alt={domain.stay.name}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  src={domain.stay.img}
-                />
-                <div className="absolute inset-0 bg-black/10 group-hover:bg-black/40 transition-colors"></div>
-                <div className="absolute bottom-4 left-4 right-4 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                  <span className="text-[9px] font-bold uppercase tracking-[0.2em] text-white/80 block mb-1">{t('recommendedStay')}</span>
-                  <h3 className="text-white font-headline text-base leading-tight drop-shadow-md">{domain.stay.name}</h3>
+              {hotel ? (
+                <article 
+                  className="group cursor-pointer flex flex-col bg-surface-container-low rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2 border border-outline-variant/30"
+                  onClick={() => navigate(`/hotel/${domain.id}`)}
+                >
+                  <div className="relative h-[240px] overflow-hidden">
+                    <img
+                      alt={tContent('stayName', hotel.id)}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      src={hotel.img}
+                    />
+                    <div className="absolute top-4 right-4 bg-tertiary/90 backdrop-blur-md text-on-tertiary text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-full border border-white/20 shadow-sm">
+                      {t('premiumLocation')}
+                    </div>
+                  </div>
+                  <div className="p-8 flex flex-col gap-4 text-left">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <h3 className="font-headline text-2xl text-on-surface font-medium leading-tight group-hover:text-primary transition-colors italic">
+                          {tContent('stayName', hotel.id)}
+                        </h3>
+                        <p className="text-on-surface-variant text-sm mt-1">{cityName}</p>
+                      </div>
+                      <span className="material-symbols-outlined text-primary scale-125">add_circle</span>
+                    </div>
+                    <p className="text-on-surface-variant text-sm line-clamp-2 leading-relaxed">
+                      {tContent('stayDesc', hotel.id)}
+                    </p>
+                  </div>
+                </article>
+              ) : (
+                <div className="flex flex-col items-center justify-center bg-surface-container-low rounded-[2rem] border border-dashed border-outline-variant/30 p-8 text-center opacity-60">
+                  <span className="material-symbols-outlined text-4xl mb-4 text-on-surface-variant">hotel</span>
+                  <p className="font-headline text-xl text-on-surface-variant italic">{t('noResults')}</p>
                 </div>
-                <div className="absolute top-4 right-4 bg-white/30 backdrop-blur-md rounded-full p-2 opacity-0 group-hover:opacity-100 transition-all duration-300 scale-75 group-hover:scale-100">
-                  <span className="material-symbols-outlined text-white text-sm">arrow_forward</span>
-                </div>
-              </div>
+              )}
             </div>
           </div>
         </section>

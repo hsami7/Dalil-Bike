@@ -15,9 +15,10 @@ See: .planning/PROJECT.md (updated 2026-04-17)
 ## Current Context
 - Codebase mapping complete.
 - Header modified: Search and Profile icons removed per user request.
-- awaiting user answers to vision questions (Backend, Search logic, Legacy files).
+- Project confirmed as a static/local MVP (no Supabase/backend).
 
 ## Open Threads
-- Finalizing the definition of "Dynamic Transformation".
+- Finalizing the definition of "Dynamic Transformation" (likely client-side only).
 - Deciding on legacy file archiving strategy.
-- Confirming backend stack (Supabase?).
+- Finalizing internationalization content.
+

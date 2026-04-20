@@ -1,10 +1,10 @@
-// All UI strings for the Tourist Guide in 4 languages
+// All UI strings for Dalil Bike in 4 languages
 // Content data (city names, descriptions) stays in data.js — only UI chrome is translated here.
 
 const translations = {
   en: {
     // Brand
-    brandName: "Tourist Guide",
+    brandName: "Dalil Bike",
 
     // Navigation
     navExplore: "Explore",
@@ -97,6 +97,7 @@ const translations = {
     guestsDefault: "2 Adults, 1 Room",
     reserveSuite: "Reserve Suite",
     noCharge: "You won't be charged yet.",
+    backToStays: "Back to Stays",
 
     // Place page
     echoesOfPast: "Echoes of the Past",
@@ -213,6 +214,7 @@ const translations = {
     guestsDefault: "2 Adultes, 1 Chambre",
     reserveSuite: "Réserver une Suite",
     noCharge: "Aucun paiement immédiat.",
+    backToStays: "Retour aux Séjours",
     echoesOfPast: "Échos du Passé",
     timelessLandmarks: "Monuments Intemporels",
     placeSubtitle:
@@ -323,6 +325,7 @@ const translations = {
     guestsDefault: "2 Adultos, 1 Habitación",
     reserveSuite: "Reservar Suite",
     noCharge: "No se cobrará ahora.",
+    backToStays: "Volver a Alojamientos",
     echoesOfPast: "Ecos del Pasado",
     timelessLandmarks: "Monumentos Atemporales",
     placeSubtitle:
@@ -430,6 +433,7 @@ const translations = {
     guestsDefault: "بالغان، غرفة واحدة",
     reserveSuite: "حجز جناح",
     noCharge: "لن يتم الخصم الآن.",
+    backToStays: "العودة إلى الإقامات",
     echoesOfPast: "أصداء الماضي",
     timelessLandmarks: "معالم خالدة",
     placeSubtitle:

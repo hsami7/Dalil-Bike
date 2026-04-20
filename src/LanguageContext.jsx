@@ -4,7 +4,7 @@ import contentTranslations from './content-translations';
 
 const LanguageContext = createContext();
 
-const STORAGE_KEY = 'tourist-guide-lang';
+const STORAGE_KEY = 'dalil-bike-lang';
 
 export function LanguageProvider({ children }) {
   const [language, setLanguage] = useState(() => {

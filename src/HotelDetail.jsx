@@ -25,6 +25,18 @@ export default function HotelDetail() {
 
   const stay = HOTELS.find(h => h.cityId === cityId);
   const cityName = tCity(domain.id);
+  
+  if (!stay) {
+    return (
+      <div className="min-h-screen bg-surface flex items-center justify-center">
+        <div className="text-center">
+          <p className="text-on-surface-variant text-xl mb-4">{t('noResults')}</p>
+          <button onClick={() => navigate('/hotel')} className="text-primary hover:underline">{t('backToStays')}</button>
+        </div>
+      </div>
+    );
+  }
+
   const photoData = HOTEL_IMAGES[stay.imageKey];
   const hotelPhotos = photoData ? [
     { url: photoData.primary },
