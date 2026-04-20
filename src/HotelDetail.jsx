@@ -99,7 +99,7 @@ export default function HotelDetail() {
               <img
                 alt={tContent('historyName', domain.id)}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                src={hotelPhotos[2]?.url || domain.history.img}
+                src={hotelPhotos[2]?.url || hotelPhotos[0]?.url || domain.img}
               />
               <div
                 className="absolute inset-0 bg-primary/20 hover:bg-primary/10 transition-colors flex items-center justify-center cursor-pointer"
