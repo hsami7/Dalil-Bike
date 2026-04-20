@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { DOMAINS } from './data';
+import { DOMAINS, HOTELS } from './data';
 import { HOTEL_IMAGES } from './data/hotel-images';
 import Header from './Header';
 import BottomNav from './BottomNav';
@@ -23,7 +23,7 @@ export default function HotelDetail() {
     );
   }
 
-  const stay = domain.stay;
+  const stay = HOTELS.find(h => h.cityId === cityId);
   const cityName = tCity(domain.id);
   const photoData = HOTEL_IMAGES[stay.imageKey];
   const hotelPhotos = photoData ? [
