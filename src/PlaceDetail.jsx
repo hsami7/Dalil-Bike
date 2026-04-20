@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { DOMAINS, LANDMARKS } from './data';
+import { DOMAINS, LANDMARKS, HOTELS } from './data';
 import { HISTORY_IMAGES } from './data/history-images';
 import Header from './Header';
 import BottomNav from './BottomNav';
@@ -24,6 +24,7 @@ export default function PlaceDetail() {
 
   const cityName = tCity(domain.id);
   const hData = HISTORY_IMAGES[landmark.imageKey];
+  const hotel = HOTELS.find(h => h.cityId === domain.id);
   const landmarkPhotos = hData ? [
     { url: hData.primary },
     ...hData.gallery.map(url => ({ url }))
