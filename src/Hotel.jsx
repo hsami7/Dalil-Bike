@@ -30,7 +30,7 @@ export default function Hotel() {
             <article 
               key={hotel.id}
               className="group cursor-pointer flex flex-col bg-surface-container-lowest rounded-[2rem] overflow-hidden shadow-[0_4px_32px_rgba(26,28,30,0.04)] hover:shadow-[0_24px_64px_rgba(26,28,30,0.12)] transition-all duration-500 hover:-translate-y-2 border border-outline-variant/30"
-              onClick={() => navigate(`/hotel/${hotel.cityId}`)}
+              onClick={() => navigate(`/hotel/${hotel.cityId}/${hotel.id}`)}
             >
               {/* Image Container */}
               <div className="relative h-[280px] overflow-hidden">

@@ -8,7 +8,7 @@ import { useLanguage } from './LanguageContext';
 
 export default function HotelDetail() {
   const navigate = useNavigate();
-  const { cityId } = useParams();
+  const { cityId, hotelId } = useParams();
   const { t, tCity, tContent } = useLanguage();
   const [galleryOpen, setGalleryOpen] = useState(false);
   const [activePhoto, setActivePhoto] = useState(0);
@@ -23,7 +23,7 @@ export default function HotelDetail() {
     );
   }
 
-  const stay = HOTELS.find(h => h.cityId === cityId);
+  const stay = HOTELS.find(h => h.id === hotelId);
   const cityName = tCity(domain.id);
   
   if (!stay) {
