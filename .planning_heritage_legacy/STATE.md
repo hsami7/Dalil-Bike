@@ -1,9 +1,10 @@
-# Project State
+# Dalil Bike v1.0.0 State
 
 ## Project Reference
 See: .planning/PROJECT.md (updated 2026-04-17)
 
-**Core value:** Providing an immersive and authoritative digital gateway to Moroccan heritage through premium design and intuitive content discovery.
+**Core value:** Providing an immersive and authoritative digital gateway to Moroccan heritage (Dalil Bike) through premium design and intuitive content discovery.
+
 **Current focus:** Project Initialization (Deep Questioning)
 
 ## Phase Roadmap
