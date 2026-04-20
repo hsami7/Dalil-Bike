@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { DOMAINS } from './data';
+import { HOTELS } from './data';
 import Header from './Header';
 import BottomNav from './BottomNav';
 import { useLanguage } from './LanguageContext';
@@ -26,22 +26,22 @@ export default function Hotel() {
 
         {/* Directory Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
-          {DOMAINS.map((city) => (
+          {HOTELS.map((hotel) => (
             <article 
-              key={city.id}
+              key={hotel.id}
               className="group cursor-pointer flex flex-col bg-surface-container-lowest rounded-[2rem] overflow-hidden shadow-[0_4px_32px_rgba(26,28,30,0.04)] hover:shadow-[0_24px_64px_rgba(26,28,30,0.12)] transition-all duration-500 hover:-translate-y-2 border border-outline-variant/30"
-              onClick={() => navigate(`/hotel/${city.id}`)}
+              onClick={() => navigate(`/hotel/${hotel.cityId}`)}
             >
               {/* Image Container */}
               <div className="relative h-[280px] overflow-hidden">
                 <img
-                  alt={city.stay.name}
+                  alt={hotel.name}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 ease-out"
-                  src={city.stay.img}
+                  src={hotel.img}
                 />
                 <div className="absolute top-4 right-4">
                   <span className="bg-surface/80 backdrop-blur-md text-on-surface text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-full border border-outline-variant/30 shadow-sm">
-                    {tCity(city.id)}
+                    {tCity(hotel.cityId)}
                   </span>
                 </div>
               </div>
@@ -50,18 +50,18 @@ export default function Hotel() {
               <div className="p-8 flex flex-col flex-1">
                 <div className="flex justify-between items-start mb-3">
                   <h2 className="font-headline text-2xl text-on-surface font-medium leading-tight group-hover:text-primary transition-colors">
-                    {tContent('stayName', city.id)}
+                    {tContent('stayName', hotel.cityId)}
                   </h2>
                 </div>
                 
                 <p className="font-body text-on-surface-variant text-sm line-clamp-2 mb-6 flex-1">
-                  {tContent('stayDesc', city.id)}
+                  {tContent('stayDesc', hotel.cityId)}
                 </p>
 
                 <div className="flex items-center justify-between pt-6 border-t border-outline-variant/30 mt-auto">
                   <div>
                     <span className="text-[10px] uppercase font-bold text-outline tracking-wider block mb-0.5">{t('startingFrom')}</span>
-                    <span className="text-primary font-bold text-xl">{city.stay.price}</span>
+                    <span className="text-primary font-bold text-xl">{hotel.price}</span>
                   </div>
                   <button className="bg-primary hover:bg-primary-container text-on-primary hover:text-on-primary-container p-3 rounded-full transition-all duration-300 transform group-hover:scale-110">
                     <span className="material-symbols-outlined text-xl">arrow_forward</span>
