@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { DOMAINS } from './data';
+import { HOTEL_IMAGES } from './data/hotel-images';
 import Header from './Header';
 import BottomNav from './BottomNav';
 import { useLanguage } from './LanguageContext';
@@ -9,6 +10,8 @@ export default function HotelDetail() {
   const navigate = useNavigate();
   const { cityId } = useParams();
   const { t, tCity, tContent } = useLanguage();
+  const [galleryOpen, setGalleryOpen] = useState(false);
+  const [activePhoto, setActivePhoto] = useState(0);
 
   const domain = DOMAINS.find(d => d.id === cityId);
 
@@ -22,6 +25,16 @@ export default function HotelDetail() {
 
   const stay = domain.stay;
   const cityName = tCity(domain.id);
+  const photoData = HOTEL_IMAGES[stay.imageKey];
+  const hotelPhotos = photoData ? [
+    { url: photoData.primary },
+    ...photoData.gallery.map(url => ({ url }))
+  ] : [];
+
+  const openGallery = (index = 0) => { setActivePhoto(index); setGalleryOpen(true); };
+  const closeGallery = () => setGalleryOpen(false);
+  const prevPhoto = () => setActivePhoto(i => (i - 1 + hotelPhotos.length) % hotelPhotos.length);
+  const nextPhoto = () => setActivePhoto(i => (i + 1) % hotelPhotos.length);
 
   return (
     <div className="min-h-screen bg-surface">
@@ -29,15 +42,25 @@ export default function HotelDetail() {
 
       <main className="pt-28 pb-24">
         {/* Hero Gallery Bento Grid */}
-        <section className="max-w-screen-2xl mx-auto px-4 md:px-6 mb-12">
-          <div className="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-[400px] md:h-[716px]">
+        <section className="max-w-screen-2xl mx-auto px-4 lg:px-6 mb-12">
+          <div className="grid grid-cols-1 lg:grid-cols-4 grid-rows-2 gap-4 h-[400px] lg:h-[716px]">
             {/* Main large image */}
-            <div className="md:col-span-3 row-span-2 rounded-xl overflow-hidden relative group">
+            <div
+              className="lg:col-span-3 row-span-2 rounded-xl overflow-hidden relative group cursor-pointer"
+              onClick={() => openGallery(0)}
+            >
               <img
                 alt={stay.name}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                src={stay.img}
+                src={hotelPhotos[0]?.url || stay.img}
               />
+              {/* View photos button — visible only below md where the third cell is hidden */}
+              {hotelPhotos.length > 0 && (
+                <span className="lg:hidden absolute bottom-6 right-6 bg-surface-container-lowest/80 backdrop-blur-md text-primary px-4 py-2 rounded-full font-semibold text-sm flex items-center gap-2 shadow-sm pointer-events-none">
+                  <span className="material-symbols-outlined text-lg">photo_library</span>
+                  {t('viewPhotos')}
+                </span>
+              )}
               {/* Location Overlay Widget */}
               <div className="absolute bottom-6 left-6 bg-surface/40 backdrop-blur-md rounded-xl p-4 text-on-surface flex items-center gap-4 shadow-[0_32px_32px_rgba(26,28,30,0.06)]">
                 <div>
@@ -53,20 +76,23 @@ export default function HotelDetail() {
               </div>
             </div>
             {/* Smaller images */}
-            <div className="hidden md:block rounded-xl overflow-hidden group">
+            <div className="hidden lg:block rounded-xl overflow-hidden group cursor-pointer" onClick={() => openGallery(1)}>
               <img
                 alt={cityName}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                src={domain.img}
+                src={hotelPhotos[1]?.url || domain.img}
               />
             </div>
-            <div className="hidden md:block rounded-xl overflow-hidden relative group">
+            <div className="hidden lg:block rounded-xl overflow-hidden relative group">
               <img
                 alt={domain.history.name}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                src={domain.history.img}
+                src={hotelPhotos[2]?.url || domain.history.img}
               />
-              <div className="absolute inset-0 bg-primary/20 hover:bg-primary/10 transition-colors flex items-center justify-center cursor-pointer">
+              <div
+                className="absolute inset-0 bg-primary/20 hover:bg-primary/10 transition-colors flex items-center justify-center cursor-pointer"
+                onClick={() => openGallery(2)}
+              >
                 <span className="bg-surface-container-lowest/80 backdrop-blur text-primary px-4 py-2 rounded-full font-semibold text-sm flex items-center gap-2">
                   <span className="material-symbols-outlined text-lg">photo_library</span>
                   {t('viewPhotos')}
@@ -223,6 +249,47 @@ export default function HotelDetail() {
       </main>
 
       <BottomNav activeTab="stays" />
+
+      {/* Photo Gallery Modal */}
+      {galleryOpen && hotelPhotos.length > 0 && (
+        <div className="fixed inset-0 z-50 bg-black/90 flex flex-col" onClick={closeGallery}>
+          {/* Header */}
+          <div className="flex items-center justify-between px-6 py-4 shrink-0" onClick={e => e.stopPropagation()}>
+            <span className="text-white/70 text-sm">{activePhoto + 1} / {hotelPhotos.length}</span>
+            <button onClick={closeGallery} className="text-white/70 hover:text-white transition-colors">
+              <span className="material-symbols-outlined text-3xl">close</span>
+            </button>
+          </div>
+
+          {/* Main image */}
+          <div className="flex-1 flex items-center justify-center px-4 relative" onClick={e => e.stopPropagation()}>
+            <button onClick={prevPhoto} className="absolute left-4 md:left-8 text-white/70 hover:text-white bg-white/10 hover:bg-white/20 rounded-full p-2 transition-all z-10">
+              <span className="material-symbols-outlined text-3xl">chevron_left</span>
+            </button>
+            <img
+              src={hotelPhotos[activePhoto].url}
+              alt={stay.name}
+              className="max-h-full max-w-full object-contain rounded-xl"
+            />
+            <button onClick={nextPhoto} className="absolute right-4 md:right-8 text-white/70 hover:text-white bg-white/10 hover:bg-white/20 rounded-full p-2 transition-all z-10">
+              <span className="material-symbols-outlined text-3xl">chevron_right</span>
+            </button>
+          </div>
+
+          {/* Thumbnails */}
+          <div className="flex gap-2 px-6 py-4 overflow-x-auto shrink-0" onClick={e => e.stopPropagation()}>
+            {hotelPhotos.map((photo, i) => (
+              <button
+                key={i}
+                onClick={() => setActivePhoto(i)}
+                className={`shrink-0 w-16 h-16 rounded-lg overflow-hidden border-2 transition-all ${i === activePhoto ? 'border-white' : 'border-transparent opacity-50 hover:opacity-80'}`}
+              >
+                <img src={photo.url} alt="" className="w-full h-full object-cover" />
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 }

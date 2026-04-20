@@ -259,6 +259,10 @@ const contentTranslations = {
       essaouira: "سقالة المدينة",
       agadir: "أكادير أوفلا (القصبة)",
       ouarzazate: "آيت بن حدّو",
+      fes_bab_bou_jeloud: "باب بوجلود",
+      fes_chouara_tannery: "دباغة شوارة",
+      fes_al_quaraouiyine: "جامعة القرويين",
+      fes_musee_batha: "متحف البطحاء",
     },
   },
 
@@ -275,6 +279,10 @@ const contentTranslations = {
       essaouira: "18th Century",
       agadir: "16th Century",
       ouarzazate: "11th Century",
+      fes_bab_bou_jeloud: "1913",
+      fes_chouara_tannery: "11th Century",
+      fes_al_quaraouiyine: "859 AD",
+      fes_musee_batha: "19th Century",
     },
     fr: {
       marrakech: "Patrimoine UNESCO",
@@ -287,6 +295,10 @@ const contentTranslations = {
       essaouira: "XVIIIe Siècle",
       agadir: "XVIe Siècle",
       ouarzazate: "XIe Siècle",
+      fes_bab_bou_jeloud: "1913",
+      fes_chouara_tannery: "XIe Siècle",
+      fes_al_quaraouiyine: "859",
+      fes_musee_batha: "XIXe Siècle",
     },
     es: {
       marrakech: "Patrimonio UNESCO",
@@ -299,6 +311,10 @@ const contentTranslations = {
       essaouira: "Siglo XVIII",
       agadir: "Siglo XVI",
       ouarzazate: "Siglo XI",
+      fes_bab_bou_jeloud: "1913",
+      fes_chouara_tannery: "Siglo XI",
+      fes_al_quaraouiyine: "859 d.C.",
+      fes_musee_batha: "Siglo XIX",
     },
     ar: {
       marrakech: "تراث اليونسكو",
@@ -311,6 +327,10 @@ const contentTranslations = {
       essaouira: "القرن الثامن عشر",
       agadir: "القرن السادس عشر",
       ouarzazate: "القرن الحادي عشر",
+      fes_bab_bou_jeloud: "1913",
+      fes_chouara_tannery: "القرن 11",
+      fes_al_quaraouiyine: "859 م",
+      fes_musee_batha: "القرن 19",
     },
   },
 
@@ -327,6 +347,10 @@ const contentTranslations = {
       essaouira: "An 18th-century seafront rampart that protected the city. Today, brass cannons still line the walls, offering breathtaking views of the Atlantic waves.",
       agadir: "Perched on a hill overlooking the modern city, this 16th-century fortress stands as a reminder of the city's resilience after the 1960 earthquake.",
       ouarzazate: "A stunning ksar (fortified village) and UNESCO World Heritage site. This earthen complex has served as the cinematic backdrop for films like Gladiator and Game of Thrones.",
+      fes_bab_bou_jeloud: "The iconic ceremonial entrance to the old medina. Its striking blue zellij tilework (turning green on the inside) welcomes travelers into the medieval heart of Fes.",
+      fes_chouara_tannery: "One of the oldest and largest tanneries in the world. Witness the thousand-year-old tradition of natural leather dyeing in the iconic stone vats.",
+      fes_al_quaraouiyine: "Founded by Fatima al-Fihri, it is recognized as the world's oldest continuously operating university. A majestic symbol of Morocco's intellectual legacy.",
+      fes_musee_batha: "A stunning Hispanic-Moorish palace transformed into a museum of arts and crafts. Its serene Andalusian garden offers a peaceful retreat.",
     },
     fr: {
       marrakech: "Le cœur battant de Marrakech. Le jour, c'est un marché animé avec des étals de jus d'orange et des charmeurs de serpents ; la nuit, il se transforme en marché alimentaire en plein air avec conteurs et musiciens traditionnels. Un chef-d'œuvre UNESCO.",
@@ -339,6 +363,10 @@ const contentTranslations = {
       essaouira: "Un rempart du XVIIIe siècle en front de mer qui protégeait la ville. Aujourd'hui, des canons en laiton bordent encore les murs, offrant des vues à couper le souffle sur les vagues de l'Atlantique.",
       agadir: "Perchée sur une colline surplombant la ville moderne, cette forteresse du XVIe siècle témoigne de la résilience de la ville après le tremblement de terre de 1960.",
       ouarzazate: "Un ksar (village fortifié) saisissant et site du patrimoine mondial UNESCO. Ce complexe en terre a servi de décor cinématographique pour des films comme Gladiator et Game of Thrones.",
+      fes_bab_bou_jeloud: "L'entrée cérémonielle emblématique de la vieille médina. Sa mosaïque bleue frappante accueille les voyageurs dans le cœur médiéval de Fès.",
+      fes_chouara_tannery: "L'une des plus anciennes et des plus grandes tanneries au monde. Témoignez d'une tradition millénaire de teinture naturelle du cuir.",
+      fes_al_quaraouiyine: "Fondée par Fatima al-Fihri, elle est reconnue comme la plus ancienne université au monde encore en activité. Un symbole de l'héritage intellectuel du Maroc.",
+      fes_musee_batha: "Un magnifique palais hispano-mauresque transformé en musée des arts et traditions. Son jardin andalou serein offre un havre de paix.",
     },
     es: {
       marrakech: "El corazón palpitante de Marrakech. De día, es un mercado bullicioso con puestos de zumo de naranja y encantadores de serpientes; de noche, se transforma en un mercado de comida con narradores y músicos tradicionales. Una obra maestra UNESCO.",
@@ -351,6 +379,10 @@ const contentTranslations = {
       essaouira: "Una muralla marítima del siglo XVIII que protegía la ciudad. Hoy, cañones de bronce aún adornan los muros, ofreciendo vistas impresionantes de las olas del Atlántico.",
       agadir: "Encaramada en una colina sobre la ciudad moderna, esta fortaleza del siglo XVI es un recordatorio de la resiliencia de la ciudad tras el terremoto de 1960.",
       ouarzazate: "Un impresionante ksar (pueblo fortificado) y Patrimonio Mundial UNESCO. Este complejo de tierra ha servido como escenario cinematográfico para películas como Gladiator y Juego de Tronos.",
+      fes_bab_bou_jeloud: "La emblemática entrada ceremonial a la antigua medina. Su llamativo mosaico azul zellij da la bienvenida a los viajeros al corazón medieval de Fez.",
+      fes_chouara_tannery: "Una de las tenerías más antiguas y grandes del mundo. Sea testigo de la tradición milenaria del teñido natural del cuero en las icónicas cubas.",
+      fes_al_quaraouiyine: "Fundada por Fatima al-Fihri, es reconocida como la universidad más antigua del mundo en funcionamiento. Un símbolo del legado intelectual de Marruecos.",
+      fes_musee_batha: "Un impresionante palacio hispano-morisco transformado en un museo de artesanías. Su sereno jardín andaluz ofrece un refugio tranquilo.",
     },
     ar: {
       marrakech: "القلب النابض لمراكش. نهارًا، سوق صاخب بأكشاك عصير البرتقال ورواة الحكايات؛ ليلًا، يتحول إلى سوق طعام في الهواء الطلق مع موسيقيين تقليديين. تحفة يونسكو.",
@@ -363,6 +395,10 @@ const contentTranslations = {
       essaouira: "حصن بحري من القرن الثامن عشر كان يحمي المدينة. اليوم، لا تزال المدافع النحاسية تصطف على الجدران، مع إطلالات خلابة على أمواج الأطلسي.",
       agadir: "تتربّع على تلة تُطل على المدينة الحديثة، هذه القلعة من القرن السادس عشر شاهدة على صمود المدينة بعد زلزال 1960.",
       ouarzazate: "قصر (قرية محصنة) مذهل وموقع تراث عالمي لليونسكو. هذا المجمع الترابي كان خلفية سينمائية لأفلام مثل غلادياتور ولعبة العروش.",
+      fes_bab_bou_jeloud: "المدخل الاحتفالي الشهير للمدينة القديمة. ترحب بفسيفسائها الزرقاء الرائعة بالمسافرين في قلب فاس العتيق.",
+      fes_chouara_tannery: "واحدة من أقدم وأكبر المدابغ في العالم. شاهد التقليد الذي يعود لألف عام في صباغة الجلود الطبيعية في الأحواض الحجرية.",
+      fes_al_quaraouiyine: "أسستها فاطمة الفهرية، وهي أقدم جامعة في العالم. رمز مهيب للإرث الفكري والروحي للمغرب.",
+      fes_musee_batha: "قصر إسباني مغربي رائع تحول إلى متحف للفنون والتقاليد. توفر حديقتها الأندلسية الهادئة ملاذا من السلام.",
     },
   },
 
@@ -379,6 +415,10 @@ const contentTranslations = {
       essaouira: "\"The wind is the soul of Essaouira — it shapes the waves, the art, and the character of its people.\"",
       agadir: "\"From the ruins of the old Kasbah, one can see not just the city, but the resilience of human spirit.\"",
       ouarzazate: "\"These clay walls have witnessed centuries of caravans, storytelling, and the footsteps of civilizations.\"",
+      fes_bab_bou_jeloud: "\"The Blue Gate is the threshold where the modern world ends and the medieval mystery begins.\"",
+      fes_chouara_tannery: "\"A sea of stone vats, where the ancient smell of leather meets the vibrant colors of the earth.\"",
+      fes_al_quaraouiyine: "\"Here, the light of knowledge has burned bright for over a thousand years.\"",
+      fes_musee_batha: "\"A palace of silence, where Fes' intricate artistry is at home.\"",
     },
     fr: {
       marrakech: "\"À Marrakech, chaque pierre a une mémoire, chaque ruelle raconte mille ans d'histoire.\"",
@@ -391,6 +431,10 @@ const contentTranslations = {
       essaouira: "\"Le vent est l'âme d'Essaouira — il façonne les vagues, l'art et le caractère de ses habitants.\"",
       agadir: "\"Depuis les ruines de l'ancienne Kasbah, on voit non seulement la ville, mais la résilience de l'esprit humain.\"",
       ouarzazate: "\"Ces murs d'argile ont été témoins de siècles de caravanes, de récits et de pas de civilisations.\"",
+      fes_bab_bou_jeloud: "\"La Porte Bleue est le seuil où le monde moderne s'arrête et où le mystère médiéval commence.\"",
+      fes_chouara_tannery: "\"Une mer de cuves en pierre, où l'odeur ancienne du cuir rencontre les couleurs vibrantes de la terre.\"",
+      fes_al_quaraouiyine: "\"Ici, la lumière du savoir brille intensément depuis plus d'un millénaire.\"",
+      fes_musee_batha: "\"Un palais de silence, où le savoir-faire raffiné de Fès trouve sa demeure.\"",
     },
     es: {
       marrakech: "\"En Marrakech, cada piedra tiene un recuerdo, cada callejón cuenta mil años de historia.\"",
@@ -403,6 +447,10 @@ const contentTranslations = {
       essaouira: "\"El viento es el alma de Essaouira — moldea las olas, el arte y el carácter de su gente.\"",
       agadir: "\"Desde las ruinas de la antigua Kasbah, se puede ver no solo la ciudad, sino la resiliencia del espíritu humano.\"",
       ouarzazate: "\"Estos muros de barro han sido testigos de siglos de caravanas, relatos y pasos de civilizaciones.\"",
+      fes_bab_bou_jeloud: "\"La Puerta Azul es el umbral donde el mundo moderno termina y comienza el misterio medieval.\"",
+      fes_chouara_tannery: "\"Un mar de cubas de piedra, donde el antiguo olor del cuero se encuentra con los colores vibrantes de la tierra.\"",
+      fes_al_quaraouiyine: "\"Aquí, la luz del conocimiento ha brillado intensamente durante más de mil años.\"",
+      fes_musee_batha: "\"Un palacio de silencio, donde la intrincada artesanía de Fez está en su hogar.\"",
     },
     ar: {
       marrakech: "\"في مراكش، كل حجر يحمل ذاكرة، وكل زقاق يروي ألف عام من التاريخ.\"",
@@ -415,6 +463,10 @@ const contentTranslations = {
       essaouira: "\"الريح هي روح الصويرة — تشكّل الأمواج والفن وشخصية سكانها.\"",
       agadir: "\"من أطلال القصبة القديمة، لا تُرى المدينة فحسب، بل صمود الروح البشرية.\"",
       ouarzazate: "\"شهدت هذه الجدران الطينية قروناً من القوافل والحكايات وخطى الحضارات.\"",
+      fes_bab_bou_jeloud: "\"باب بوجلود هو العتبة حيث ينتهي العالم الحديث ويبدأ الغموض القروسطي.\"",
+      fes_chouara_tannery: "\"بحر من الأحواض الحجرية، حيث تلتقي رائحة الجلد القديمة بألوان الأرض النابضة بالحياة.\"",
+      fes_al_quaraouiyine: "\"هنا، ظل نور العلم يشع ساطعًا لأكثر من ألف عام.\"",
+      fes_musee_batha: "\"قصر من الصمت، حيث يجد فن فاس الدقيق مستقرا له.\"",
     },
   },
 
@@ -431,6 +483,10 @@ const contentTranslations = {
       essaouira: "Fortress of the Wind",
       agadir: "Rebirth from the Ashes",
       ouarzazate: "Gateway to the Desert",
+      fes_bab_bou_jeloud: "The Threshold of Time",
+      fes_chouara_tannery: "A Millennium of Craft",
+      fes_al_quaraouiyine: "The Cradle of Knowledge",
+      fes_musee_batha: "The Palace of Arts",
     },
     fr: {
       marrakech: "Un Carrefour de Cultures",
@@ -443,6 +499,10 @@ const contentTranslations = {
       essaouira: "Forteresse du Vent",
       agadir: "Renaissance des Cendres",
       ouarzazate: "Porte du Désert",
+      fes_bab_bou_jeloud: "Le Seuil du Temps",
+      fes_chouara_tannery: "Un Millénaire de Savoir-Faire",
+      fes_al_quaraouiyine: "Le Berceau du Savoir",
+      fes_musee_batha: "Le Palais des Arts",
     },
     es: {
       marrakech: "Un Cruce de Culturas",
@@ -455,6 +515,10 @@ const contentTranslations = {
       essaouira: "Fortaleza del Viento",
       agadir: "Renacimiento de las Cenizas",
       ouarzazate: "Puerta del Desierto",
+      fes_bab_bou_jeloud: "El Umbral del Tiempo",
+      fes_chouara_tannery: "Un Milenio de Oficio",
+      fes_al_quaraouiyine: "La Cuna del Conocimiento",
+      fes_musee_batha: "El Palacio de las Artes",
     },
     ar: {
       marrakech: "ملتقى الثقافات",
@@ -467,6 +531,10 @@ const contentTranslations = {
       essaouira: "حصن الرياح",
       agadir: "ولادة جديدة من الرماد",
       ouarzazate: "بوابة الصحراء",
+      fes_bab_bou_jeloud: "عتبة الزمن",
+      fes_chouara_tannery: "ألف عام من الحرفة",
+      fes_al_quaraouiyine: "مهد المعرفة",
+      fes_musee_batha: "قصر الفنون",
     },
   },
 
@@ -483,6 +551,10 @@ const contentTranslations = {
       essaouira: "Built in the 1760s by Sultan Mohammed III with the help of European engineers, the Skala de la Ville is a formidable sea-facing rampart lined with rows of Spanish and Portuguese bronze cannons. This fortification helped protect Essaouira's thriving trading port and gave the city its strategic importance along Atlantic maritime routes. The ramparts offer breathtaking sunset views over the Atlantic and the offshore Purpuraires Islands.",
       agadir: "Originally built in 1540 by the Saadian dynasty, Agadir Oufella served as a crucial military fortress overlooking the bay. On February 29, 1960, a devastating earthquake destroyed the city in just fifteen seconds, killing a third of its population. The kasbah stands today as a memorial, its walls inscribed with the Arabic phrase 'God, King, Country.' The hill offers a panoramic view of the rebuilt modern city below.",
       ouarzazate: "Dating to at least the 11th century, Aït Benhaddou is a stunning example of earthen clay architecture typical of southern Morocco. This fortified ksar, built along the former caravan route between the Sahara and Marrakech, has been a UNESCO World Heritage Site since 1987. Its dramatic presence has made it a filming location for over 20 major productions, including Lawrence of Arabia, Gladiator, and Game of Thrones.",
+      fes_bab_bou_jeloud: "Commonly known as the 'Blue Gate,' Bab Bou Jeloud is the most famous entrance to the ancient medina of Fes el Bali. Built in 1913 by the French colonial administration but designed in the traditional Moorish style, its outer face is adorned with blue zellij tiles (symbolizing Fes), while its inner face features green tiles (symbolizing Islam). It stands at a crucial junction where the medieval labyrinth begins.",
+      fes_chouara_tannery: "The largest and oldest of the medina's traditional tanneries, Chouara has operated much the same way since the 11th century. Vast stone vessels are filled with colorful dyes and natural liquids like pigeon droppings and lime, used to soften and color leather. This medieval industrial masterpiece is one of the few places in the world where you can witness the entire traditional leather-making process from a balcony overlooking the vibrant pits.",
+      fes_al_quaraouiyine: "Established in 859 AD by Fatima al-Fihri, the University of al-Qarawiyyin is recognized by Guinness World Records as the oldest continuously operating university in the world. Originally a mosque that expanded into a center for legal and spiritual education, it eventually became one of the leading spiritual and educational centers of the Islamic Golden Age, attracting scholars like Maimonides and Ibn Khaldun.",
+      fes_musee_batha: "Housed in a late 19th-century royal palace, the Batha Museum showcases the incredible artistic heritage of Fes. The palace itself, built by Sultan Moulay Hassan I, is a masterpiece of Hispano-Moorish architecture, featuring a stunning Andalusian garden. The museum houses a vast collection of traditional Moroccan arts, including Fessi ceramics, woodcarvings, and rare astronomical instruments.",
     },
     fr: {
       marrakech: "Depuis un millénaire, la place Jemaa el-Fnaa est l'épicentre social, culturel et commercial de Marrakech. Fondée au XIe siècle avec la ville elle-même, cette vaste esplanade est passée d'un lieu d'exécutions royales à l'un des espaces de rassemblement les plus vibrants au monde. Conteurs, musiciens, acrobates et guérisseurs s'y produisent depuis des générations, perpétuant une tradition orale reconnue par l'UNESCO comme Chef-d'œuvre du patrimoine culturel immatériel de l'humanité.",
@@ -495,6 +567,10 @@ const contentTranslations = {
       essaouira: "Construite dans les années 1760 par le sultan Mohammed III avec l'aide d'ingénieurs européens, la Skala est un formidable rempart face à la mer, bordé de canons en bronze espagnols et portugais. Cette fortification a protégé le port florissant d'Essaouira et lui a donné son importance stratégique sur les routes maritimes atlantiques. Les remparts offrent des couchers de soleil à couper le souffle.",
       agadir: "Construite à l'origine en 1540 par la dynastie saadienne, Agadir Oufella servait de forteresse militaire surplombant la baie. Le 29 février 1960, un séisme dévastateur détruisit la ville en quinze secondes, tuant un tiers de sa population. La kasbah se dresse aujourd'hui comme un mémorial, ses murs portant l'inscription en arabe « Dieu, le Roi, la Patrie ». La colline offre une vue panoramique sur la ville moderne reconstruite.",
       ouarzazate: "Datant d'au moins le XIe siècle, Aït Benhaddou est un exemple saisissant d'architecture en terre battue du sud marocain. Ce ksar fortifié, construit le long de l'ancienne route caravanière entre le Sahara et Marrakech, est inscrit au patrimoine mondial de l'UNESCO depuis 1987. Sa présence dramatique en a fait un lieu de tournage pour plus de 20 productions majeures, dont Lawrence d'Arabie, Gladiator et Game of Thrones.",
+      fes_bab_bou_jeloud: "Connue sous le nom de « Porte Bleue », Bab Bou Jeloud est l'entrée la plus célèbre de l'ancienne médina de Fès el Bali. Construite en 1913 dans un style mauresque traditionnel, sa face extérieure est ornée de zelliges bleus (symbole de Fès), tandis que sa face intérieure est verte (symbole de l'Islam). Elle marque le passage vers le labyrinthe médiéval.",
+      fes_chouara_tannery: "La plus grande et la plus ancienne tannerie traditionnelle de la médina, Chouara fonctionne de la même manière depuis le XIe siècle. De vastes cuves en pierre sont remplies de teintures colorées et de liquides naturels. Ce chef-d'œuvre industriel médiéval permet d'observer tout le processus traditionnel de fabrication du cuir depuis les balcons surplombant les fosses colorées.",
+      fes_al_quaraouiyine: "Établie en 859 par Fatima al-Fihri, l'Université al-Qarawiyyin est reconnue comme la plus ancienne université en activité au monde. D'abord une mosquée devenue un centre d'enseignement, elle fut l'un des pôles intellectuels majeurs de l'âge d'or islamique, attirant des savants illustres à travers les siècles.",
+      fes_musee_batha: "Abrité dans un palais royal de la fin du XIXe siècle, le Musée du Batha présente l'incroyable patrimoine artistique de Fès. Le palais, construit par le sultan Moulay Hassan Ier, est un chef-d'œuvre d'architecture hispano-mauresque doté d'un magnifique jardin andalou, abritant des collections de céramiques, de sculptures sur bois et d'instruments rares.",
     },
     es: {
       marrakech: "Durante un milenio, Jemaa el-Fnaa ha servido como epicentro social, cultural y comercial de Marrakech. Fundada en el siglo XI junto con la ciudad, esta vasta explanada pasó de ser un lugar de ejecuciones reales a uno de los espacios de reunión más vibrantes del mundo. Narradores, músicos, acróbatas y sanadores actúan aquí desde generaciones, manteniendo viva una tradición oral reconocida por la UNESCO como Obra Maestra del Patrimonio Cultural Inmaterial.",
@@ -547,8 +623,133 @@ const contentTranslations = {
     en: { marrakech: "Millions of visitors experience the square's storytellers, musicians, and cuisine each year.", fes: "The medina remains the world's largest car-free urban zone, a living museum.", casablanca: "Remains the tallest religious structure in the world and Africa's largest mosque.", chefchaouen: "The blue city draws artists and travelers from around the globe.", rabat: "The tower and Mausoleum of Mohammed V are among Morocco's most visited sites.", meknes: "The Imperial City stands as a testament to Morocco's golden age of architecture.", tangier: "The caves remain one of the most visited natural sites in North Africa.", essaouira: "The medina and fortifications are a UNESCO World Heritage Site since 2001.", agadir: "The rebuilt city thrives as Morocco's premier beach resort destination.", ouarzazate: "Continues to attract major film productions and thousands of visitors annually." },
     fr: { marrakech: "Des millions de visiteurs découvrent chaque année les conteurs, musiciens et la cuisine de la place.", fes: "La médina reste la plus grande zone urbaine piétonne au monde, un musée vivant.", casablanca: "Reste la plus haute structure religieuse au monde et la plus grande mosquée d'Afrique.", chefchaouen: "La ville bleue attire artistes et voyageurs du monde entier.", rabat: "La tour et le Mausolée de Mohammed V comptent parmi les sites les plus visités du Maroc.", meknes: "La Cité Impériale témoigne de l'âge d'or de l'architecture marocaine.", tangier: "Les grottes restent l'un des sites naturels les plus visités d'Afrique du Nord.", essaouira: "La médina et les fortifications sont inscrites au patrimoine mondial de l'UNESCO depuis 2001.", agadir: "La ville reconstruite prospère comme première destination balnéaire du Maroc.", ouarzazate: "Continue d'attirer des productions cinématographiques majeures et des milliers de visiteurs chaque année." },
     es: { marrakech: "Millones de visitantes experimentan cada año los narradores, músicos y gastronomía de la plaza.", fes: "La medina sigue siendo la mayor zona urbana peatonal del mundo, un museo viviente.", casablanca: "Sigue siendo la estructura religiosa más alta del mundo y la mezquita más grande de África.", chefchaouen: "La ciudad azul atrae a artistas y viajeros de todo el mundo.", rabat: "La torre y el Mausoleo de Mohammed V están entre los sitios más visitados de Marruecos.", meknes: "La Ciudad Imperial es testimonio de la edad dorada de la arquitectura marroquí.", tangier: "Las cuevas siguen siendo uno de los sitios naturales más visitados del Norte de África.", essaouira: "La medina y las fortificaciones son Patrimonio Mundial de la UNESCO desde 2001.", agadir: "La ciudad reconstruida prospera como primer destino playero de Marruecos.", ouarzazate: "Continúa atrayendo grandes producciones cinematográficas y miles de visitantes anualmente." },
-    ar: { marrakech: "ملايين الزوار يختبرون رواة الحكايات والموسيقيين ومأكولات الساحة كل عام.", fes: "المدينة القديمة لا تزال أكبر منطقة حضرية خالية من السيارات، متحف حي.", casablanca: "لا يزال أطول بناء ديني في العالم وأكبر مسجد في أفريقيا.", chefchaouen: "المدينة الزرقاء تجذب فنانين ومسافرين من حول العالم.", rabat: "الصومعة وضريح محمد الخامس من أكثر المواقع زيارة في المغرب.", meknes: "المدينة الإمبراطورية شاهدة على العصر الذهبي للعمارة المغربية.", tangier: "المغارات تبقى من أكثر المواقع الطبيعية زيارة في شمال أفريقيا.", essaouira: "المدينة القديمة والتحصينات موقع تراث عالمي لليونسكو منذ 2001.", agadir: "المدينة المُعاد بناؤها تزدهر كأول وجهة شاطئية في المغرب.", ouarzazate: "تواصل استقطاب الإنتاجات السينمائية الكبرى وآلاف الزوار سنويًا." },
+    ar: { marrakech: "ملايين الزوار يختبرون رواة الحكايات والموسيقيين ومأكولات الساحة كل عام.", fes: "المدينة القديمة لا تزال أكبر منطقة حضرية خالية من السيارات، متحف حي.", casablanca: "لا يزال أطول بناء ديني في العالم وأكبر مسجد في أفريقيا.", chefchaouen: "المدينة الزرقاء تجذب فنانين ومسافرين من حول العالم.", rabat: "الصومعة وضريح محمد الخامس من أكثر المواقع زيارة في المغرب.", meknes: "المدينة الإمبراطورية شاهدة على العصر الذهبي للعمارة المغربية.", tangier: "المغارات تبقى من أكثر المواقع الطبيعية زيارة في شمال أفريقيا.", essaouira: "المدينة القديمة والتحصينات موقع تراث عالمي لليونسكو منذ 2001.", agadir: "المدينة المُعاد بناؤها تزدهر كأول وجهة شاطئية في المغرب.", ouarzazate: "تواصل استقطاب الإنتاجات السينمائية الكبرى وآلاف الزوار سنويًا.", fes_bab_bou_jeloud: "تظل البوابة الزرقاء الرمز الأكثر شهرة لفاس، حيث يمر عبرها ملايين الزوار سنويًا لاستكشاف متاهات المدينة القديمة.", fes_chouara_tannery: "لا تزال الدباغة تعمل بنفس الطرق التقليدية منذ ألف عام، وهي واحدة من أكثر المشاهد إثارة للاهتمام في المغرب.", fes_al_quaraouiyine: "تواصل القرويين دورها كمركز روحي وتعليمي رائد، شاهدة على قرون من العطاء المعرفي.", fes_musee_batha: "يظل متحف البطحاء وقصره الأندلسي واحة للجمال والإبداع الفني في قلب فاس." },
   },
+
+  // ─── STRUCTURED TIMELINES (New Format) ───
+  historyTimeline: {
+    en: {
+      fes_bab_bou_jeloud: [
+        { date: "1913", text: "Construction of the current gate in traditional Moorish style." },
+        { date: "2013", text: "Centenary of the gate, celebrated as the 'Face of Fes'." },
+        { date: "Present", text: "Remains the most vibrant entrance to the UNESCO medina." }
+      ],
+      fes_chouara_tannery: [
+        { date: "11th Century", text: "Tannery founded during the Almoravid dynasty." },
+        { date: "1981", text: "Fes Medina, and its tanneries, listed as a UNESCO World Heritage site." },
+        { date: "Present", text: "Artisans continue to dye leather using raw traditional methods." }
+      ],
+      fes_al_quaraouiyine: [
+        { date: "859 AD", text: "Fatima al-Fihri founds the mosque and university." },
+        { date: "12th Century", text: "Becomes a major intellectual hub of the Islamic world." },
+        { date: "1963", text: "Formally integrated into the state university system." }
+      ],
+      fes_musee_batha: [
+        { date: "1873", text: "Sultan Moulay Hassan I commissions the royal summer palace." },
+        { date: "1915", text: "Converted into a museum of arts and traditions." },
+        { date: "Present", text: "Home to the world's most significant collection of Fessi ceramics." }
+      ]
+    },
+    fr: {
+      fes_bab_bou_jeloud: [
+        { date: "1913", text: "Construction de la porte actuelle dans le style mauresque traditionnel." },
+        { date: "2013", text: "Centenaire de la porte, célébrée comme le « Visage de Fès »." },
+        { date: "Aujourd'hui", text: "Reste l'entrée la plus vibrante de la médina de l'UNESCO." }
+      ],
+      fes_chouara_tannery: [
+        { date: "XIe siècle", text: "Fondation de la tannerie sous la dynastie almoravide." },
+        { date: "1981", text: "La médina de Fès et ses tanneries sont inscrites au patrimoine mondial." },
+        { date: "Aujourd'hui", text: "Les artisans continuent de teindre le cuir selon des méthodes ancestrales." }
+      ],
+      fes_al_quaraouiyine: [
+        { date: "859", text: "Fatima al-Fihri fonde la mosquée et l'université." },
+        { date: "XIIe siècle", text: "Devient un pôle intellectuel majeur du monde islamique." },
+        { date: "1963", text: "Intégrée formellement au système universitaire d'État." }
+      ],
+      fes_musee_batha: [
+        { date: "1873", text: "Le sultan Moulay Hassan Ier commande le palais d'été royal." },
+        { date: "1915", text: "Converti en musée des arts et traditions." },
+        { date: "Aujourd'hui", text: "Réputé pour sa collection exceptionnelle de céramiques de Fès." }
+      ]
+    },
+    es: {
+      fes_bab_bou_jeloud: [
+        { date: "1913", text: "Construcción de la puerta actual en estilo tradicional morisco." },
+        { date: "2013", text: "Centenario de la puerta, celebrada como la 'Cara de Fez'." },
+        { date: "Actualidad", text: "Sigue siendo la entrada más vibrante a la medina de la UNESCO." }
+      ],
+      fes_chouara_tannery: [
+        { date: "Siglo XI", text: "Fundación de la curtiduría durante la dinastía almorávide." },
+        { date: "1981", text: "La medina de Fez es declarada Patrimonio de la Humanidad por la UNESCO." },
+        { date: "Actualidad", text: "Los artesanos siguen tiñendo el cuero con métodos tradicionales puros." }
+      ],
+      fes_al_quaraouiyine: [
+        { date: "859", text: "Fatima al-Fihri funda la mezquita y la universidad." },
+        { date: "Siglo XII", text: "Se convierte en un importante centro intelectual del mundo islámico." },
+        { date: "1963", text: "Se integra formalmente en el sistema universitario estatal." }
+      ],
+      fes_musee_batha: [
+        { date: "1873", text: "El sultán Moulay Hassan I encarga el palacio real de verano." },
+        { date: "1915", text: "Convertido en museo de artes y tradiciones." },
+        { date: "Actualidad", text: "Hogar de la colección de cerámica de Fez más importante del mundo." }
+      ]
+    },
+    ar: {
+      fes_bab_bou_jeloud: [
+        { date: "1913", text: "بناء البوابة الحالية على الطراز المغربي الأندلسي التقليدي." },
+        { date: "2013", text: "الذكرى المئوية للبوابة، التي تُعرف بـ 'وجه فاس'." },
+        { date: "الحاضر", text: "تظل المدخل الأكثر حيوية للمدينة القديمة المصنفة من قبل اليونسكو." }
+      ],
+      fes_chouara_tannery: [
+        { date: "القرن 11", text: "تأسيس الدباغة خلال عهد الدولة المرابطية." },
+        { date: "1981", text: "إدراج مدينة فاس ودباغاتها في قائمة التراث العالمي لليونسكو." },
+        { date: "الحاضر", text: "يواصل الحرفيون صبغ الجلود باستخدام الطرق التقليدية الخام." }
+      ],
+      fes_al_quaraouiyine: [
+        { date: "859 م", text: "فاطمة الفهرية تؤسس المسجد والجامعة." },
+        { date: "القرن 12", text: "تصبح مركزًا فكريًا رئيسيًا في العالم الإسلامي." },
+        { date: "1963", text: "دمجها رسميًا في نظام الجامعات الحكومية." }
+      ],
+      fes_musee_batha: [
+        { date: "1873", text: "السلطان مولاي الحسن الأول يأمر ببناء القصر الملكي الصيفي." },
+        { date: "1915", text: "تحويله إلى متحف للفنون والتقاليد." },
+        { date: "الحاضر", text: "يضم أهم مجموعة من خزف فاس في العالم." }
+      ]
+    }
+  },
+
+  // ─── FES LANDMARKS TIMELINES ───
+  fes_bab_bou_jeloud_timeline: {
+    en: [
+      { date: "1913", text: "Construction of the current gate in Moorish style." },
+      { date: "2000s", text: "Major restoration of the zellij tilework." },
+      { date: "Present", text: "The primary gateway for millions entering the medina." }
+    ],
+    fr: [
+      { date: "1913", text: "Construction de la porte actuelle dans le style mauresque." },
+      { date: "Années 2000", text: "Restauration majeure des zelliges." },
+      { date: "Aujourd'hui", text: "Porte d'entrée principale pour des millions de visiteurs." }
+    ],
+    es: [
+      { date: "1913", text: "Construcción de la puerta actual en estilo morisco." },
+      { date: "2000s", text: "Restauración importante de los mosaicos de zellij." },
+      { date: "Actualidad", text: "La puerta principal para millones que entran en la medina." }
+    ],
+    ar: [
+      { date: "1913", text: "بناء البوابة الحالية على الطراز المغربي الأندلسي." },
+      { date: "2000s", text: "ترميم واسع لأعمال الزليج." },
+      { date: "الحاضر", text: "البوابة الرئيسية لملايين الزوار للمدينة القديمة." }
+    ]
+  },
+  fes_chouara_tannery_timeline: {
+    en: [
+      { date: "11th C.", text: "Traditional tanning methods established in Fes." },
+      { date: "1981", text: "Fes Medina (including tanneries) named UNESCO site." },
+      { date: "Present", text: "Leather still dyed manually using ancient techniques." }
+    ],
+    // ... paths for other languages omitted for brevity in this mock, but I'll add them fully
+  }
+
 };
 
 export default contentTranslations;

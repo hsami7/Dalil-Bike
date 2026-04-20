@@ -19,7 +19,7 @@ function ServiceCard({ icon, title, subtitle, price, accent, onClick }) {
         flexDirection: 'column',
         alignItems: 'center',
         width: '100%',
-        maxWidth: 280,
+        maxWidth: 260,
         minHeight: 360,
         padding: '32px 24px',
         borderRadius: 32,
@@ -173,10 +173,12 @@ export default function Landing() {
 
         <div style={{
           display: 'flex',
-          gap: 32,
-          flexWrap: 'wrap',
+          gap: 16,
+          flexWrap: 'nowrap',
+          overflowX: 'auto',
           justifyContent: 'center',
           width: '100%',
+          padding: '10px 0'
         }}>
           <ServiceCard
             icon="🚴"
@@ -196,29 +198,6 @@ export default function Landing() {
           />
         </div>
 
-        <button
-          onClick={() => navigate('/explore')}
-          style={{
-            marginTop: 64,
-            background: 'none',
-            border: 'none',
-            color: '#64748b',
-            fontSize: 14,
-            cursor: 'pointer',
-            fontFamily: "'Plus Jakarta Sans', sans-serif",
-            fontWeight: 500,
-            textDecoration: 'underline',
-            textUnderlineOffset: '4px',
-            display: 'flex',
-            alignItems: 'center',
-            gap: 8,
-            transition: 'color 0.2s'
-          }}
-          onMouseEnter={(e) => e.target.style.color = '#1E3A5F'}
-          onMouseLeave={(e) => e.target.style.color = '#64748b'}
-        >
-          {t('continueToExplore')} {isRtl ? '←' : '→'}
-        </button>
       </div>
 
       <style>{`

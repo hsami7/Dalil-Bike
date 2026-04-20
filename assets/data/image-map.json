@@ -1,0 +1,562 @@
+{
+  "hotels": {
+    "marrakech_la_mamounia": [
+      {
+        "url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/fe/c4/81/hotel-entrance.jpg?w=1000&h=-1&s=1",
+        "source": "Wikimedia Commons - Pi3.124",
+        "type": "main"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/La_Mamounia_interior_II.jpg",
+        "source": "Wikimedia Commons - Pi3.124",
+        "type": "secondary"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/93/La_Mamounia_outdoor_pool.jpg",
+        "source": "Wikimedia Commons - Pi3.124",
+        "type": "secondary"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/41/Entr%C3%A9e_de_l%27h%C3%B4tel_La_Mamounia.jpg",
+        "source": "Wikimedia Commons - martinvarsavsky",
+        "type": "secondary"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/La_Mamounia_indoor_pool.jpg",
+        "source": "Wikimedia Commons - Fred Romero",
+        "type": "secondary"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/La_Mamounia_garden.jpg",
+        "source": "Wikimedia Commons - Pi3.124",
+        "type": "secondary"
+      }
+    ],
+    "fez_hotel_sahrai": [
+      {
+        "url": "https://hotelsahrai.com/_novaimg/galleria/1376704.jpg",
+        "source": "Hotel Sahrai Official",
+        "type": "main"
+      },
+      {
+        "url": "https://hotelsahrai.com/_novaimg/galleria/1376679.jpg",
+        "source": "Hotel Sahrai Official",
+        "type": "secondary"
+      },
+      {
+        "url": "https://hotelsahrai.com/_novaimg/galleria/1376674.jpg",
+        "source": "Hotel Sahrai Official",
+        "type": "secondary"
+      },
+      {
+        "url": "https://hotelsahrai.com/_novaimg/galleria/1376659.jpg",
+        "source": "Hotel Sahrai Official",
+        "type": "secondary"
+      },
+      {
+        "url": "https://hotelsahrai.com/_novaimg/galleria/1376698.jpg",
+        "source": "Hotel Sahrai Official",
+        "type": "secondary"
+      },
+      {
+        "url": "https://hotelsahrai.com/_novaimg/galleria/1376709.jpg",
+        "source": "Hotel Sahrai Official",
+        "type": "secondary"
+      }
+    ],
+    "casablanca_four_seasons": [
+      {
+        "url": "https://www.fourseasons.com/alt/img-opt/~70.1530.0,0000-225,7500-3000,0000-1687,5000/publish/content/dam/fourseasons/images/web/CBL/CBL_101_original.jpg",
+        "source": "Four Seasons Official",
+        "type": "main"
+      },
+      {
+        "url": "https://www.fourseasons.com/alt/img-opt/~70.1530.75,0000-196,9375-2850,0000-1603,1250/publish/content/dam/fourseasons/images/web/CBL/CBL_033_original.jpg",
+        "source": "Four Seasons Official",
+        "type": "secondary"
+      },
+      {
+        "url": "https://www.fourseasons.com/alt/img-opt/~70.1530.0,0000-29,2500-3000,0000-1687,5000/publish/content/dam/fourseasons/images/web/CBL/CBL_111_original.jpg",
+        "source": "Four Seasons Official",
+        "type": "secondary"
+      },
+      {
+        "url": "https://www.fourseasons.com/alt/img-opt/~70.1530.0,0000-5,5000-3000,0000-1687,5000/publish/content/dam/fourseasons/images/web/CBL/CBL_040_original.jpg",
+        "source": "Four Seasons Official",
+        "type": "secondary"
+      },
+      {
+        "url": "https://www.fourseasons.com/alt/img-opt/~70.1530.0,0000-125,7500-3000,0000-1687,5000/publish/content/dam/fourseasons/images/web/CBL/CBL_076_original.jpg",
+        "source": "Four Seasons Official",
+        "type": "secondary"
+      }
+    ],
+    "chefchaouen_lina_ryad": [
+      {
+        "url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/17720203.jpg?k=7a2b5426429407f47083106f3b0460cb8b71167732f70401729163ced2be8836&o=",
+        "source": "Lina Ryad Official",
+        "type": "main"
+      },
+      {
+        "url": "http://txo.b29.mywebsitetransfer.com/lrs/wp-content/uploads/2023/10/linaryad-hammam.jpg",
+        "source": "Lina Ryad Official",
+        "type": "secondary"
+      },
+      {
+        "url": "http://txo.b29.mywebsitetransfer.com/lrs/wp-content/uploads/2023/10/linaryad-indoor-pool.jpg",
+        "source": "Lina Ryad Official",
+        "type": "secondary"
+      },
+      {
+        "url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/17720632.jpg?k=78286c53a2e8a14dc1c70aa1173e7bc66962975d1a5b12e791fa8f36d8771d16&o=",
+        "source": "Lina Ryad Official",
+        "type": "secondary"
+      },
+      {
+        "url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/17720316.jpg?k=2da13c9a57a525336d6ad301a2d5b760e8c0046ec7cf52551eb93dc38061f866&o=",
+        "source": "Lina Ryad Official",
+        "type": "secondary"
+      }
+    ],
+    "rabat_tour_hassan": [
+      {
+        "url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/259979212.jpg?k=7656fc446ad037e690a03c055d98ce5cf6d028ddb2c08173f82e387fac2043de&o=",
+        "source": "La Tour Hassan Official",
+        "type": "main"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGwAfOg7ETHV7YrRSJSvo3IJTnAYp54in5YSH0F3MfwRuXrOTsCNkGqgQptZoLM1OnAtatqL4XDtTYZu4mlS99xNuquJPdYc1tNTaJ8r4wqSQRfg9KTfdcxRnn4WUELDs56jhoY=s0",
+        "source": "La Tour Hassan Official",
+        "type": "secondary"
+      },
+      {
+        "url": "https://tourhassanpalace.com/wp-content/uploads/2018/02/La-maison-arabe-2-min-2023.jpg",
+        "source": "La Tour Hassan Official",
+        "type": "secondary"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEFR-h182SN-6UYrBx9AMxORKsK_y7HEpRFeVC1w2_3fJBXYX2MzJqvIVPTwoSVSXXllqqargnJ2PA7PO5cpVX_887BvrPv7S0dSThUE-VDCZ3z9sEV-X6n_p8Yz7GImkZrIryIVL_Famoa=s0",
+        "source": "La Tour Hassan Official",
+        "type": "secondary"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFrUNfd-tq1DWpd2JYytdRfToQRxf2IlxFP2DL3uDgeLQgIqcm6S9vKxlx5ZvvXF816lDqcDZ0_0wG4vSjKbBuo8QbgaqBdFMrtFFSKV-gnBFy1zB1kokDf4ECRJ9VhftvZvHmx=s0",
+        "source": "La Tour Hassan Official",
+        "type": "secondary"
+      }
+    ],
+    "meknes_chateau_roslane": [
+      {
+        "url": "https://www.roslaneboutiquehotel.com/wp-content/uploads/2018/05/Slider.jpg",
+        "source": "Château Roslane Official",
+        "type": "main"
+      },
+      {
+        "url": "https://www.roslaneboutiquehotel.com/wp-content/uploads/2018/05/Q7B0748.jpg",
+        "source": "Château Roslane Official",
+        "type": "secondary"
+      },
+      {
+        "url": "https://www.roslaneboutiquehotel.com/wp-content/uploads/2018/05/Q7B0780.jpg",
+        "source": "Château Roslane Official",
+        "type": "secondary"
+      },
+      {
+        "url": "https://www.roslaneboutiquehotel.com/wp-content/uploads/2018/05/Q7B0594.jpg",
+        "source": "Château Roslane Official",
+        "type": "secondary"
+      },
+      {
+        "url": "https://www.roslaneboutiquehotel.com/wp-content/uploads/2018/05/Q7B0527.jpg",
+        "source": "Château Roslane Official",
+        "type": "secondary"
+      }
+    ],
+    "tangier_el_minzah": [
+      {
+        "url": "https://lh5.googleusercontent.com/p/AF1QipM4jz7fIhty7pJTrk2tgPrJHxaD2Wm9kgMaQpo8=s0",
+        "source": "El Minzah Official",
+        "type": "main"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFqrtQxSt0-WDByKvzBvxKMshnXJd8xS_1OvAZm50DlAPvCo7PkSOBy4wXcU3Cni49uDvcsoqm4NH_lTCwx0cZbVCF5_DN0-KI_GI9yl-5KkNr4QmScqbMTWpzQyAOBn6Q3h1Um=s0",
+        "source": "El Minzah Official",
+        "type": "secondary"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHi22aORbDQAh84ZsPE0viRgqYaIAYR6NW05K61l0UnFPV9NMOdGnowfOUzeo4m92tizMRyyoneGWxrcXoSB9vEQ5XYLETYhGkuDPqkXDLjNI6mna3C61Vd4LcExom_gl0fhaXb2Au1yGI=s0",
+        "source": "El Minzah Official",
+        "type": "secondary"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/p/AF1QipPB6WO7JxLgx8tWg9tFob-uEpYaXkWr8lThGQzW=s0",
+        "source": "El Minzah Official",
+        "type": "secondary"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/p/AF1QipOs1eYzSAzCWX9yc3cgIEhRHYau5cn04ST8lztn=s0",
+        "source": "El Minzah Official",
+        "type": "secondary"
+      }
+    ],
+    "essaouira_heure_bleue": [
+      {
+        "url": "https://www.heure-bleue.com/_novaimg/4682554-1436518_0_0_3402_2473_2200_1600.rc.jpg",
+        "source": "Heure Bleue Official",
+        "type": "main"
+      },
+      {
+        "url": "https://yonder.fr/sites/default/files/styles/1920x1080/public/contenu/images/hotel-de-referennce-essaouira-heure-bleue-palais.jpg",
+        "source": "Heure Bleue Official via Yonder",
+        "type": "secondary"
+      },
+      {
+        "url": "https://yonder.fr/sites/default/files/styles/1920x1080/public/contenu/images/chambres-et-suites-essaouira-heure-bleue-palais.jpg",
+        "source": "Heure Bleue Official via Yonder",
+        "type": "secondary"
+      },
+      {
+        "url": "https://yonder.fr/sites/default/files/styles/1920x1080/public/contenu/images/piscine-sur-le-toit-essaouira-heure-bleue-palais.jpg",
+        "source": "Heure Bleue Official via Yonder",
+        "type": "secondary"
+      },
+      {
+        "url": "https://vivre-essaouira.com/wp-content/uploads/2013/06/Heure-Bleue-Palais-Essaouira.jpg",
+        "source": "Heure Bleue Official via Vivre Essaouira",
+        "type": "secondary"
+      }
+    ],
+    "agadir_sofitel": [
+      {
+        "url": "https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img/https://findagolfbreak.com/wp-content/uploads/2024/08/Entrance-sofitel-agadir-thalassa-sea-spa-morocco.jpg",
+        "source": "Sofitel Official via FindaGolfBreak",
+        "type": "main"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Hotel_Sofitel_Agadir_Thalassa_Sea_%26_Spa_-_sea_view.png",
+        "source": "Wikimedia Commons",
+        "type": "secondary"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Interior%2C_lobby_Sofitel_Agadir_Thalassa_Sea_%26_Spa.png",
+        "source": "Wikimedia Commons",
+        "type": "secondary"
+      },
+      {
+        "url": "https://images.ctfassets.net/p03bi75xct27/7fU0H0lU3m6E0U6G6u0u6u/2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c/Agadir_Sofitel_Thalassa.jpg",
+        "source": "Sofitel Official",
+        "type": "secondary"
+      },
+      {
+        "url": "https://www.traveler.es/wp-content/uploads/2021/01/sofitel-agadir-thalassa-sea-spa.jpg",
+        "source": "Sofitel Official via Traveler.es",
+        "type": "secondary"
+      }
+    ],
+    "ouarzazate_berber_palace": [
+      {
+        "url": "https://static.service-voyages.com/photos/vacances-maroc/ouarzazate/piscine-le-berbere-palace_881026_fullhd.jpg",
+        "source": "Berber Palace Official via Service-Voyages",
+        "type": "main"
+      },
+      {
+        "url": "https://lph-group.com/wp-content/uploads/2018/06/LPH-BERBERE-PALACE-OUARZAZATE-8.jpg",
+        "source": "Berber Palace Official via LPH Group",
+        "type": "secondary"
+      },
+      {
+        "url": "https://lph-group.com/wp-content/uploads/2018/06/LPH-BERBERE-PALACE-OUARZAZATE-13.jpg",
+        "source": "Berber Palace Official via LPH Group",
+        "type": "secondary"
+      },
+      {
+        "url": "https://lph-group.com/wp-content/uploads/2018/06/LPH-BERBERE-PALACE-OUARZAZATE-1.jpg",
+        "source": "Berber Palace Official via LPH Group",
+        "type": "secondary"
+      },
+      {
+        "url": "https://lph-group.com/wp-content/uploads/2018/06/LPH-BERBERE-PALACE-OUARZAZATE-9.jpg",
+        "source": "Berber Palace Official via LPH Group",
+        "type": "secondary"
+      }
+    ]
+  },
+  "landmarks": {
+    "marrakech_jemaa_el_fnaa": [
+      {
+        "url": "https://www.arabamerica.com/wp-content/uploads/2024/12/Screenshot-2024-12-25-at-1.09.18-AM-1024x675.png",
+        "source": "Arab America",
+        "type": "main"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Jemaa_el-Fnaa_at_night.jpg",
+        "source": "Wikimedia Commons",
+        "type": "secondary"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Jemaa_el-Fnaa_%287346166250%29.jpg",
+        "source": "Wikimedia Commons",
+        "type": "secondary"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Drawing_a_henna%2C_Jemaa_el-Fnaa%2C_Marrakesh.jpg",
+        "source": "Wikimedia Commons",
+        "type": "secondary"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Jemaa_el-Fnaa_%282%29.jpg",
+        "source": "Wikimedia Commons",
+        "type": "secondary"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Marrakesh%2C_Morocco-_Jemaa_el-Fnaa_square.jpg",
+        "source": "Wikimedia Commons",
+        "type": "secondary"
+      }
+    ],
+    "fez_fes_el_bali": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Tanneries_in_Fes.jpg",
+        "source": "Wikimedia Commons",
+        "type": "main"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Tanneries_of_Fez.jpg",
+        "source": "Wikimedia Commons",
+        "type": "secondary"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Fes_El_Bali%2C_Fes%2C_Morocco_-_panoramio_%282%29.jpg",
+        "source": "Wikimedia Commons",
+        "type": "secondary"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/F%C3%A8s_tanners.jpg",
+        "source": "Wikimedia Commons",
+        "type": "secondary"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Fes-Bou-Inania-Medersa.jpg",
+        "source": "Wikimedia Commons",
+        "type": "secondary"
+      }
+    ],
+    "casablanca_hassan_ii_mosque": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Sunshine_on_mosque_Hassan_II_in_Casablanca%2C_Morocco_-_Flickr_-_Milamber%27s_portfolio.jpg",
+        "source": "Wikimedia Commons",
+        "type": "main"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Hassan_II_Mosque_Plaza.jpg",
+        "source": "Wikimedia Commons",
+        "type": "secondary"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Maroc%2C_Mosqu%C3%A9e_Hassan_2%2C_Grand_Casablanca.jpg",
+        "source": "Wikimedia Commons",
+        "type": "secondary"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Hassan_II_Mosque_Casablanca_Morocco.jpg",
+        "source": "Wikimedia Commons",
+        "type": "secondary"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Mezquita_Hassan_II_%28reflejo_en_agua%29.jpg",
+        "source": "Wikimedia Commons",
+        "type": "secondary"
+      }
+    ],
+    "chefchaouen_blue_medina": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Chefchaouen_%28Blue_City%29.jpg",
+        "source": "Wikimedia Commons",
+        "type": "main"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Chefchaouen%2C_Rif_Mountains%2C_Morocco%2C_Blue_City.jpg",
+        "source": "Wikimedia Commons",
+        "type": "secondary"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Chefchaouen_medina.jpg",
+        "source": "Wikimedia Commons",
+        "type": "secondary"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/A_Chefchaouen_street.jpg",
+        "source": "Wikimedia Commons",
+        "type": "secondary"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Chefchaouen_Blue_Streets.jpg",
+        "source": "Wikimedia Commons",
+        "type": "secondary"
+      }
+    ],
+    "rabat_hassan_tower": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Hassan_Tower%2C_Rabat%2C_Marocco_%28%D8%B5%D9%88%D9%85%D8%B9%D8%A9_%D8%AD%D8%B3%D8%A7%D9%86_%29.jpg",
+        "source": "Wikimedia Commons",
+        "type": "main"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Hassan_Tower.jpg",
+        "source": "Wikimedia Commons",
+        "type": "secondary"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Hassan_Tower_01.jpg",
+        "source": "Wikimedia Commons",
+        "type": "secondary"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Hassan_Tower_Columns_Rabat_Nov25_A7CR_08839.jpg",
+        "source": "Wikimedia Commons",
+        "type": "secondary"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Tour_Hassan_a_Rabat_P1060435.JPG",
+        "source": "Wikimedia Commons",
+        "type": "secondary"
+      }
+    ],
+    "meknes_bab_mansour": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Bab_el-Mansour._Mequinez.jpg",
+        "source": "Wikimedia Commons - José Luis Filpo Cabana",
+        "type": "main"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/78/ASC_Leiden_-_van_Achterberg_Collection_-_12_-_06_-_La_porte_Bab_El_Mansour_el-Aleuj_sur_la_place_El_Hedi_-_Mekn%C3%A8s%2C_Maroc_-_Ann%C3%A9es_1990.jpg",
+        "source": "Wikimedia Commons - Angeline A. van Achterberg / ASC Leiden",
+        "type": "secondary"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Bab_mansour_antique_capital_DSCF3786.jpg",
+        "source": "Wikimedia Commons - Robert Prazeres",
+        "type": "secondary"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Bab_El_Mansour_Gate_Meknes_Morocco_165357_%2849682259918%29.jpg",
+        "source": "Wikimedia Commons - bobistraveling",
+        "type": "secondary"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Bab_El_Mansour_Gate_Meknes_Morocco_165429_%2849683081242%29.jpg",
+        "source": "Wikimedia Commons - bobistraveling",
+        "type": "secondary"
+      }
+    ],
+    "tangier_hercules_caves": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Cuevas_de_H%C3%A9rcules%2C_Cabo_Espartel%2C_Marruecos%2C_2015-12-11%2C_DD_07-09_HDR.JPG",
+        "source": "Wikimedia Commons - Diego Delso",
+        "type": "main"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Cuevas_de_H%C3%A9rcules%2C_Cabo_Espartel%2C_Marruecos%2C_2015-12-11%2C_DD_10-12_HDR.JPG",
+        "source": "Wikimedia Commons - Diego Delso",
+        "type": "secondary"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Cuevas_de_H%C3%A9rcules%2C_Cabo_Espartel%2C_Marruecos%2C_2015-12-11%2C_DD_13-15_HDR.JPG",
+        "source": "Wikimedia Commons - Diego Delso",
+        "type": "secondary"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Cuevas_de_H%C3%A9rcules%2C_Cabo_Espartel%2C_Marruecos%2C_2015-12-11%2C_DD_16-18_HDR.JPG",
+        "source": "Wikimedia Commons - Diego Delso",
+        "type": "secondary"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Caves_of_Hercules_%2823380719195%29.jpg",
+        "source": "Wikimedia Commons - cat_collector",
+        "type": "secondary"
+      }
+    ],
+    "essaouira_skala": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/31/%22Ein_bemerkenswertes_historisches_Denkmal%22._01.jpg",
+        "source": "Wikimedia Commons - Holger Uwe Schmitt",
+        "type": "main"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/%22Ein_bemerkenswertes_historisches_Denkmal%22._11.jpg",
+        "source": "Wikimedia Commons - Holger Uwe Schmitt",
+        "type": "secondary"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/%22Ein_bemerkenswertes_historisches_Denkmal%22._15.jpg",
+        "source": "Wikimedia Commons - Holger Uwe Schmitt",
+        "type": "secondary"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/16th_Century_Portguese_Cannons_-_panoramio_%281%29.jpg",
+        "source": "Wikimedia Commons - Patrick Nouhailler",
+        "type": "secondary"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Skala_de_Ville.jpg",
+        "source": "Wikimedia Commons - Jerzy Strzelecki",
+        "type": "secondary"
+      }
+    ],
+    "agadir_agadir_oufella": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Agadir_80000%2C_Morocco_-_panoramio_%2825%29.jpg",
+        "source": "Wikimedia Commons - karel291",
+        "type": "main"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Agadir_80000%2C_Morocco_-_panoramio_%2826%29.jpg",
+        "source": "Wikimedia Commons - karel291",
+        "type": "secondary"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Agadir_80000%2C_Morocco_-_panoramio_%2827%29.jpg",
+        "source": "Wikimedia Commons - karel291",
+        "type": "secondary"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Agadir_80000%2C_Morocco_-_panoramio_%2832%29.jpg",
+        "source": "Wikimedia Commons - karel291",
+        "type": "secondary"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Agadir_oflla_morocco.jpg",
+        "source": "Wikimedia Commons - zarti rachid",
+        "type": "secondary"
+      }
+    ],
+    "ouarzazate_ait_benhaddou": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Ait_ben_haddou.jpg",
+        "source": "Wikimedia Commons - Achalhikarim",
+        "type": "main"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Ait_Ben_Haddou_%2816112394620%29.jpg",
+        "source": "Wikimedia Commons - jjmusgrove",
+        "type": "secondary"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Ait_Ben_Haddou%2C_2025_%2802%29.jpg",
+        "source": "Wikimedia Commons - Draceane",
+        "type": "secondary"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Ksar_A%C3%AFt_Benhaddou%2C_Marocco_%28%D8%A3%D9%8A%D8%AA_%D8%A8%D9%86_%D8%AD%D8%AF%D9%88%D8%8C_%D8%A7%D9%84%D9%85%D8%BA%D8%B1%D8%A8%2C_%E2%B4%B0%E2%B5%A2%E2%B5%9C_%E2%B5%83%E2%B4%B0%E2%B4%B7%E2%B4%B7%E2%B5%93%29.jpg",
+        "source": "Wikimedia Commons - Petar Milošević",
+        "type": "secondary"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/%22Hervorragendes_Beispiel_marokkanischer_Lehmbauarchitektur%22._02.jpg",
+        "source": "Wikimedia Commons - Holger Uwe Schmitt",
+        "type": "secondary"
+      }
+    ]
+  }
+}
+

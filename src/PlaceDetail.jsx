@@ -1,18 +1,20 @@
 import React from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { DOMAINS } from './data';
+import { DOMAINS, LANDMARKS } from './data';
+import { HISTORY_IMAGES } from './data/history-images';
 import Header from './Header';
 import BottomNav from './BottomNav';
 import { useLanguage } from './LanguageContext';
 
 export default function PlaceDetail() {
   const navigate = useNavigate();
-  const { cityId } = useParams();
+  const { landmarkId } = useParams();
   const { t, tCity, tContent } = useLanguage();
 
-  const domain = DOMAINS.find(d => d.id === cityId);
+  const landmark = LANDMARKS.find(l => l.id === landmarkId);
+  const domain = landmark ? DOMAINS.find(d => d.id === landmark.cityId) : null;
 
-  if (!domain) {
+  if (!landmark || !domain) {
     return (
       <div className="min-h-screen bg-surface flex items-center justify-center">
         <p className="text-on-surface-variant text-xl">{t('noResults')}</p>
@@ -20,29 +22,33 @@ export default function PlaceDetail() {
     );
   }
 
-  const history = domain.history;
   const cityName = tCity(domain.id);
+  const hData = HISTORY_IMAGES[landmark.imageKey];
+  const landmarkPhotos = hData ? [
+    { url: hData.primary },
+    ...hData.gallery.map(url => ({ url }))
+  ] : [{ url: landmark.img }];
 
   return (
     <div className="min-h-screen bg-surface">
-      <Header activeTab="history" mobileTitle={tContent('historyName', domain.id)} />
+      <Header activeTab="history" mobileTitle={tContent('historyName', landmark.id)} />
 
-      <main className="pt-0 md:pt-0 pb-32 md:pb-24">
+      <main className="pt-0 lg:pt-0 pb-32 lg:pb-24">
         {/* Hero Section — Full-bleed cinematic image */}
-        <section className="relative w-full h-[60vh] md:h-[80vh] bg-surface-container-low overflow-hidden">
+        <section className="relative w-full h-[60vh] lg:h-[80vh] bg-surface-container-low overflow-hidden">
           <img
-            alt={tContent('historyName', domain.id)}
+            alt={tContent('historyName', landmark.id)}
             className="w-full h-full object-cover"
-            src={history.img}
+            src={landmarkPhotos[0]?.url}
           />
           {/* Gradient overlay */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/10"></div>
 
           {/* Location / Period Widget Overlay */}
-          <div className="absolute bottom-6 left-6 md:bottom-12 md:left-12 bg-surface/60 backdrop-blur-[20px] rounded-xl p-4 flex items-center gap-4 text-on-surface shadow-[0_32px_32px_rgba(26,28,30,0.06)]">
+          <div className="absolute bottom-6 left-6 lg:bottom-12 lg:left-12 bg-surface/60 backdrop-blur-[20px] rounded-xl p-4 flex items-center gap-4 text-on-surface shadow-[0_32px_32px_rgba(26,28,30,0.06)]">
             <div className="flex flex-col">
               <span className="text-[0.75rem] font-bold uppercase tracking-wider text-primary">{cityName}</span>
-              <span className="font-headline text-[1.375rem]">{tContent('historyPeriod', domain.id)}</span>
+              <span className="font-headline text-[1.375rem]">{tContent('historyPeriod', landmark.id)}</span>
             </div>
             <div className="w-px h-8 bg-outline-variant/30"></div>
             <div className="flex flex-col">
@@ -58,46 +64,66 @@ export default function PlaceDetail() {
           <article className="lg:col-span-8">
             <header className="mb-12">
               <span className="text-[0.75rem] font-bold uppercase tracking-wider text-secondary mb-4 block">
-                {tContent('historyPeriod', domain.id)}
+                {tContent('historyPeriod', landmark.id)}
               </span>
               <h1 className="font-headline text-[2.5rem] md:text-[3.5rem] leading-tight text-primary mb-6">
-                {tContent('historyName', domain.id)}
+                {tContent('historyName', landmark.id)}
               </h1>
               <p className="text-on-surface-variant text-lg leading-relaxed">
-                {tContent('historyDesc', domain.id)}
+                {tContent('historyDesc', landmark.id)}
               </p>
             </header>
 
             <div className="text-on-surface max-w-none">
               {/* Decorative quote */}
               <p className="font-headline text-[1.75rem] leading-relaxed mb-8 text-primary-container italic">
-                {tContent('historyQuote', domain.id)}
+                {tContent('historyQuote', landmark.id)}
               </p>
 
               {/* Extended article section */}
               <h2 className="font-headline text-[1.75rem] text-primary mt-12 mb-6">
-                {tContent('historyArticleTitle', domain.id)}
+                {tContent('historyArticleTitle', landmark.id)}
               </h2>
               <p className="mb-6 leading-relaxed text-on-surface-variant">
-                {tContent('historyArticleBody', domain.id)}
+                {tContent('historyArticleBody', landmark.id)}
               </p>
 
               {/* Historical Timeline */}
               <div className="relative ps-8 mt-12 mb-12">
                 <div className="absolute start-0 top-0 bottom-0 w-px bg-outline-variant/20"></div>
-                <TimelineItem
-                  date={tContent('historyTimeline1Date', domain.id)}
-                  text={tContent('historyTimeline1Text', domain.id)}
-                />
-                <TimelineItem
-                  date={tContent('historyTimeline2Date', domain.id)}
-                  text={tContent('historyTimeline2Text', domain.id)}
-                />
-                <TimelineItem
-                  date={tContent('historyTimeline3Date', domain.id)}
-                  text={tContent('historyTimeline3Text', domain.id)}
-                  last
-                />
+                {/* Check for structured timeline first, else fallback to legacy flat keys */}
+                {(() => {
+                  const structuredTimeline = tContent('historyTimeline', landmark.id);
+                  if (Array.isArray(structuredTimeline) && structuredTimeline.length > 0) {
+                    return structuredTimeline.map((item, idx) => (
+                      <TimelineItem 
+                        key={idx} 
+                        date={item.date} 
+                        text={item.text} 
+                        last={idx === structuredTimeline.length - 1} 
+                      />
+                    ));
+                  }
+                  
+                  // Legacy Fallback for original 10 landmarks
+                  return (
+                    <>
+                      <TimelineItem
+                        date={tContent('historyTimeline1Date', landmark.id)}
+                        text={tContent('historyTimeline1Text', landmark.id)}
+                      />
+                      <TimelineItem
+                        date={tContent('historyTimeline2Date', landmark.id)}
+                        text={tContent('historyTimeline2Text', landmark.id)}
+                      />
+                      <TimelineItem
+                        date={tContent('historyTimeline3Date', landmark.id)}
+                        text={tContent('historyTimeline3Text', landmark.id)}
+                        last
+                      />
+                    </>
+                  );
+                })()}
               </div>
             </div>
           </article>
@@ -132,7 +158,7 @@ export default function PlaceDetail() {
               <div className="absolute inset-0 bg-primary/10"></div>
               <div className="absolute bottom-4 left-4 right-4 bg-surface/80 backdrop-blur-md rounded-lg p-4 flex items-center justify-between">
                 <div>
-                  <h4 className="font-semibold text-primary text-sm">{tContent('historyName', domain.id)}</h4>
+                  <h4 className="font-semibold text-primary text-sm">{tContent('historyName', landmark.id)}</h4>
                   <p className="text-xs text-on-surface-variant">{cityName}, {t('morocco')}</p>
                 </div>
                 <button
@@ -156,12 +182,12 @@ export default function PlaceDetail() {
               {/* Large image */}
               <div className="md:col-span-2 md:row-span-2 rounded-xl overflow-hidden relative group">
                 <img
-                  alt={tContent('historyName', domain.id)}
+                  alt={tContent('historyName', landmark.id)}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  src={history.img}
+                  src={landmarkPhotos[0]?.url}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
-                  <span className="text-white text-sm font-medium">{tContent('historyName', domain.id)}</span>
+                  <span className="text-white text-sm font-medium">{tContent('historyName', landmark.id)}</span>
                 </div>
               </div>
               {/* Smaller images */}
@@ -169,15 +195,26 @@ export default function PlaceDetail() {
                 <img
                   alt={cityName}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  src={domain.img}
+                  src={landmarkPhotos[1]?.url || domain.img}
                 />
               </div>
-              <div className="rounded-xl overflow-hidden relative group">
+              <div 
+                className="rounded-xl overflow-hidden relative group cursor-pointer shadow-lg"
+                onClick={() => navigate(`/hotel/${domain.id}`)}
+              >
                 <img
                   alt={domain.stay.name}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   src={domain.stay.img}
                 />
+                <div className="absolute inset-0 bg-black/10 group-hover:bg-black/40 transition-colors"></div>
+                <div className="absolute bottom-4 left-4 right-4 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                  <span className="text-[9px] font-bold uppercase tracking-[0.2em] text-white/80 block mb-1">{t('recommendedStay')}</span>
+                  <h3 className="text-white font-headline text-base leading-tight drop-shadow-md">{domain.stay.name}</h3>
+                </div>
+                <div className="absolute top-4 right-4 bg-white/30 backdrop-blur-md rounded-full p-2 opacity-0 group-hover:opacity-100 transition-all duration-300 scale-75 group-hover:scale-100">
+                  <span className="material-symbols-outlined text-white text-sm">arrow_forward</span>
+                </div>
               </div>
             </div>
           </div>
@@ -191,6 +228,7 @@ export default function PlaceDetail() {
 
 // Sub-components
 function TimelineItem({ date, text, last }) {
+  if (!date || !text) return null;
   return (
     <div className={`relative ${last ? '' : 'mb-8'}`}>
       <div className="absolute -start-[37px] top-2 w-3 h-3 rounded-full bg-secondary"></div>

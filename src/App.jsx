@@ -23,7 +23,7 @@ function App() {
             <Route path="/place"   element={<Place />} />
             <Route path="/hotel"   element={<Hotel />} />
             <Route path="/hotel/:cityId" element={<HotelDetail />} />
-            <Route path="/place/:cityId" element={<PlaceDetail />} />
+            <Route path="/place/:landmarkId" element={<PlaceDetail />} />
           </Routes>
         </div>
       </BrowserRouter>

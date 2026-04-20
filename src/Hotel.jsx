@@ -14,9 +14,9 @@ export default function Hotel() {
       <Header activeTab="stays" mobileTitle={t('staysDirectory')} />
       
       <main className="max-w-screen-xl mx-auto px-6 pt-32 pb-24">
-        <header className="mb-12 md:mb-16">
+        <header className="mb-12 lg:mb-16">
           <span className="text-primary font-bold uppercase tracking-[0.2em] text-xs mb-3 block">{t('moroccanSanctuaries')}</span>
-          <h1 className="font-headline text-4xl md:text-6xl text-on-surface font-medium tracking-tight mb-6">
+          <h1 className="font-headline text-4xl lg:text-6xl text-on-surface font-medium tracking-tight mb-6">
             {t('artOfStay')}
           </h1>
           <p className="font-body text-on-surface-variant text-lg max-w-2xl leading-relaxed">
@@ -34,9 +34,9 @@ export default function Hotel() {
             >
               {/* Image Container */}
               <div className="relative h-[280px] overflow-hidden">
-                <img 
-                  alt={city.stay.name} 
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 ease-out" 
+                <img
+                  alt={city.stay.name}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 ease-out"
                   src={city.stay.img}
                 />
                 <div className="absolute top-4 right-4">

@@ -103,9 +103,9 @@ export default function Home() {
     <>
       <Header activeTab="explore" onSearchClick={handleSearchFocus} />
       
-      <main className="pt-0 md:pt-20 pb-24">
+      <main className="pt-0 lg:pt-20 pb-24">
         {/* Hero Section */}
-        <section className="relative w-full h-[614px] md:h-[768px] flex flex-col justify-center items-center px-6 overflow-hidden">
+        <section className="relative w-full h-[614px] lg:h-[768px] flex flex-col justify-center items-center px-6 overflow-hidden">
           {/* Hero Background Image */}
           <div className="absolute inset-0 z-0">
             <img 
@@ -118,7 +118,7 @@ export default function Home() {
           
           {/* Hero Content */}
           <div className="relative z-10 w-full max-w-3xl mx-auto text-center mt-auto mb-16 md:mb-24">
-            <h1 className="font-headline text-5xl md:text-7xl text-white md:text-on-surface mb-6 drop-shadow-sm font-medium tracking-tight" style={{ textShadow: '0 4px 24px rgba(0,0,0,0.8)' }}>
+            <h1 className="font-headline text-5xl lg:text-7xl text-white lg:text-on-surface mb-6 drop-shadow-sm font-medium tracking-tight" style={{ textShadow: '0 4px 24px rgba(0,0,0,0.8)' }}>
               {t('heroTitle')}
             </h1>
             
@@ -144,7 +144,7 @@ export default function Home() {
         </section>
 
         {/* Curated Destinations (Bento Grid) */}
-        <section className="bg-surface-container-low py-16 md:py-24 px-6 rounded-t-[2.5rem] md:rounded-none -mt-8 relative z-20">
+        <section className="bg-surface-container-low py-16 lg:py-24 px-6 rounded-t-[2.5rem] lg:rounded-none -mt-8 relative z-20">
           <div className="max-w-screen-xl mx-auto">
             <header className="mb-10 md:mb-16 ml-0 md:ml-12">
               <h2 className="font-headline text-3xl md:text-4xl text-on-surface font-medium tracking-tight">
