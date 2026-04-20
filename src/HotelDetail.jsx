@@ -31,7 +31,7 @@ export default function HotelDetail() {
       <div className="min-h-screen bg-surface flex items-center justify-center">
         <div className="text-center">
           <p className="text-on-surface-variant text-xl mb-4">{t('noResults')}</p>
-          <button onClick={() => navigate('/hotel')} className="text-primary hover:underline">{t('backToStays')}</button>
+          <button onClick={() => navigate(`/hotel/${cityId}`)} className="text-primary hover:underline">{t('backToStays')}</button>
         </div>
       </div>
     );
