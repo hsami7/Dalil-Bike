@@ -90,5 +90,175 @@ export const HOTEL_IMAGES = {
       "https://lph-group.com/wp-content/uploads/2018/06/LPH-BERBERE-PALACE-OUARZAZATE-1.jpg",
       "https://lph-group.com/wp-content/uploads/2018/06/LPH-BERBERE-PALACE-OUARZAZATE-9.jpg"
     ]
+  },
+  // Marrakech
+  marrakech_royal_mansour: {
+    primary: "https://images.unsplash.com/photo-1549294413-26f195200c16?auto=format&fit=crop&q=80&w=1000",
+    gallery: ["https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&q=80&w=1000"]
+  },
+  marrakech_amanjena: {
+    primary: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=1000",
+    gallery: ["https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&q=80&w=1000"]
+  },
+  marrakech_mandarin_oriental: {
+    primary: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&q=80&w=1000",
+    gallery: ["https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=1000"]
+  },
+  marrakech_selman: {
+    primary: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&q=80&w=1000",
+    gallery: ["https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=1000"]
+  },
+  // Fes
+  fes_riad_fes: {
+    primary: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80&w=1000",
+    gallery: ["https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&q=80&w=1000"]
+  },
+  fes_palais_faraj: {
+    primary: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=1000",
+    gallery: ["https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80&w=1000"]
+  },
+  fes_karawan_riad: {
+    primary: "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&q=80&w=1000",
+    gallery: ["https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&q=80&w=1000"]
+  },
+  fes_palais_amani: {
+    primary: "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&q=80&w=1000",
+    gallery: ["https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80&w=1000"]
+  },
+  // Casablanca
+  casablanca_royal_mansour: {
+    primary: "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80&w=1000",
+    gallery: ["https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&q=80&w=1000"]
+  },
+  casablanca_hyatt_regency: {
+    primary: "https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&q=80&w=1000",
+    gallery: ["https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&q=80&w=1000"]
+  },
+  casablanca_le_casablanca: {
+    primary: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&q=80&w=1000",
+    gallery: ["https://images.unsplash.com/photo-1495365200479-c4ed1d392721?auto=format&fit=crop&q=80&w=1000"]
+  },
+  casablanca_le_doge: {
+    primary: "https://images.unsplash.com/photo-1495365200479-c4ed1d392721?auto=format&fit=crop&q=80&w=1000",
+    gallery: ["https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80&w=1000"]
+  },
+  // Chefchaouen
+  chefchaouen_le_petit_palais: {
+    primary: "https://images.unsplash.com/photo-1512918728675-ed5a9ecde9d7?auto=format&fit=crop&q=80&w=1000",
+    gallery: ["https://images.unsplash.com/photo-1512918728675-ed5a9ecde9d7?auto=format&fit=crop&q=80&w=1000"]
+  },
+  chefchaouen_dar_echchaouen: {
+    primary: "https://images.unsplash.com/photo-1512918728675-ed5a9ecde9d7?auto=format&fit=crop&q=80&w=1000",
+    gallery: ["https://images.unsplash.com/photo-1512918728675-ed5a9ecde9d7?auto=format&fit=crop&q=80&w=1000"]
+  },
+  chefchaouen_riad_hicham: {
+    primary: "https://images.unsplash.com/photo-1512918728675-ed5a9ecde9d7?auto=format&fit=crop&q=80&w=1000",
+    gallery: ["https://images.unsplash.com/photo-1512918728675-ed5a9ecde9d7?auto=format&fit=crop&q=80&w=1000"]
+  },
+  chefchaouen_casa_perleta: {
+    primary: "https://images.unsplash.com/photo-1512918728675-ed5a9ecde9d7?auto=format&fit=crop&q=80&w=1000",
+    gallery: ["https://images.unsplash.com/photo-1512918728675-ed5a9ecde9d7?auto=format&fit=crop&q=80&w=1000"]
+  },
+  // Rabat
+  rabat_fairmont: {
+    primary: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80&w=1000",
+    gallery: ["https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&q=80&w=1000"]
+  },
+  rabat_conrad: {
+    primary: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=1000",
+    gallery: ["https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80&w=1000"]
+  },
+  rabat_marriott: {
+    primary: "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&q=80&w=1000",
+    gallery: ["https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80&w=1000"]
+  },
+  rabat_villa_mandarine: {
+    primary: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&q=80&w=1000",
+    gallery: ["https://images.unsplash.com/photo-1495365200479-c4ed1d392721?auto=format&fit=crop&q=80&w=1000"]
+  },
+  // Meknes
+  meknes_riad_heritage: {
+    primary: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80&w=1000",
+    gallery: ["https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&q=80&w=1000"]
+  },
+  meknes_palais_didi: {
+    primary: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=1000",
+    gallery: ["https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80&w=1000"]
+  },
+  meknes_transatlantique: {
+    primary: "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&q=80&w=1000",
+    gallery: ["https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80&w=1000"]
+  },
+  meknes_riad_zaki: {
+    primary: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&q=80&w=1000",
+    gallery: ["https://images.unsplash.com/photo-1495365200479-c4ed1d392721?auto=format&fit=crop&q=80&w=1000"]
+  },
+  // Tangier
+  tangier_villa_de_france: {
+    primary: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=1000",
+    gallery: ["https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80&w=1000"]
+  },
+  tangier_palais_zahia: {
+    primary: "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&q=80&w=1000",
+    gallery: ["https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&q=80&w=1000"]
+  },
+  tangier_marina_bay: {
+    primary: "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80&w=1000",
+    gallery: ["https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&q=80&w=1000"]
+  },
+  tangier_hilton: {
+    primary: "https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&q=80&w=1000",
+    gallery: ["https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&q=80&w=1000"]
+  },
+  // Essaouira
+  essaouira_sofitel_mogador: {
+    primary: "https://images.unsplash.com/photo-1566633806327-eb801bd55a6c?auto=format&fit=crop&q=80&w=1000",
+    gallery: ["https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&q=80&w=1000"]
+  },
+  essaouira_le_jardin_des_douars: {
+    primary: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80&w=1000",
+    gallery: ["https://images.unsplash.com/photo-1512918728675-ed5a9ecde9d7?auto=format&fit=crop&q=80&w=1000"]
+  },
+  essaouira_atlas_essaouira: {
+    primary: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&q=80&w=1000",
+    gallery: ["https://images.unsplash.com/photo-1495365200479-c4ed1d392721?auto=format&fit=crop&q=80&w=1000"]
+  },
+  essaouira_riad_mimouna: {
+    primary: "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&q=80&w=1000",
+    gallery: ["https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=1000"]
+  },
+  // Agadir
+  agadir_riu_palace: {
+    primary: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=1000",
+    gallery: ["https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&q=80&w=1000"]
+  },
+  agadir_palais_des_roses: {
+    primary: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&q=80&w=1000",
+    gallery: ["https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=1000"]
+  },
+  agadir_royal_atlas: {
+    primary: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&q=80&w=1000",
+    gallery: ["https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=1000"]
+  },
+  agadir_hyatt_place: {
+    primary: "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80&w=1000",
+    gallery: ["https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&q=80&w=1000"]
+  },
+  // Ouarzazate
+  ouarzazate_oscar_hotel: {
+    primary: "https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&q=80&w=1000",
+    gallery: ["https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&q=80&w=1000"]
+  },
+  ouarzazate_ksar_ighnda: {
+    primary: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&q=80&w=1000",
+    gallery: ["https://images.unsplash.com/photo-1495365200479-c4ed1d392721?auto=format&fit=crop&q=80&w=1000"]
+  },
+  ouarzazate_dar_kamoula: {
+    primary: "https://images.unsplash.com/photo-1495365200479-c4ed1d392721?auto=format&fit=crop&q=80&w=1000",
+    gallery: ["https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80&w=1000"]
+  },
+  ouarzazate_riad_kounouz: {
+    primary: "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80&w=1000",
+    gallery: ["https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&q=80&w=1000"]
   }
 };

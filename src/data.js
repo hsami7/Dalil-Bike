@@ -124,6 +124,296 @@ export const HOTELS = [
     imageKey: "ouarzazate_berber_palace", 
     img: HOTEL_IMAGES.ouarzazate_berber_palace.primary,
     price: "1900 MAD"
+  },
+  // Marrakech
+  { 
+    id: "marrakech_royal_mansour", 
+    cityId: "marrakech", 
+    imageKey: "marrakech_royal_mansour", 
+    img: HOTEL_IMAGES.marrakech_royal_mansour.primary,
+    price: "4500 MAD"
+  },
+  { 
+    id: "marrakech_amanjena", 
+    cityId: "marrakech", 
+    imageKey: "marrakech_amanjena", 
+    img: HOTEL_IMAGES.marrakech_amanjena.primary,
+    price: "6200 MAD"
+  },
+  { 
+    id: "marrakech_mandarin_oriental", 
+    cityId: "marrakech", 
+    imageKey: "marrakech_mandarin_oriental", 
+    img: HOTEL_IMAGES.marrakech_mandarin_oriental.primary,
+    price: "7800 MAD"
+  },
+  { 
+    id: "marrakech_selman", 
+    cityId: "marrakech", 
+    imageKey: "marrakech_selman", 
+    img: HOTEL_IMAGES.marrakech_selman.primary,
+    price: "3900 MAD"
+  },
+  // Fes
+  { 
+    id: "fes_riad_fes", 
+    cityId: "fes", 
+    imageKey: "fes_riad_fes", 
+    img: HOTEL_IMAGES.fes_riad_fes.primary,
+    price: "2800 MAD"
+  },
+  { 
+    id: "fes_palais_faraj", 
+    cityId: "fes", 
+    imageKey: "fes_palais_faraj", 
+    img: HOTEL_IMAGES.fes_palais_faraj.primary,
+    price: "2400 MAD"
+  },
+  { 
+    id: "fes_karawan_riad", 
+    cityId: "fes", 
+    imageKey: "fes_karawan_riad", 
+    img: HOTEL_IMAGES.fes_karawan_riad.primary,
+    price: "3100 MAD"
+  },
+  { 
+    id: "fes_palais_amani", 
+    cityId: "fes", 
+    imageKey: "fes_palais_amani", 
+    img: HOTEL_IMAGES.fes_palais_amani.primary,
+    price: "1900 MAD"
+  },
+  // Casablanca
+  { 
+    id: "casablanca_royal_mansour", 
+    cityId: "casablanca", 
+    imageKey: "casablanca_royal_mansour", 
+    img: HOTEL_IMAGES.casablanca_royal_mansour.primary,
+    price: "5500 MAD"
+  },
+  { 
+    id: "casablanca_hyatt_regency", 
+    cityId: "casablanca", 
+    imageKey: "casablanca_hyatt_regency", 
+    img: HOTEL_IMAGES.casablanca_hyatt_regency.primary,
+    price: "2100 MAD"
+  },
+  { 
+    id: "casablanca_le_casablanca", 
+    cityId: "casablanca", 
+    imageKey: "casablanca_le_casablanca", 
+    img: HOTEL_IMAGES.casablanca_le_casablanca.primary,
+    price: "2600 MAD"
+  },
+  { 
+    id: "casablanca_le_doge", 
+    cityId: "casablanca", 
+    imageKey: "casablanca_le_doge", 
+    img: HOTEL_IMAGES.casablanca_le_doge.primary,
+    price: "2200 MAD"
+  },
+  // Chefchaouen
+  { 
+    id: "chefchaouen_le_petit_palais", 
+    cityId: "chefchaouen", 
+    imageKey: "chefchaouen_le_petit_palais", 
+    img: HOTEL_IMAGES.chefchaouen_le_petit_palais.primary,
+    price: "1200 MAD"
+  },
+  { 
+    id: "chefchaouen_dar_echchaouen", 
+    cityId: "chefchaouen", 
+    imageKey: "chefchaouen_dar_echchaouen", 
+    img: HOTEL_IMAGES.chefchaouen_dar_echchaouen.primary,
+    price: "1500 MAD"
+  },
+  { 
+    id: "chefchaouen_riad_hicham", 
+    cityId: "chefchaouen", 
+    imageKey: "chefchaouen_riad_hicham", 
+    img: HOTEL_IMAGES.chefchaouen_riad_hicham.primary,
+    price: "1800 MAD"
+  },
+  { 
+    id: "chefchaouen_casa_perleta", 
+    cityId: "chefchaouen", 
+    imageKey: "chefchaouen_casa_perleta", 
+    img: HOTEL_IMAGES.chefchaouen_casa_perleta.primary,
+    price: "1100 MAD"
+  },
+  // Rabat
+  { 
+    id: "rabat_fairmont", 
+    cityId: "rabat", 
+    imageKey: "rabat_fairmont", 
+    img: HOTEL_IMAGES.rabat_fairmont.primary,
+    price: "3800 MAD"
+  },
+  { 
+    id: "rabat_conrad", 
+    cityId: "rabat", 
+    imageKey: "rabat_conrad", 
+    img: HOTEL_IMAGES.rabat_conrad.primary,
+    price: "4200 MAD"
+  },
+  { 
+    id: "rabat_marriott", 
+    cityId: "rabat", 
+    imageKey: "rabat_marriott", 
+    img: HOTEL_IMAGES.rabat_marriott.primary,
+    price: "2600 MAD"
+  },
+  { 
+    id: "rabat_villa_mandarine", 
+    cityId: "rabat", 
+    imageKey: "rabat_villa_mandarine", 
+    img: HOTEL_IMAGES.rabat_villa_mandarine.primary,
+    price: "2200 MAD"
+  },
+  // Meknes
+  { 
+    id: "meknes_riad_heritage", 
+    cityId: "meknes", 
+    imageKey: "meknes_riad_heritage", 
+    img: HOTEL_IMAGES.meknes_riad_heritage.primary,
+    price: "1400 MAD"
+  },
+  { 
+    id: "meknes_palais_didi", 
+    cityId: "meknes", 
+    imageKey: "meknes_palais_didi", 
+    img: HOTEL_IMAGES.meknes_palais_didi.primary,
+    price: "1600 MAD"
+  },
+  { 
+    id: "meknes_transatlantique", 
+    cityId: "meknes", 
+    imageKey: "meknes_transatlantique", 
+    img: HOTEL_IMAGES.meknes_transatlantique.primary,
+    price: "900 MAD"
+  },
+  { 
+    id: "meknes_riad_zaki", 
+    cityId: "meknes", 
+    imageKey: "meknes_riad_zaki", 
+    img: HOTEL_IMAGES.meknes_riad_zaki.primary,
+    price: "1300 MAD"
+  },
+  // Tangier
+  { 
+    id: "tangier_villa_de_france", 
+    cityId: "tangier", 
+    imageKey: "tangier_villa_de_france", 
+    img: HOTEL_IMAGES.tangier_villa_de_france.primary,
+    price: "2500 MAD"
+  },
+  { 
+    id: "tangier_palais_zahia", 
+    cityId: "tangier", 
+    imageKey: "tangier_palais_zahia", 
+    img: HOTEL_IMAGES.tangier_palais_zahia.primary,
+    price: "1800 MAD"
+  },
+  { 
+    id: "tangier_marina_bay", 
+    cityId: "tangier", 
+    imageKey: "tangier_marina_bay", 
+    img: HOTEL_IMAGES.tangier_marina_bay.primary,
+    price: "1400 MAD"
+  },
+  { 
+    id: "tangier_hilton", 
+    cityId: "tangier", 
+    imageKey: "tangier_hilton", 
+    img: HOTEL_IMAGES.tangier_hilton.primary,
+    price: "2800 MAD"
+  },
+  // Essaouira
+  { 
+    id: "essaouira_sofitel_mogador", 
+    cityId: "essaouira", 
+    imageKey: "essaouira_sofitel_mogador", 
+    img: HOTEL_IMAGES.essaouira_sofitel_mogador.primary,
+    price: "3200 MAD"
+  },
+  { 
+    id: "essaouira_le_jardin_des_douars", 
+    cityId: "essaouira", 
+    imageKey: "essaouira_le_jardin_des_douars", 
+    img: HOTEL_IMAGES.essaouira_le_jardin_des_douars.primary,
+    price: "2400 MAD"
+  },
+  { 
+    id: "essaouira_atlas_essaouira", 
+    cityId: "essaouira", 
+    imageKey: "essaouira_atlas_essaouira", 
+    img: HOTEL_IMAGES.essaouira_atlas_essaouira.primary,
+    price: "1100 MAD"
+  },
+  { 
+    id: "essaouira_riad_mimouna", 
+    cityId: "essaouira", 
+    imageKey: "essaouira_riad_mimouna", 
+    img: HOTEL_IMAGES.essaouira_riad_mimouna.primary,
+    price: "1300 MAD"
+  },
+  // Agadir
+  { 
+    id: "agadir_riu_palace", 
+    cityId: "agadir", 
+    imageKey: "agadir_riu_palace", 
+    img: HOTEL_IMAGES.agadir_riu_palace.primary,
+    price: "2900 MAD"
+  },
+  { 
+    id: "agadir_palais_des_roses", 
+    cityId: "agadir", 
+    imageKey: "agadir_palais_des_roses", 
+    img: HOTEL_IMAGES.agadir_palais_des_roses.primary,
+    price: "1500 MAD"
+  },
+  { 
+    id: "agadir_royal_atlas", 
+    cityId: "agadir", 
+    imageKey: "agadir_royal_atlas", 
+    img: HOTEL_IMAGES.agadir_royal_atlas.primary,
+    price: "1800 MAD"
+  },
+  { 
+    id: "agadir_hyatt_place", 
+    cityId: "agadir", 
+    imageKey: "agadir_hyatt_place", 
+    img: HOTEL_IMAGES.agadir_hyatt_place.primary,
+    price: "2200 MAD"
+  },
+  // Ouarzazate
+  { 
+    id: "ouarzazate_oscar_hotel", 
+    cityId: "ouarzazate", 
+    imageKey: "ouarzazate_oscar_hotel", 
+    img: HOTEL_IMAGES.ouarzazate_oscar_hotel.primary,
+    price: "1200 MAD"
+  },
+  { 
+    id: "ouarzazate_ksar_ighnda", 
+    cityId: "ouarzazate", 
+    imageKey: "ouarzazate_ksar_ighnda", 
+    img: HOTEL_IMAGES.ouarzazate_ksar_ighnda.primary,
+    price: "2100 MAD"
+  },
+  { 
+    id: "ouarzazate_dar_kamoula", 
+    cityId: "ouarzazate", 
+    imageKey: "ouarzazate_dar_kamoula", 
+    img: HOTEL_IMAGES.ouarzazate_dar_kamoula.primary,
+    price: "1600 MAD"
+  },
+  { 
+    id: "ouarzazate_riad_kounouz", 
+    cityId: "ouarzazate", 
+    imageKey: "ouarzazate_riad_kounouz", 
+    img: HOTEL_IMAGES.ouarzazate_riad_kounouz.primary,
+    price: "900 MAD"
   }
 ];
 
