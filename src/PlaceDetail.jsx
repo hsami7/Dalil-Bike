@@ -202,34 +202,29 @@ export default function PlaceDetail() {
                   src={landmarkPhotos[1]?.url || domain.img}
                 />
               </div>
-              {hotel ? (
+             {hotel ? (
                 <article 
-                  className="group cursor-pointer flex flex-col bg-surface-container-low rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2 border border-outline-variant/30"
+                  className="group cursor-pointer rounded-xl overflow-hidden relative h-full bg-surface-container-low shadow-sm hover:shadow-xl transition-all duration-500"
                   onClick={() => navigate(`/hotel/${domain.id}`)}
                 >
-                  <div className="relative h-[240px] overflow-hidden">
-                    <img
-                      alt={tContent('stayName', hotel.id)}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                      src={hotel.img}
-                    />
-                    <div className="absolute top-4 right-4 bg-tertiary/90 backdrop-blur-md text-on-tertiary text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-full border border-white/20 shadow-sm">
-                      {t('premiumLocation')}
-                    </div>
+                  <img
+                    alt={tContent('stayName', hotel.id)}
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    src={hotel.img}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                  
+                  {/* Badge */}
+                  <div className="absolute top-6 left-6 bg-white/90 backdrop-blur-md px-4 py-1.5 rounded-full shadow-sm border border-white/20">
+                    <span className="text-primary font-bold text-[10px] uppercase tracking-[0.2em]">
+                      {t('hotelLabel')}
+                    </span>
                   </div>
-                  <div className="p-8 flex flex-col gap-4 text-left">
-                    <div className="flex justify-between items-start">
-                      <div>
-                        <h3 className="font-headline text-2xl text-on-surface font-medium leading-tight group-hover:text-primary transition-colors italic">
-                          {tContent('stayName', hotel.id)}
-                        </h3>
-                        <p className="text-on-surface-variant text-sm mt-1">{cityName}</p>
-                      </div>
-                      <span className="material-symbols-outlined text-primary scale-125">add_circle</span>
-                    </div>
-                    <p className="text-on-surface-variant text-sm line-clamp-2 leading-relaxed">
-                      {tContent('stayDesc', hotel.id)}
-                    </p>
+                  
+                  <div className="absolute bottom-6 left-6 p-2">
+                    <h3 className="font-headline text-[1.75rem] text-white font-medium leading-tight italic drop-shadow-md">
+                      {tContent('stayName', hotel.id)}
+                    </h3>
                   </div>
                 </article>
               ) : (

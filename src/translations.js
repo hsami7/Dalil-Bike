@@ -129,6 +129,7 @@ const translations = {
     noPedalChargeDesc:
       "Enjoy an ultra-fast charge without any physical effort.",
     continueToExplore: "Continue to exploration",
+    hotelLabel: "Hotel",
 
     // Language names
     langEn: "English",
@@ -242,6 +243,7 @@ const translations = {
     noPedalChargeDesc:
       "Profitez d'une recharge ultra-rapide sans aucun effort physique.",
     continueToExplore: "Continuer vers l'exploration",
+    hotelLabel: "Hôtel",
     langEn: "English",
     langFr: "Français",
     langEs: "Español",
@@ -352,6 +354,7 @@ const translations = {
     noPedalChargeDesc:
       "Disfruta de una carga ultra rápida sin ningún esfuerzo físico.",
     continueToExplore: "Continuar hacia la exploración",
+    hotelLabel: "Hotel",
     langEn: "English",
     langFr: "Français",
     langEs: "Español",
@@ -458,6 +461,7 @@ const translations = {
     noPedalChargeTitle: "شحن بدون تبديل",
     noPedalChargeDesc: "استمتع بشحن فائق السرعة دون أي مجهود بدني.",
     continueToExplore: "الاستمرار في الاستكشاف",
+    hotelLabel: "فندق",
     langEn: "English",
     langFr: "Français",
     langEs: "Español",
