@@ -103,30 +103,34 @@ export const HOTEL_IMAGES = {
   // Marrakech
   marrakech_royal_mansour: {
     primary:
-      "https://images.unsplash.com/photo-1549294413-26f195200c16?auto=format&fit=crop&q=80&w=1000",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/00/58/c6/lobby.jpg?w=2000&h=-1&s=1",
     gallery: [
-      "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&q=80&w=1000",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/c8/44/f1/lobby.jpg?w=1200&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/75/84/b4/royal-mansour-marrakech.jpg?w=1200&h=-1&s=1",
     ],
   },
   marrakech_amanjena: {
     primary:
-      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=1000",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/54/ca/7e/amanjena-bassin.jpg?w=2000&h=-1&s=1",
     gallery: [
-      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&q=80&w=1000",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/78/dc/ee/amanjena.jpg?w=1200&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/78/dc/e6/amanjena.jpg?w=1200&h=-1&s=1",
     ],
   },
   marrakech_mandarin_oriental: {
     primary:
-      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&q=80&w=1000",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/00/58/53/pool-with-atlas-mountains.jpg?w=2000&h=-1&s=1",
     gallery: [
-      "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=1000",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/32/f1/72/cf/mes-lalla.jpg?w=1200&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/32/f1/72/d0/marrakech-spa-yoga-outdoor.jpg?w=1200&h=-1&s=1",
     ],
   },
   marrakech_selman: {
     primary:
-      "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&q=80&w=1000",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/27/ea/33/7d/hotel-view.jpg?w=2000&h=-1&s=1",
     gallery: [
-      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=1000",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/74/74/6e/pool-perspective-night.jpg?w=1200&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/47/3a/ff/selman-marrakech.jpg?w=1200&h=-1&s=1",
     ],
   },
   // Fes
