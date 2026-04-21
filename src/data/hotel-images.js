@@ -136,9 +136,11 @@ export const HOTEL_IMAGES = {
   // Fes
   fes_riad_fes: {
     primary:
-      "https://media.istockphoto.com/id/172380559/photo/courtyard-inside-old-riad-in-fez-morocco.jpg?s=612x612&w=0&k=20&c=yIPa6c5FHNe43mxMuNyleCCdDpO2iVzFzmeqawylBlE=",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/ff/13/d5/riad-fes-relais-chateaux.jpg?w=1200&h=-1&s=1",
     gallery: [
-      "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&q=80&w=1000",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/29/4b/2e/chambre.jpg?w=1200&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/ff/13/95/royale-suite.jpg?w=1200&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/ff/10/d2/roof-top-bar.jpg?w=1200&h=-1&s=1",
     ],
   },
   fes_palais_faraj: {
@@ -150,45 +152,57 @@ export const HOTEL_IMAGES = {
   },
   fes_karawan_riad: {
     primary:
-      "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&q=80&w=1000",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/40/bc/ed/patio.jpg?w=1200&h=-1&s=1",
     gallery: [
-      "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&q=80&w=1000",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/2f/c5/24/medina-de-fes-vue-de.jpg?w=1200&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/37/c0/3d/une-vue-depuis-le-patio.jpg?w=1200&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/2f/c6/1f/vue-du-patio-de-nuit.jpg?w=1200&h=-1&s=1",
     ],
   },
   fes_palais_amani: {
     primary:
-      "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&q=80&w=1000",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/fe/76/9a/palais-amani.jpg?w=1200&h=-1&s=1",
     gallery: [
-      "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80&w=1000",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/9f/83/4c/palais-amani.jpg?w=1200&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/9f/86/ce/palais-amani.jpg?w=1200&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/32/bc/1a/2a/caption.jpg?w=1200&h=1200&s=1",
     ],
   },
   // Casablanca
   casablanca_royal_mansour: {
     primary:
-      "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80&w=1000",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/03/ef/f4/lobby.jpg?w=900&h=500&s=1",
     gallery: [
-      "https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&q=80&w=1000",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/e1/0e/0c/guest-room.jpg?w=900&h=500&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/df/0e/9e/caption.jpg?w=900&h=500&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/df/25/44/le-spa.jpg?w=500&h=-1&s=1",
     ],
   },
   casablanca_hyatt_regency: {
     primary:
-      "https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&q=80&w=1000",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/7a/3c/52/facade-de-l-hotel.jpg?w=900&h=500&s=1",
     gallery: [
-      "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&q=80&w=1000",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/7d/3b/64/hyatt-regency-casablanca.jpg?w=900&h=500&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/7a/3c/58/vue-de-l-hotel.jpg?w=900&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/08/c7/a3/hyatt-regency-casablanca.jpg?w=500&h=-1&s=1",
     ],
   },
   casablanca_le_casablanca: {
     primary:
       "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/58/d6/60/le-casablanca-hotel.jpg?w=900&h=500&s=1",
     gallery: [
-      "https://images.unsplash.com/photo-1495365200479-c4ed1d392721?auto=format&fit=crop&q=80&w=1000",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/4b/f2/2d/le-casablanca-hotel.jpg?w=900&h=500&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/4b/fc/c6/le-casablanca-hotel.jpg?w=900&h=500&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/4b/f3/47/le-casablanca-hotel.jpg?w=500&h=-1&s=1",
     ],
   },
   casablanca_le_doge: {
     primary:
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/ad/72/3a/hotel-le-doge-relais.jpg?w=900&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/21/16/76/suite.jpg?w=900&h=500&s=1",
     gallery: [
-      "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80&w=1000",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/9e/cf/d4/hotel-le-doge-relais.jpg?w=900&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/02/9e/56/a9/filename-hall-02-big.jpg?w=900&h=500&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/1f/78/49/hotel-spa-le-doge-relais.jpg?w=300&h=200&s=1",
     ],
   },
   // Chefchaouen
