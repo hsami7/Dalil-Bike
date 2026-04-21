@@ -208,30 +208,38 @@ export const HOTEL_IMAGES = {
   // Chefchaouen
   chefchaouen_le_petit_palais: {
     primary:
-      "https://images.unsplash.com/photo-1512918728675-ed5a9ecde9d7?auto=format&fit=crop&q=80&w=1000",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/a7/63/cd/the-panoramic-terrasse.jpg?w=1200&h=-1&s=1",
     gallery: [
-      "https://images.unsplash.com/photo-1512918728675-ed5a9ecde9d7?auto=format&fit=crop&q=80&w=1000",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/fb/1d/1e/sejour.jpg?w=1200&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/fb/1c/7c/sejour.jpg?w=1200&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2f/67/95/d2/caption.jpg?w=1200&h=-1&s=1",
     ],
   },
   chefchaouen_dar_echchaouen: {
     primary:
-      "https://images.unsplash.com/photo-1512918728675-ed5a9ecde9d7?auto=format&fit=crop&q=80&w=1000",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/80/40/71/pool--v15502402.jpg?w=1200&h=-1&s=1",
     gallery: [
-      "https://images.unsplash.com/photo-1512918728675-ed5a9ecde9d7?auto=format&fit=crop&q=80&w=1000",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/80/40/e6/the-hotel--v15502443.jpg?w=1200&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/80/40/ca/royal-suite--v15502415.jpg?w=1200&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/32/e3/c1/3b/caption.jpg?w=1200&h=1200&s=1",
     ],
   },
   chefchaouen_riad_hicham: {
     primary:
-      "https://images.unsplash.com/photo-1512918728675-ed5a9ecde9d7?auto=format&fit=crop&q=80&w=1000",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/96/3d/fd/photo0jpg.jpg?w=1200&h=-1&s=1",
     gallery: [
-      "https://images.unsplash.com/photo-1512918728675-ed5a9ecde9d7?auto=format&fit=crop&q=80&w=1000",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/33/01/4b/b4/caption.jpg?w=1200&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/33/01/4b/b3/caption.jpg?w=1200&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/32/42/36/20/caption.jpg?w=1200&h=-1&s=1",
     ],
   },
   chefchaouen_casa_perleta: {
     primary:
-      "https://images.unsplash.com/photo-1512918728675-ed5a9ecde9d7?auto=format&fit=crop&q=80&w=1000",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/fb/e9/6b/rooftop-terrace-where.jpg?w=1200&h=-1&s=1",
     gallery: [
-      "https://images.unsplash.com/photo-1512918728675-ed5a9ecde9d7?auto=format&fit=crop&q=80&w=1000",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/72/87/92/terraza.jpg?w=1200&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/12/f8/f9/casa-perleta.jpg?w=1200&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/14/97/b2/caption.jpg?w=1200&h=-1&s=1",
     ],
   },
   // Rabat
