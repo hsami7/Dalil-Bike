@@ -1,16 +1,49 @@
-# React + Vite
+# Dalil Bike 🏍️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**The Ultimate Directory for Motorbike Travelers in Morocco.**
 
-Currently, two official plugins are available:
+Dalil Bike is a curated, immersive guide designed for explorers navigating Morocco on two wheels. Whether you're seeking the hidden riads of the Medina or the most iconic historical landmarks in the Atlas mountains, Dalil Bike provides the essential roadmap for your journey.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Universal Search**: A powerful, fuzzy-search engine that queries across Cities (Hubs), Stays (Hotels), and History (Landmarks) in real-time.
+- **Curated Stays**: A hand-picked selection of Morocco's finest accommodations, featuring high-resolution imagery and detailed descriptions.
+- **Moroccan Heritage Guide**: Explore the rich history of Morocco with dedicated pages for historical sites, including period data and visitor insights.
+- **Multi-language Support**: Fully localized in **English**, **French**, **Spanish**, and **Arabic** for a truly global experience.
+- **Stunning UI/UX**: A modern, responsive design built with a focus on editorial aesthetics, featuring smooth animations and a premium feel.
 
-## Expanding the ESLint configuration
+## 🛠️ Technology Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend**: [React 19](https://react.dev/) + [Vite](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Google Material Symbols](https://fonts.google.com/icons)
+- **Data**: Static JSON-based data layer for maximum performance and offline-readiness.
+
+## 🚀 Getting Started
+
+1. **Clone the repository**:
+   ```bash
+   git clone git@github.com:hsami7/Dalil-Bike.git
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production**:
+   ```bash
+   npm run build
+   ```
+
+---
+
+*Explore Morocco. Ride Dalil.*
