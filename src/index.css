@@ -22,3 +22,15 @@ body {
     transform: translateY(0);
   }
 }
+
+/* Background Video Styles */
+.video-background-iframe {
+  pointer-events: none;
+  user-select: none;
+  z-index: 10;
+}
+
+/* Ensure iframes are clean */
+iframe {
+  border: none;
+}

@@ -4,6 +4,7 @@ import { DOMAINS, LANDMARKS, HOTELS } from './data';
 import Header from './Header';
 import BottomNav from './BottomNav';
 import { useLanguage } from './LanguageContext';
+import CityMedia from './components/CityMedia';
 
 export default function Hub() {
   const navigate = useNavigate();
@@ -55,10 +56,9 @@ export default function Hub() {
         {/* Hero Section (Immersive Bleed) */}
         <section className="relative w-full h-[614px] lg:h-[768px] min-h-[400px] flex flex-col justify-end overflow-hidden">
           <div className="absolute inset-0 z-0">
-            <img 
-              alt={domain.name} 
-              className="w-full h-full object-cover object-center scale-105" 
-              src={domain.img} 
+            <CityMedia 
+              city={domain} 
+              imgClassName="object-center scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/20 to-transparent"></div>
           </div>

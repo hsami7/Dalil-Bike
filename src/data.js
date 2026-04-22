@@ -424,7 +424,8 @@ export const DOMAINS = [
     tagline: "The Red City",
     cols: "md:col-span-8 row-span-2",
     desc: "Southern Majesty. The ochre heart of Morocco layered with millennia of history.",
-    img: "https://images.unsplash.com/photo-1585004607620-fb4c44331e73?auto=format&fit=crop&q=80&w=2000"
+    img: "https://images.unsplash.com/photo-1585004607620-fb4c44331e73?auto=format&fit=crop&q=80&w=2000",
+    videoId: "WGoSnw5Y3nE"
   },
   {
     id: "fes",
@@ -432,7 +433,8 @@ export const DOMAINS = [
     tagline: "The Cultural Capital",
     cols: "md:col-span-4 row-span-1",
     desc: "Narrow labyrinthine alleyways and intricate mosaic tilework, celebrated as home to the world's oldest university.",
-    img: "https://images.unsplash.com/photo-1696952252983-46cb2c304ad9?auto=format&fit=crop&w=1200&q=80"
+    img: "https://images.unsplash.com/photo-1696952252983-46cb2c304ad9?auto=format&fit=crop&w=1200&q=80",
+    videoId: "kYxBn98X3Ig"
   },
   {
     id: "casablanca",
@@ -440,7 +442,8 @@ export const DOMAINS = [
     tagline: "The Economic Hub",
     cols: "md:col-span-4 row-span-1",
     desc: "White-washed modern architecture sitting by the Atlantic ocean, where tradition meets contemporary dynamism.",
-    img: "https://images.unsplash.com/photo-1706203644187-a719449587bb?auto=format&fit=crop&w=1200&q=80"
+    img: "https://images.unsplash.com/photo-1706203644187-a719449587bb?auto=format&fit=crop&w=1200&q=80",
+    videoId: "BDqAcVIRqXc"
   },
   {
     id: "chefchaouen",
@@ -448,7 +451,8 @@ export const DOMAINS = [
     tagline: "The Blue Pearl",
     cols: "md:col-span-12 row-span-1",
     desc: "Famous for its brilliant blue-painted houses situated in the dramatic Rif Mountains. A photographer's dream.",
-    img: "https://images.unsplash.com/photo-1577147443647-81856d5151af?auto=format&fit=crop&w=1200&q=80"
+    img: "https://images.unsplash.com/photo-1577147443647-81856d5151af?auto=format&fit=crop&w=1200&q=80",
+    videoId: "4CQ0irysD8s"
   },
   {
     id: "rabat",
@@ -456,7 +460,8 @@ export const DOMAINS = [
     tagline: "The Elegant Capital",
     cols: "md:col-span-6 row-span-1",
     desc: "A stunning blend of Islamic history and French colonial architecture. Both sophisticated and traditional.",
-    img: "https://images.unsplash.com/photo-1598022124758-26d09adcb7b6?auto=format&fit=crop&w=1200&q=80"
+    img: "https://images.unsplash.com/photo-1598022124758-26d09adcb7b6?auto=format&fit=crop&w=1200&q=80",
+    videoId: "6gVdAWDf0G0"
   },
   {
     id: "meknes",
@@ -464,7 +469,8 @@ export const DOMAINS = [
     tagline: "The Imperial City",
     cols: "md:col-span-6 row-span-1",
     desc: "A quiet, regal UNESCO World Heritage site known for its grand imperial palaces and monumental gateways.",
-    img: "https://images.unsplash.com/photo-1600353908694-a606c58a0b73?auto=format&fit=crop&w=1200&q=80"
+    img: "https://images.unsplash.com/photo-1600353908694-a606c58a0b73?auto=format&fit=crop&w=1200&q=80",
+    videoId: "8t0O0VjmJtQ"
   },
   {
     id: "tangier",
@@ -472,7 +478,8 @@ export const DOMAINS = [
     tagline: "Gateway to Africa",
     cols: "md:col-span-4 row-span-1",
     desc: "A coastal city perched by the Strait of Gibraltar with a rich multicultural history and views of Spain.",
-    img: "https://images.unsplash.com/photo-1582919534700-acf2374f10d3?auto=format&fit=crop&w=1200&q=80"
+    img: "https://images.unsplash.com/photo-1582919534700-acf2374f10d3?auto=format&fit=crop&w=1200&q=80",
+    videoId: "qGUwPoOuFuA"
   },
   {
     id: "essaouira",
@@ -480,7 +487,8 @@ export const DOMAINS = [
     tagline: "The Windy City",
     cols: "md:col-span-4 row-span-1",
     desc: "A peaceful coastal town favored for its long beaches, steady winds, and historic UNESCO medina.",
-    img: "https://images.unsplash.com/photo-1624802706192-78b15c3edae0?auto=format&fit=crop&w=1200&q=80"
+    img: "https://images.unsplash.com/photo-1624802706192-78b15c3edae0?auto=format&fit=crop&w=1200&q=80",
+    videoId: "joRZxY4gcyQ"
   },
   {
     id: "agadir",
@@ -488,7 +496,8 @@ export const DOMAINS = [
     tagline: "Sunshine Resort",
     cols: "md:col-span-4 row-span-1",
     desc: "A major seaside resort known for its exceptionally mild climate and modern golden sand beaches.",
-    img: "https://images.unsplash.com/photo-1710092538995-4af0c11a3f3c?auto=format&fit=crop&w=1200&q=80"
+    img: "https://images.unsplash.com/photo-1710092538995-4af0c11a3f3c?auto=format&fit=crop&w=1200&q=80",
+    videoId: "6GME_pODsJQ"
   },
   {
     id: "ouarzazate",
@@ -496,6 +505,7 @@ export const DOMAINS = [
     tagline: "The Desert Experience",
     cols: "md:col-span-12 row-span-2",
     desc: "The Hollywood of Africa and gateway to the Sahara. From the clay kasbahs of Ouarzazate to the towering dunes of Merzouga.",
-    img: "https://images.unsplash.com/photo-1677839698101-c145cda4718a?auto=format&fit=crop&w=1200&q=80"
+    img: "https://images.unsplash.com/photo-1677839698101-c145cda4718a?auto=format&fit=crop&w=1200&q=80",
+    videoId: "485DQw5_ZRo"
   }
 ];
