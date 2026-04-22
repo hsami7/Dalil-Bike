@@ -34,16 +34,18 @@ export default function Home() {
     const term = searchTerm.toLowerCase().trim();
 
     // 1. Prepare searchable items with consistent schema
+    const hubItems = DOMAINS.map(city => ({
+      ...city,
+      type: 'hub',
+      searchName: tCity(city.id),
+      searchTagline: tContent('tagline', city.id),
+      searchDesc: tContent('desc', city.id),
+      img: city.img,
+      cols: city.cols || "md:col-span-4 row-span-1"
+    }));
+
     const allItems = [
-      ...DOMAINS.map(city => ({
-        ...city,
-        type: 'hub',
-        searchName: tCity(city.id),
-        searchTagline: tContent('tagline', city.id),
-        searchDesc: tContent('desc', city.id),
-        img: city.img,
-        cols: city.cols || "md:col-span-4 row-span-1"
-      })),
+      ...hubItems,
       ...HOTELS.map(hotel => ({
         ...hotel,
         type: 'hotel',
@@ -64,7 +66,7 @@ export default function Home() {
       }))
     ];
 
-    if (!term) return { finalResults: DOMAINS, autocorrectedFrom: null, suggestion: null };
+    if (!term) return { finalResults: hubItems, autocorrectedFrom: null, suggestion: null };
 
     // 2. Calculate scores for all items
     const scoredResults = allItems.map(item => {
@@ -238,15 +240,20 @@ export default function Home() {
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
                       <div className="absolute bottom-0 left-0 p-8 w-full">
-                        {badge && (
+                        {item.id === 'marrakech' && item.type === 'hub' && (
+                          <span className="inline-block bg-tertiary/90 backdrop-blur-sm text-on-tertiary text-xs font-bold uppercase tracking-wider py-1 px-3 rounded-full mb-3">
+                            {t('mustSee')}
+                          </span>
+                        )}
+                        {badge && item.id !== 'marrakech' && (
                           <span className={`inline-block backdrop-blur-sm text-white text-[10px] font-bold uppercase tracking-wider py-1 px-3 rounded-full mb-3 ${badge.class}`}>
                             {badge.label}
                           </span>
                         )}
-                        <h3 className="font-headline text-3xl md:text-4xl text-white font-medium mb-1 drop-shadow-md">
+                        <h3 className={`font-headline text-white font-medium mb-1 drop-shadow-md ${item.type === 'hub' ? 'text-4xl md:text-5xl' : 'text-3xl md:text-4xl'}`}>
                           {item.type === 'hub' ? tCity(item.id) : item.searchName}
                         </h3>
-                        <p className="font-body text-white/90 text-xs md:text-sm max-w-xl line-clamp-2 pb-2">
+                        <p className={`font-body text-white/90 max-w-xl line-clamp-2 pb-2 ${item.type === 'hub' ? 'text-sm' : 'text-xs md:text-sm'}`}>
                           {item.type === 'hub' ? tContent('desc', item.id) : item.searchDesc}
                         </p>
                       </div>
