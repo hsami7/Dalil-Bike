@@ -7,21 +7,7 @@
 Dalil Bike is a sustainable energy and travel initiative designed for the modern explorer in Morocco. We bridge the gap between eco-friendly mobility and essential connectivity, providing interactive charging stations that power your journey through human kinetic energy.
 
 ---
-
-## ⚡ Our Services
-
-We offer two ways to stay connected while you explore:
-
-### 🚴 Pedal and Charge
-*Explore Morocco while pedaling and charging your device.*
-- **Price**: 5 DH
-- **Concept**: Sustainable energy generation through physical activity. Perfect for eco-conscious travelers.
-
-### ⚡ Charge Without Pedaling
-*Enjoy an ultra-fast charge without any physical effort.*
-- **Price**: 10 DH
-- **Concept**: High-efficiency, rapid charging for those on the move.
-
+---
 ---
 
 ## ✨ Application Features
