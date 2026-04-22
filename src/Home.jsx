@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { DOMAINS } from './data';
+import { DOMAINS, HOTELS, LANDMARKS } from './data';
 import Header from './Header';
 import BottomNav from './BottomNav';
 import { useLanguage } from './LanguageContext';
@@ -32,28 +32,60 @@ export default function Home() {
   // Sophisticated search ranking and filtering
   const processSearch = () => {
     const term = searchTerm.toLowerCase().trim();
+
+    // 1. Prepare searchable items with consistent schema
+    const allItems = [
+      ...DOMAINS.map(city => ({
+        ...city,
+        type: 'hub',
+        searchName: tCity(city.id),
+        searchTagline: tContent('tagline', city.id),
+        searchDesc: tContent('desc', city.id),
+        img: city.img,
+        cols: city.cols || "md:col-span-4 row-span-1"
+      })),
+      ...HOTELS.map(hotel => ({
+        ...hotel,
+        type: 'hotel',
+        searchName: tContent('stayName', hotel.id),
+        searchTagline: hotel.price,
+        searchDesc: tContent('stayDesc', hotel.id),
+        img: hotel.img,
+        cols: "md:col-span-4 row-span-1"
+      })),
+      ...LANDMARKS.map(place => ({
+        ...place,
+        type: 'place',
+        searchName: tContent('historyName', place.id),
+        searchTagline: tContent('historyPeriod', place.id),
+        searchDesc: tContent('historyPeriod', place.id), // Just using period as tagline/desc for scoring
+        img: place.img,
+        cols: "md:col-span-4 row-span-1"
+      }))
+    ];
+
     if (!term) return { finalResults: DOMAINS, autocorrectedFrom: null, suggestion: null };
 
-    // 1. Calculate scores for all domains
-    const scoredResults = DOMAINS.map(city => {
-      const cityName = city.name.toLowerCase();
+    // 2. Calculate scores for all items
+    const scoredResults = allItems.map(item => {
+      const itemName = item.searchName.toLowerCase();
       let score = 0;
 
       // Type 1: Exact Start (Highest priority)
-      if (cityName.startsWith(term)) {
+      if (itemName.startsWith(term)) {
         score = 100;
       }
       // Type 2: Contains Name
-      else if (cityName.includes(term)) {
+      else if (itemName.includes(term)) {
         score = 80;
       }
       // Type 3: Contains in Tagline/Desc
-      else if (city.tagline?.toLowerCase().includes(term) || city.desc.toLowerCase().includes(term)) {
+      else if (item.searchTagline?.toLowerCase().includes(term) || item.searchDesc?.toLowerCase().includes(term)) {
         score = 50;
       }
       // Type 4: Fuzzy Match (Levenshtein)
       else {
-        const distance = getLevenshteinDistance(term, cityName);
+        const distance = getLevenshteinDistance(term, itemName);
         // Only consider if distance is small compared to length
         if (distance <= 2) {
           score = 40;
@@ -62,11 +94,11 @@ export default function Home() {
         }
       }
 
-      return { city, score };
+      return { item, score };
     }).filter(item => item.score > 0)
       .sort((a, b) => b.score - a.score);
 
-    const results = scoredResults.map(item => item.city);
+    const results = scoredResults.map(item => item.item);
     
     // Determine if we need to show the "Showing results for..." banner
     const hasExact = scoredResults.some(item => item.score >= 50);
@@ -75,13 +107,13 @@ export default function Home() {
     // Suggestion logic for very distant matches
     let suggestion = null;
     if (results.length === 0 && term.length > 2) {
-      const bestMatch = DOMAINS.map(city => ({
-        city,
-        distance: getLevenshteinDistance(term, city.name.toLowerCase())
+      const bestMatch = allItems.map(item => ({
+        item,
+        distance: getLevenshteinDistance(term, item.searchName.toLowerCase())
       })).sort((a, b) => a.distance - b.distance)[0];
       
       if (bestMatch.distance <= 4) {
-        suggestion = bestMatch.city;
+        suggestion = bestMatch.item;
       }
     }
 
@@ -175,29 +207,52 @@ export default function Home() {
 
             {finalResults.length > 0 ? (
               <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 auto-rows-[300px]">
-                {finalResults.map(city => (
-                  <article 
-                    key={city.id}
-                    className={`${city.cols} group rounded-xl overflow-hidden relative bg-surface-container-lowest cursor-pointer shadow-[0_4px_32px_rgba(26,28,30,0.06)]`}
-                    onClick={() => navigate(`/hub?city=${city.id}`)}
-                  >
-                    <img 
-                      alt={city.name} 
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out object-center" 
-                      src={city.img}
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
-                    <div className="absolute bottom-0 left-0 p-8 w-full">
-                      {city.id === 'marrakech' && (
-                        <span className="inline-block bg-tertiary/90 backdrop-blur-sm text-on-tertiary text-xs font-bold uppercase tracking-wider py-1 px-3 rounded-full mb-3">
-                          {t('mustSee')}
-                        </span>
-                      )}
-                      <h3 className="font-headline text-4xl md:text-5xl text-white font-medium mb-1 drop-shadow-md">{tCity(city.id)}</h3>
-                      <p className="font-body text-white/90 text-sm max-w-xl line-clamp-2 pb-2">{tContent('desc', city.id)}</p>
-                    </div>
-                  </article>
-                ))}
+                {finalResults.map(item => {
+                  const handleNavigate = () => {
+                    if (item.type === 'hub') navigate(`/hub?city=${item.id}`);
+                    else if (item.type === 'hotel') navigate(`/hotel/${item.cityId}/${item.id}`);
+                    else if (item.type === 'place') navigate(`/place/${item.id}`);
+                  };
+
+                  const getBadge = () => {
+                    switch (item.type) {
+                      case 'hub': return { label: t('navExplore'), class: 'bg-primary/90' };
+                      case 'hotel': return { label: t('navStays'), class: 'bg-tertiary/90' };
+                      case 'place': return { label: t('navHistory'), class: 'bg-secondary/90' };
+                      default: return null;
+                    }
+                  };
+
+                  const badge = getBadge();
+
+                  return (
+                    <article 
+                      key={`${item.type}-${item.id}`}
+                      className={`${item.cols} group rounded-xl overflow-hidden relative bg-surface-container-lowest cursor-pointer shadow-[0_4px_32px_rgba(26,28,30,0.06)]`}
+                      onClick={handleNavigate}
+                    >
+                      <img 
+                        alt={item.searchName} 
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out object-center" 
+                        src={item.img}
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
+                      <div className="absolute bottom-0 left-0 p-8 w-full">
+                        {badge && (
+                          <span className={`inline-block backdrop-blur-sm text-white text-[10px] font-bold uppercase tracking-wider py-1 px-3 rounded-full mb-3 ${badge.class}`}>
+                            {badge.label}
+                          </span>
+                        )}
+                        <h3 className="font-headline text-3xl md:text-4xl text-white font-medium mb-1 drop-shadow-md">
+                          {item.type === 'hub' ? tCity(item.id) : item.searchName}
+                        </h3>
+                        <p className="font-body text-white/90 text-xs md:text-sm max-w-xl line-clamp-2 pb-2">
+                          {item.type === 'hub' ? tContent('desc', item.id) : item.searchDesc}
+                        </p>
+                      </div>
+                    </article>
+                  );
+                })}
               </div>
             ) : (
               <div className="py-12">
@@ -208,10 +263,14 @@ export default function Home() {
                     <div className="px-6">
                       <p className="text-on-surface font-headline text-2xl md:text-3xl mb-4">
                         {t('didYouMean')} <button 
-                          onClick={() => navigate(`/hub?city=${suggestion.id}`)}
+                          onClick={() => {
+                            if (suggestion.type === 'hub') navigate(`/hub?city=${suggestion.id}`);
+                            else if (suggestion.type === 'hotel') navigate(`/hotel/${suggestion.cityId}/${suggestion.id}`);
+                            else if (suggestion.type === 'place') navigate(`/place/${suggestion.id}`);
+                          }}
                           className="text-primary font-bold hover:underline italic underline-offset-8 decoration-primary/30"
                         >
-                          {suggestion.name}
+                          {suggestion.type === 'hub' ? tCity(suggestion.id) : suggestion.searchName}
                         </button>?
                       </p>
                       <p className="text-on-surface-variant font-body mb-8">{t('clickAbove')}</p>
