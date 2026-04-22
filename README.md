@@ -1,49 +1,51 @@
-# Dalil Bike 🏍️
+# Dalil Bike 🔋🚴
 
-**The Ultimate Directory for Motorbike Travelers in Morocco.**
+![Dalil Bike Logo](./src/assets/logo.jpeg)
 
-Dalil Bike is a curated, immersive guide designed for explorers navigating Morocco on two wheels. Whether you're seeking the hidden riads of the Medina or the most iconic historical landmarks in the Atlas mountains, Dalil Bike provides the essential roadmap for your journey.
+**CHARGE YOUR PHONE. FIND YOUR WAY.**
+
+Dalil Bike is a sustainable energy and travel initiative designed for the modern explorer in Morocco. We bridge the gap between eco-friendly mobility and essential connectivity, providing interactive charging stations that power your journey through human kinetic energy.
 
 ---
 
-## ✨ Key Features
+## ⚡ Our Services
 
-- **Universal Search**: A powerful, fuzzy-search engine that queries across Cities (Hubs), Stays (Hotels), and History (Landmarks) in real-time.
-- **Curated Stays**: A hand-picked selection of Morocco's finest accommodations, featuring high-resolution imagery and detailed descriptions.
-- **Moroccan Heritage Guide**: Explore the rich history of Morocco with dedicated pages for historical sites, including period data and visitor insights.
-- **Multi-language Support**: Fully localized in **English**, **French**, **Spanish**, and **Arabic** for a truly global experience.
-- **Stunning UI/UX**: A modern, responsive design built with a focus on editorial aesthetics, featuring smooth animations and a premium feel.
+We offer two ways to stay connected while you explore:
+
+### 🚴 Pedal and Charge
+*Explore Morocco while pedaling and charging your device.*
+- **Price**: 5 DH
+- **Concept**: Sustainable energy generation through physical activity. Perfect for eco-conscious travelers.
+
+### ⚡ Charge Without Pedaling
+*Enjoy an ultra-fast charge without any physical effort.*
+- **Price**: 10 DH
+- **Concept**: High-efficiency, rapid charging for those on the move.
+
+---
+
+## ✨ Application Features
+
+In addition to our physical stations, the Dalil Bike digital platform provides:
+
+- **Universal Search**: Find your way through a unified directory of Hubs (Cities), Stays (Hotels), and History (Landmarks).
+- **Curated Stays**: Hand-picked accommodations across Morocco with high-quality visual galleries.
+- **Heritage Guide**: Immersive editorial content about Moroccan historical sites and cultural heritage.
+- **Multi-language Support**: Fully localized in English, French, Spanish, and Arabic.
 
 ## 🛠️ Technology Stack
 
 - **Frontend**: [React 19](https://react.dev/) + [Vite](https://vitejs.dev/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 - **Animations**: [Framer Motion](https://www.framer.com/motion/)
-- **Icons**: [Google Material Symbols](https://fonts.google.com/icons)
-- **Data**: Static JSON-based data layer for maximum performance and offline-readiness.
+- **Data**: Static JSON architecture for high performance and reliability.
 
 ## 🚀 Getting Started
 
-1. **Clone the repository**:
-   ```bash
-   git clone git@github.com:hsami7/Dalil-Bike.git
-   ```
-
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
-
-3. **Run the development server**:
-   ```bash
-   npm run dev
-   ```
-
-4. **Build for production**:
-   ```bash
-   npm run build
-   ```
+1. **Clone**: `git clone git@github.com:hsami7/Dalil-Bike.git`
+2. **Install**: `npm install`
+3. **Dev**: `npm run dev`
 
 ---
 
-*Explore Morocco. Ride Dalil.*
+*Sustainability in Motion. Connectivity in Every Mile.*
