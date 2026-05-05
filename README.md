@@ -28,7 +28,7 @@ In addition to our physical stations, the Dalil Bike digital platform provides:
 
 ## 🚀 Getting Started
 
-1. **Clone**: `git clone git@github.com:hsami7/Dalil-Bike.git`
+1. **Clone**: `git clone https://github.com/hsami7/Dalil-Bike.git`
 2. **Install**: `npm install`
 3. **Dev**: `npm run dev`
 
