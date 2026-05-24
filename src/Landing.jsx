@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useLanguage } from './LanguageContext';
 import LanguageSwitcher from './LanguageSwitcher';
+import logo from './assets/logo.jpeg';
 
 /* ─── Service card ─── */
 function ServiceCard({ icon, title, subtitle, price, accent, onClick }) {
@@ -130,7 +131,7 @@ export default function Landing() {
         {/* Brand Logo Image (Copied directly from assets) */}
         <div style={{ marginBottom: 24 }}>
           <img
-            src="/src/assets/logo.jpeg"
+            src={logo}
             alt="Dalil Bike Logo"
             style={{ width: 220, height: 220, objectFit: 'contain' }}
             onError={(e) => {

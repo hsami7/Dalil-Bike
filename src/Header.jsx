@@ -1,13 +1,14 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useLanguage } from './LanguageContext';
+import brandLogo from './assets/just_dalil_bike_logo.png';
 
 function DalilBikeLogo({ scale = 1, transformOrigin = 'center center' }) {
   const height = Math.round(50 * scale);
   return (
     <div style={{ display: 'flex', alignItems: 'center', height: '40px' }}>
       <img
-        src="/src/assets/just_dalil_bike_logo.png"
+        src={brandLogo}
         alt="Dalil Bike"
         style={{
           height: height,
